@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="helloorm:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Backend.war">
+      <element id="artifact" artifact-name="helloorm:war exploded" />
+    </root>
+  </artifact>
+</component>
