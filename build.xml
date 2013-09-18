@@ -31,7 +31,10 @@
         </copy>
     </target>
 
-    <target name="compile" depends="copyjars"
+
+
+    <!--<target name="compile" depends="copyjars"-->
+    <target name="compile"
             description="Compiles Java source and copies other source files to the WAR.">
         <mkdir dir="${project.name}/WEB-INF/classes"/>
         <copy todir="${project.name}/WEB-INF/classes">
@@ -59,6 +62,24 @@
                 <arg value="--jvm_flag=-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"/>
             </options>
         </dev_appserver>
+    </target>
+
+    <target name="deploy-app" description="Uploads and deploys the application to App Engine.">
+        <input message="Enter email" addproperty="gae-email"/>
+        <input message="Enter password :- " addproperty="gae-password">
+            <!--<handler type="secure"/>-->
+        </input>
+
+        <!-- Call dependencies here rather than with 'depends' attribute to get input first -->
+        <!--<antcall target="test" />-->
+
+        <java classname="com.google.appengine.tools.admin.AppCfg" inputstring="${gae-password}"
+              classpath="${sdk.dir}/lib/appengine-tools-api.jar" fork="true" failonerror="true">
+            <arg value="--email=${gae-email}" />
+            <arg value="--passin" />
+            <arg value="update" />
+            <arg value="war" />
+        </java>
     </target>
 
     <target name="update" depends="datanucleusenhance"

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" build-on-make="true" name="helloorm:war exploded">
-    <output-path>$PROJECT_DIR$/target/Backend</output-path>
+    <output-path>$PROJECT_DIR$/war</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="helloorm/web/Web" />
       <element id="directory" name="WEB-INF">

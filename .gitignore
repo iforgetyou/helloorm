@@ -216,3 +216,4 @@ pip-log.txt
 /war/WEB-INF/lib
 /out
 /target
+/war/WEB-INF/classes
