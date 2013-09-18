@@ -10,7 +10,7 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <!--<bean class="com.citylife.trackup.backend.controller.jsonview.JsonViewSupportFactoryBean" />-->
+    <bean class="com.zy17.controller.jsonview.JsonViewSupportFactoryBean" />
 
     <bean id="validator"
           class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
@@ -31,17 +31,10 @@
     </bean>
 
     <util:list id="messageConverters">
-        <!--<bean class="com.citylife.trackup.backend.controller.jsonview.ViewAwareJsonMessageConverter" />-->
+        <bean class="com.zy17.controller.jsonview.ViewAwareJsonMessageConverter" />
         <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
-        <bean class="org.springframework.http.converter.BufferedImageHttpMessageConverter"/>
+        <!--<bean class="org.springframework.http.converter.BufferedImageHttpMessageConverter"/>-->
         <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
         <bean class="org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter"/>
-        <!--<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">-->
-            <!--<property name="objectMapper">-->
-                <!--<bean class="org.codehaus.jackson.map.ObjectMapper">-->
-                    <!--<property name="serializationInclusion" value="NON_NULL"/>-->
-                <!--</bean>-->
-            <!--</property>-->
-        <!--</bean>-->
     </util:list>
 </beans>

@@ -5,10 +5,9 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>
+        <param-value><![CDATA[
             classpath:applicationContext.xml
-            <!--classpath:applicationContext_test.xml-->
-        </param-value>
+        ]]></param-value>
     </context-param>
 
     <servlet>
@@ -28,10 +27,10 @@
         <servlet-name>getFlight</servlet-name>
         <servlet-class>com.google.appengine.demos.helloorm.GetFlight</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>getFlights</servlet-name>
-        <servlet-class>com.google.appengine.demos.helloorm.GetFlights</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>getFlights</servlet-name>-->
+        <!--<servlet-class>com.google.appengine.demos.helloorm.GetFlights</servlet-class>-->
+    <!--</servlet>-->
     <servlet>
         <servlet-name>deleteFlight</servlet-name>
         <servlet-class>com.google.appengine.demos.helloorm.DeleteFlight</servlet-class>
@@ -65,14 +64,14 @@
         <!--<url-pattern>/getFlights/*</url-pattern>-->
     <!--</servlet-mapping>-->
 
-    <servlet-mapping>
-        <servlet-name>getFlights</servlet-name>
-        <url-pattern>/*</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>getFlights</servlet-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</servlet-mapping>-->
 
 
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
-        <url-pattern>/mvc</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>

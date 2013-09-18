@@ -70,5 +70,5 @@
     <!-- enable autowire -->
     <context:annotation-config />
 
-    <util:properties id="configs" location="classpath:config.properties" />
+    <util:properties id="configs" location="classpath:war/WEB-INF/config.properties" />
 </beans>
