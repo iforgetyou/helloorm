@@ -3,8 +3,7 @@ package com.zy17.domain;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,8 +13,9 @@ import javax.jdo.annotations.Persistent;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
-@PersistenceCapable(detachable = "true")
-public class TextMessage {
+@PersistenceCapable
+@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
+public class TextMessage extends Base{
 
     @Persistent
     private String name;

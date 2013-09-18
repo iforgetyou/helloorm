@@ -7,8 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.jdo.PersistenceManager;
 import javax.validation.Valid;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,10 +28,8 @@ public class MessageController {
     @RequestMapping(method = RequestMethod.GET)
     public
     @ResponseBody
-    TextMessage getMessage() {
-        TextMessage textMessage = new TextMessage();
-        textMessage.setName("hello");
-        return textMessage;
+    List<TextMessage> getMessages() {
+        return messageService.getAllMessage();
     }
 
     @ResponseStatus(value = HttpStatus.CREATED)
@@ -37,7 +37,6 @@ public class MessageController {
     public
     @ResponseBody
     TextMessage createTopic(@RequestBody @Valid TextMessage message) {
-        Date date = new Date();
         messageService.add(message);
         return message;
     }

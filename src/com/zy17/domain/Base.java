@@ -2,24 +2,30 @@ package com.zy17.domain;
 
 import org.springframework.data.annotation.Id;
 
+import javax.jdo.annotations.*;
 import java.util.Date;
 
-
+@PersistenceCapable
+@Inheritance(strategy=InheritanceStrategy.SUBCLASS_TABLE)
 public class Base {
 
-    @Id
-    private java.lang.String id;
+    @PrimaryKey
+    @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+    private Long id;
+    @Persistent
     private Date createdAt;
+    @Persistent
     private Date updatedAt;
 
     public Base() {
     }
 
-    public String getId() {
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

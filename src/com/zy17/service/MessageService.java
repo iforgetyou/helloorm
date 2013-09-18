@@ -2,6 +2,8 @@ package com.zy17.service;
 
 import com.zy17.domain.TextMessage;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: yan.zhang
@@ -10,4 +12,7 @@ import com.zy17.domain.TextMessage;
  */
 public interface MessageService {
     void add(TextMessage message);
+
+    List<TextMessage> getAllMessage();
+
 }

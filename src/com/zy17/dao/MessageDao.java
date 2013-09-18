@@ -2,6 +2,8 @@ package com.zy17.dao;
 
 import com.zy17.domain.TextMessage;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: yan.zhang
@@ -10,4 +12,6 @@ import com.zy17.domain.TextMessage;
  */
 public interface MessageDao {
     void insert(TextMessage message);
+
+    List<TextMessage> findAllMessages();
 }

@@ -6,6 +6,8 @@ import com.zy17.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: yan.zhang
@@ -21,4 +23,10 @@ public class MessageServiceImpl implements MessageService {
     public void add(TextMessage message) {
         dao.insert(message);
     }
+
+    @Override
+    public List<TextMessage> getAllMessage() {
+        return this.dao.findAllMessages();
+    }
+
 }

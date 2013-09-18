@@ -15,6 +15,15 @@
     <bean id="validator"
           class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
 
+
+    <bean id="pmf" class="org.datanucleus.jdo.JDOPersistenceManagerFactory" destroy-method="close">
+        <!--<property name="connectionFactory" ref="dataSource"/>-->
+        <property name="connectionURL" value="appengine"/>
+        <property name="nontransactionalWrite" value="true"/>
+        <property name="retainValues" value="true"/>
+        <property name="nontransactionalRead" value="true"/>
+    </bean>
+
     <context:component-scan base-package="com.zy17"/>
 
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
