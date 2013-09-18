@@ -54,7 +54,7 @@ public class GetFlight extends HttpServlet {
   }
 
   private Flight findJDO(long key) {
-    PersistenceManager pm = PMF.get().getPersistenceManager();
+    PersistenceManager pm = PMF_OLD.get().getPersistenceManager();
     try {
       return pm.getObjectById(Flight.class, key);
     } finally {

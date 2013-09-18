@@ -7,7 +7,7 @@ import javax.jdo.PersistenceManagerFactory;
 /**
  * @author Max Ross <maxr@google.com>
  */
-public final class PMF {
+public final class PMF_OLD {
 
   private static final PersistenceManagerFactory INSTANCE =
       JDOHelper.getPersistenceManagerFactory("transactional");
@@ -16,5 +16,5 @@ public final class PMF {
     return INSTANCE;
   }
 
-  private PMF() {}
+  private PMF_OLD() {}
 }

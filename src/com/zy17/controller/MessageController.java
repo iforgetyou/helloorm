@@ -1,10 +1,14 @@
 package com.zy17.controller;
 
 import com.zy17.domain.TextMessage;
+import com.zy17.service.MessageService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,8 +19,10 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 @RequestMapping("/message")
 public class MessageController {
+    @Autowired
+    private MessageService messageService;
 
-//    @ResponseStatus(value = HttpStatus.OK)
+    //    @ResponseStatus(value = HttpStatus.OK)
     @RequestMapping(method = RequestMethod.GET)
     public
     @ResponseBody
@@ -24,5 +30,15 @@ public class MessageController {
         TextMessage textMessage = new TextMessage();
         textMessage.setName("hello");
         return textMessage;
+    }
+
+    @ResponseStatus(value = HttpStatus.CREATED)
+    @RequestMapping(method = RequestMethod.POST)
+    public
+    @ResponseBody
+    TextMessage createTopic(@RequestBody @Valid TextMessage message) {
+        Date date = new Date();
+        messageService.add(message);
+        return message;
     }
 }

@@ -22,6 +22,9 @@
 
     <!--<mvc:annotation-driven content-negotiation-manager="contentNegotiationManager"/>-->
     <mvc:annotation-driven/>
+    <!--<bean id="pmf" class="com.zy17.dao.impl.PMFHelper" init-method="init">-->
+    <!--</bean>-->
+
     <context:component-scan base-package="com.zy17"/>
 
     <bean id="defalutViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -29,46 +32,8 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--<mongo:mongo id="mongo" replica-set="192.168.40.184:27017,192.168.40.184:27018,192.168.40.184:27019">-->
-    <mongo:mongo id="mongo" host="192.168.10.17" port="27017">
-        <mongo:options connections-per-host="500"
-                       threads-allowed-to-block-for-connection-multiplier="1000"
-                       connect-timeout="500"
-                       max-wait-time="500"
-                       auto-connect-retry="false"
-                       socket-keep-alive="true"
-                       socket-timeout="5000"
-                       slave-ok="true"
-                       write-number="1"
-                       write-timeout="0"
-                       write-fsync="true"/>
-    </mongo:mongo>
-
-    <mongo:db-factory dbname="trackuptestdata" mongo-ref="mongo" id="mongoDbFactory"/>
-
-    <bean id="mappingContext"
-          class="org.springframework.data.mongodb.core.mapping.MongoMappingContext" />
-
-    <bean id="defaultMongoTypeMapper"
-          class="org.springframework.data.mongodb.core.convert.DefaultMongoTypeMapper">
-        <constructor-arg name="typeKey"><null/></constructor-arg>
-    </bean>
-
-    <bean id="mappingMongoConverter"
-          class="org.springframework.data.mongodb.core.convert.MappingMongoConverter">
-        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
-        <constructor-arg name="mappingContext" ref="mappingContext" />
-        <property name="typeMapper" ref="defaultMongoTypeMapper" />
-    </bean>
-
-    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
-        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
-        <constructor-arg name="mongoConverter" ref="mappingMongoConverter" />
-        <property name="writeResultChecking" value="EXCEPTION"/>
-    </bean>
-
     <!-- enable autowire -->
     <context:annotation-config />
 
-    <util:properties id="configs" location="classpath:war/WEB-INF/config.properties" />
+    <util:properties id="configs" location="classpath:config.properties" />
 </beans>

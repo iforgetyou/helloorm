@@ -28,7 +28,7 @@ public class AddFlight extends HttpServlet {
   }
 
   private void doPostJDO(Flight f) {
-    PersistenceManager pm = PMF.get().getPersistenceManager();
+    PersistenceManager pm = PMF_OLD.get().getPersistenceManager();
     try {
       pm.makePersistent(f);
     } finally {

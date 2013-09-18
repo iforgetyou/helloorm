@@ -28,7 +28,7 @@ public class DeleteFlight extends HttpServlet {
   }
 
   private void doPostJDO(long key) {
-    PersistenceManager pm = PMF.get().getPersistenceManager();
+    PersistenceManager pm = PMF_OLD.get().getPersistenceManager();
     try {
       Flight f = pm.getObjectById(Flight.class, key);
       pm.deletePersistent(f);

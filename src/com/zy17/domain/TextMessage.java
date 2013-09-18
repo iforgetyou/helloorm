@@ -3,6 +3,9 @@ package com.zy17.domain;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+
 /**
  * Created with IntelliJ IDEA.
  * User: yan.zhang
@@ -11,7 +14,10 @@ import org.codehaus.jackson.map.annotate.JsonSerialize;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+@PersistenceCapable(detachable = "true")
 public class TextMessage {
+
+    @Persistent
     private String name;
 
     public String getName() {

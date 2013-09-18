@@ -5,8 +5,7 @@
     <file url="file://$PROJECT_DIR$/pom.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/applicationContext.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/zy17/domain/Base.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/war/WEB-INF/config.properties" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/war/WEB-INF/log4j.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/config.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml" charset="UTF-8" />
   </component>
 </project>

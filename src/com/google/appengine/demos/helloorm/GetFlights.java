@@ -49,7 +49,7 @@ public class GetFlights extends HttpServlet {
   }
 
   private Collection<Flight> queryJDO(String query) {
-    PersistenceManager pm = PMF.get().getPersistenceManager();
+    PersistenceManager pm = PMF_OLD.get().getPersistenceManager();
     try {
       List<Flight> flights = (List<Flight>) pm.newQuery(query).execute();
       // Force all results to be pulled back before we close the entity manager.

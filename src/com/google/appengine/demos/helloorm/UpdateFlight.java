@@ -42,7 +42,7 @@ public class UpdateFlight extends HttpServlet {
   }
 
   private void doPostJDO(long key, String orig, String dest) {
-    PersistenceManager pm = PMF.get().getPersistenceManager();
+    PersistenceManager pm = PMF_OLD.get().getPersistenceManager();
     try {
       Flight f = pm.getObjectById(Flight.class, key);
       f.setOrig(orig);
