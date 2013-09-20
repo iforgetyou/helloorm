@@ -11,7 +11,15 @@ public class Base {
 
     @PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-    private Long id;
+    @Extension(vendorName="datanucleus", key="gae.encoded-pk", value="true")
+    private String encodedKey;
+
+//    @Persistent
+//    @Extension(vendorName="datanucleus", key="gae.pk-name", value="true")
+//    private String keyName;
+
+
+
     @Persistent
     private Date createdAt;
     @Persistent
@@ -20,14 +28,14 @@ public class Base {
     public Base() {
     }
 
-
-    public Long getId() {
-        return id;
+    public String getEncodedKey() {
+        return encodedKey;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setEncodedKey(String encodedKey) {
+        this.encodedKey = encodedKey;
     }
+
 
     public Date getCreatedAt() {
         return createdAt;

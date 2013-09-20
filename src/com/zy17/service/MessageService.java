@@ -15,4 +15,7 @@ public interface MessageService {
 
     List<TextMessage> getAllMessage();
 
+    void delete(String messageid);
+
+    TextMessage getMessage(String messageid);
 }

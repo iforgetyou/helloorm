@@ -13,9 +13,9 @@ import javax.jdo.annotations.*;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
-@PersistenceCapable
-@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
-public class TextMessage extends Base{
+@PersistenceCapable(detachable = "true")
+@Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
+public class TextMessage extends Base {
 
     @Persistent
     private String name;

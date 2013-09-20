@@ -28,4 +28,14 @@ public class MessageDaoImpl extends BaseDaoImpl<TextMessage> implements MessageD
     public List<TextMessage> findAllMessages() {
         return super.findAll();
     }
+
+    @Override
+    public void delete(String messageid) {
+        super.delete(messageid);
+    }
+
+    @Override
+    public TextMessage findMessage(String messageid) {
+        return super.findOne(messageid);
+    }
 }

@@ -37,6 +37,4 @@
 
     <!-- enable autowire -->
     <context:annotation-config/>
-
-    <util:properties id="configs" location="classpath:config.properties"/>
 </beans>

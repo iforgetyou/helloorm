@@ -24,7 +24,52 @@ public class MessageController {
     @Autowired
     private MessageService messageService;
 
-    //    @ResponseStatus(value = HttpStatus.OK)
+
+    /**
+     * 创建消息
+     * @param message
+     * @return
+     */
+    @ResponseStatus(value = HttpStatus.CREATED)
+    @RequestMapping(method = RequestMethod.POST)
+    public
+    @ResponseBody
+    TextMessage createMessge(@RequestBody @Valid TextMessage message) {
+        messageService.add(message);
+        return message;
+    }
+
+
+    /**
+     * 删除消息
+     * @return
+     */
+    @ResponseStatus(value = HttpStatus.CREATED)
+    @RequestMapping(value = "/{messageid}", method = RequestMethod.DELETE)
+    public
+    @ResponseBody
+    void deleteMessages(@PathVariable(value = "messageid") String messageid ) {
+        messageService.delete(messageid);
+    }
+
+
+    /**
+     * 获取所有消息
+     * @return
+     */
+
+    @RequestMapping(value = "/{messageid}", method = RequestMethod.GET)
+    public
+    @ResponseBody
+    TextMessage getMessage(@PathVariable(value = "messageid") String messageid) {
+        return messageService.getMessage(messageid);
+    }
+
+    /**
+     * 获取某个消息
+     * @return
+     */
+
     @RequestMapping(method = RequestMethod.GET)
     public
     @ResponseBody
@@ -32,12 +77,9 @@ public class MessageController {
         return messageService.getAllMessage();
     }
 
-    @ResponseStatus(value = HttpStatus.CREATED)
-    @RequestMapping(method = RequestMethod.POST)
-    public
-    @ResponseBody
-    TextMessage createTopic(@RequestBody @Valid TextMessage message) {
-        messageService.add(message);
-        return message;
-    }
+
+
+
+
+
 }

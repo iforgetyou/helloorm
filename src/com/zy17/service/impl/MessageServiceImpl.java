@@ -29,4 +29,14 @@ public class MessageServiceImpl implements MessageService {
         return this.dao.findAllMessages();
     }
 
+    @Override
+    public void delete(String messageid) {
+        this.dao.delete(messageid);
+    }
+
+    @Override
+    public TextMessage getMessage(String messageid) {
+        return this.dao.findMessage(messageid);
+    }
+
 }

@@ -14,4 +14,8 @@ public interface MessageDao {
     void insert(TextMessage message);
 
     List<TextMessage> findAllMessages();
+
+    void delete(String messageid);
+
+    TextMessage findMessage(String messageid);
 }
