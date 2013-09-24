@@ -1,5 +1,6 @@
 package com.zy17.controller;
 
+import com.google.protobuf.InvalidProtocolBufferException;
 import com.zy17.domain.AddressBookProtos;
 import com.zy17.domain.TextMessage;
 import com.zy17.service.MessageService;
@@ -25,6 +26,7 @@ public class MessageController {
 
     /**
      * 创建消息
+     *
      * @param message
      * @return
      */
@@ -41,19 +43,21 @@ public class MessageController {
 
     /**
      * 删除消息
+     *
      * @return
      */
     @ResponseStatus(value = HttpStatus.CREATED)
     @RequestMapping(value = "/{messageid}", method = RequestMethod.DELETE)
     public
     @ResponseBody
-    void deleteMessages(@PathVariable(value = "messageid") String messageid ) {
+    void deleteMessages(@PathVariable(value = "messageid") String messageid) {
         messageService.delete(messageid);
     }
 
 
     /**
      * 获取具体消息
+     *
      * @return
      */
 
@@ -65,9 +69,9 @@ public class MessageController {
     }
 
 
-
     /**
      * 获取某个消息
+     *
      * @return
      */
 
@@ -81,6 +85,7 @@ public class MessageController {
 
     /**
      * 获取某个消息
+     *
      * @return
      */
     @RequestMapping(value = "/person", method = RequestMethod.GET)
@@ -101,9 +106,14 @@ public class MessageController {
         return john.toByteArray();
     }
 
-
-
-
+    @ResponseStatus(value = HttpStatus.CREATED)
+    @RequestMapping(value = "person",method = RequestMethod.POST)
+    public
+    @ResponseBody
+    AddressBookProtos.Person createPerson(@RequestBody byte[] bytes) throws InvalidProtocolBufferException {
+        AddressBookProtos.Person person = AddressBookProtos.Person.parseFrom(bytes);
+        return person;
+    }
 
 
 }
