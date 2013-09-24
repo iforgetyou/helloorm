@@ -1,16 +1,11 @@
 package com.zy17.dao.impl;
 
-import com.google.appengine.api.datastore.KeyFactory;
 import com.zy17.domain.Base;
-import com.zy17.domain.TextMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.Resource;
-import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
 import java.lang.reflect.ParameterizedType;
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -33,9 +28,7 @@ public class BaseDaoImpl<T extends Base> {
         PersistenceManager pm = this.persistenceManagerFactory.getPersistenceManager();
         try {
             List<T> list = (List<T>) pm.newQuery(DEFAULT_QUERY).execute();
-//            list.size();
-            List<T> ts = (List<T>) pm.detachCopyAll(list);
-            return ts;
+            return (List<T>) pm.detachCopyAll(list);
         } finally {
             pm.close();
         }
@@ -44,8 +37,7 @@ public class BaseDaoImpl<T extends Base> {
     public T findOne(String messageid) {
         PersistenceManager pm = this.persistenceManagerFactory.getPersistenceManager();
         try {
-            T one =  pm.getObjectById(this.getPersistentClass(),messageid);
-            return one;
+            return pm.getObjectById(this.getPersistentClass(),messageid);
         } finally {
             pm.close();
         }

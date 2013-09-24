@@ -1,8 +1,5 @@
 <component name="CopyrightManager">
   <settings default="">
     <module2copyright />
-    <LanguageOptions name="__TEMPLATE__">
-      <option name="lenBefore" value="8080" />
-    </LanguageOptions>
   </settings>
 </component>

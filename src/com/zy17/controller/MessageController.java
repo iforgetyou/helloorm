@@ -1,5 +1,6 @@
 package com.zy17.controller;
 
+import com.zy17.domain.AddressBookProtos;
 import com.zy17.domain.TextMessage;
 import com.zy17.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,9 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import javax.jdo.PersistenceManager;
 import javax.validation.Valid;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,7 +23,6 @@ public class MessageController {
     @Autowired
     private MessageService messageService;
 
-
     /**
      * 创建消息
      * @param message
@@ -36,6 +34,7 @@ public class MessageController {
     @ResponseBody
     TextMessage createMessge(@RequestBody @Valid TextMessage message) {
         messageService.add(message);
+
         return message;
     }
 
@@ -54,7 +53,7 @@ public class MessageController {
 
 
     /**
-     * 获取所有消息
+     * 获取具体消息
      * @return
      */
 
@@ -64,6 +63,8 @@ public class MessageController {
     TextMessage getMessage(@PathVariable(value = "messageid") String messageid) {
         return messageService.getMessage(messageid);
     }
+
+
 
     /**
      * 获取某个消息
@@ -75,6 +76,29 @@ public class MessageController {
     @ResponseBody
     List<TextMessage> getMessages() {
         return messageService.getAllMessage();
+    }
+
+
+    /**
+     * 获取某个消息
+     * @return
+     */
+    @RequestMapping(value = "/person", method = RequestMethod.GET)
+    public
+    @ResponseBody
+    byte[] getAddressBook() {
+        AddressBookProtos.Person john =
+                AddressBookProtos.Person.newBuilder()
+                        .setId(1234)
+                        .setName("John Doe")
+                        .setEmail("jdoe@example.com")
+                        .addPhone(
+                                AddressBookProtos.Person.PhoneNumber.newBuilder()
+                                        .setNumber("555-4321")
+                                        .setType(AddressBookProtos.Person.PhoneType.HOME))
+                        .build();
+        System.out.println(john);
+        return john.toByteArray();
     }
 
 
