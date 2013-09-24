@@ -217,3 +217,9 @@ pip-log.txt
 /out
 /target
 /war/WEB-INF/classes
+
+.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml
+
+test/test/com/example/GaeClient/JSONUtils.java
+
+test/test/com/example/GaeClient/TextMessageResponderFragmentTest.java
