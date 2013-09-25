@@ -2,6 +2,7 @@ package com.zy17.controller;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.zy17.domain.AddressBookProtos;
+import com.zy17.domain.PersonDomain;
 import com.zy17.domain.TextMessage;
 import com.zy17.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -91,7 +92,7 @@ public class MessageController {
     @RequestMapping(value = "/person", method = RequestMethod.GET)
     public
     @ResponseBody
-    byte[] getAddressBook() {
+    List<AddressBookProtos.Person> getPersons() {
         AddressBookProtos.Person john =
                 AddressBookProtos.Person.newBuilder()
                         .setId(1234)
@@ -102,17 +103,18 @@ public class MessageController {
                                         .setNumber("555-4321")
                                         .setType(AddressBookProtos.Person.PhoneType.HOME))
                         .build();
+
         System.out.println(john);
-        return john.toByteArray();
+        return messageService.findAllPerson();
     }
 
     @ResponseStatus(value = HttpStatus.CREATED)
     @RequestMapping(value = "person",method = RequestMethod.POST)
     public
     @ResponseBody
-    AddressBookProtos.Person createPerson(@RequestBody byte[] bytes) throws InvalidProtocolBufferException {
+    void createPerson(@RequestBody byte[] bytes) throws InvalidProtocolBufferException {
         AddressBookProtos.Person person = AddressBookProtos.Person.parseFrom(bytes);
-        return person;
+        this.messageService.add(person);
     }
 
 

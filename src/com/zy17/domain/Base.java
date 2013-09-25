@@ -1,17 +1,20 @@
 package com.zy17.domain;
 
-import org.springframework.data.annotation.Id;
+import com.googlecode.objectify.annotation.Entity;
+import com.googlecode.objectify.annotation.Id;
 
 import javax.jdo.annotations.*;
 import java.util.Date;
 
 @PersistenceCapable
 @Inheritance(strategy=InheritanceStrategy.SUBCLASS_TABLE)
+@Entity
 public class Base {
 
     @PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
     @Extension(vendorName="datanucleus", key="gae.encoded-pk", value="true")
+    @Id
     private String encodedKey;
 
 //    @Persistent

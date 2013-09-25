@@ -44,6 +44,7 @@ public class BaseDaoImpl<T extends Base> {
     }
 
     public T insertOne(T base) {
+
         base.setCreatedAt(new Date());
         base.setUpdatedAt(new Date());
         PersistenceManager pm = this.persistenceManagerFactory.getPersistenceManager();

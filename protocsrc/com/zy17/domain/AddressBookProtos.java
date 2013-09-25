@@ -51,33 +51,33 @@ public final class AddressBookProtos {
     com.google.protobuf.ByteString
         getEmailBytes();
 
-    // repeated .tutorial.Person.PhoneNumber phone = 4;
+    // repeated .com.Person.PhoneNumber phone = 4;
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     java.util.List<com.zy17.domain.AddressBookProtos.Person.PhoneNumber> 
         getPhoneList();
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     com.zy17.domain.AddressBookProtos.Person.PhoneNumber getPhone(int index);
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     int getPhoneCount();
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     java.util.List<? extends com.zy17.domain.AddressBookProtos.Person.PhoneNumberOrBuilder> 
         getPhoneOrBuilderList();
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     com.zy17.domain.AddressBookProtos.Person.PhoneNumberOrBuilder getPhoneOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code tutorial.Person}
+   * Protobuf type {@code com.Person}
    */
   public static final class Person extends
       com.google.protobuf.GeneratedMessage
@@ -167,12 +167,12 @@ public final class AddressBookProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_descriptor;
+      return com.zy17.domain.AddressBookProtos.internal_static_com_Person_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_fieldAccessorTable
+      return com.zy17.domain.AddressBookProtos.internal_static_com_Person_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.zy17.domain.AddressBookProtos.Person.class, com.zy17.domain.AddressBookProtos.Person.Builder.class);
     }
@@ -193,7 +193,7 @@ public final class AddressBookProtos {
     }
 
     /**
-     * Protobuf enum {@code tutorial.Person.PhoneType}
+     * Protobuf enum {@code com.Person.PhoneType}
      */
     public enum PhoneType
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -280,7 +280,7 @@ public final class AddressBookProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:tutorial.Person.PhoneType)
+      // @@protoc_insertion_point(enum_scope:com.Person.PhoneType)
     }
 
     public interface PhoneNumberOrBuilder
@@ -301,18 +301,18 @@ public final class AddressBookProtos {
       com.google.protobuf.ByteString
           getNumberBytes();
 
-      // optional .tutorial.Person.PhoneType type = 2 [default = HOME];
+      // optional .com.Person.PhoneType type = 2 [default = HOME];
       /**
-       * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+       * <code>optional .com.Person.PhoneType type = 2 [default = HOME];</code>
        */
       boolean hasType();
       /**
-       * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+       * <code>optional .com.Person.PhoneType type = 2 [default = HOME];</code>
        */
       com.zy17.domain.AddressBookProtos.Person.PhoneType getType();
     }
     /**
-     * Protobuf type {@code tutorial.Person.PhoneNumber}
+     * Protobuf type {@code com.Person.PhoneNumber}
      */
     public static final class PhoneNumber extends
         com.google.protobuf.GeneratedMessage
@@ -392,12 +392,12 @@ public final class AddressBookProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
+        return com.zy17.domain.AddressBookProtos.internal_static_com_Person_PhoneNumber_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable
+        return com.zy17.domain.AddressBookProtos.internal_static_com_Person_PhoneNumber_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.zy17.domain.AddressBookProtos.Person.PhoneNumber.class, com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder.class);
       }
@@ -461,17 +461,17 @@ public final class AddressBookProtos {
         }
       }
 
-      // optional .tutorial.Person.PhoneType type = 2 [default = HOME];
+      // optional .com.Person.PhoneType type = 2 [default = HOME];
       public static final int TYPE_FIELD_NUMBER = 2;
       private com.zy17.domain.AddressBookProtos.Person.PhoneType type_;
       /**
-       * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+       * <code>optional .com.Person.PhoneType type = 2 [default = HOME];</code>
        */
       public boolean hasType() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+       * <code>optional .com.Person.PhoneType type = 2 [default = HOME];</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.PhoneType getType() {
         return type_;
@@ -599,19 +599,19 @@ public final class AddressBookProtos {
         return builder;
       }
       /**
-       * Protobuf type {@code tutorial.Person.PhoneNumber}
+       * Protobuf type {@code com.Person.PhoneNumber}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessage.Builder<Builder>
          implements com.zy17.domain.AddressBookProtos.Person.PhoneNumberOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
+          return com.zy17.domain.AddressBookProtos.internal_static_com_Person_PhoneNumber_descriptor;
         }
 
         protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable
+          return com.zy17.domain.AddressBookProtos.internal_static_com_Person_PhoneNumber_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   com.zy17.domain.AddressBookProtos.Person.PhoneNumber.class, com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder.class);
         }
@@ -649,7 +649,7 @@ public final class AddressBookProtos {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
+          return com.zy17.domain.AddressBookProtos.internal_static_com_Person_PhoneNumber_descriptor;
         }
 
         public com.zy17.domain.AddressBookProtos.Person.PhoneNumber getDefaultInstanceForType() {
@@ -805,22 +805,22 @@ public final class AddressBookProtos {
           return this;
         }
 
-        // optional .tutorial.Person.PhoneType type = 2 [default = HOME];
+        // optional .com.Person.PhoneType type = 2 [default = HOME];
         private com.zy17.domain.AddressBookProtos.Person.PhoneType type_ = com.zy17.domain.AddressBookProtos.Person.PhoneType.HOME;
         /**
-         * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+         * <code>optional .com.Person.PhoneType type = 2 [default = HOME];</code>
          */
         public boolean hasType() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
-         * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+         * <code>optional .com.Person.PhoneType type = 2 [default = HOME];</code>
          */
         public com.zy17.domain.AddressBookProtos.Person.PhoneType getType() {
           return type_;
         }
         /**
-         * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+         * <code>optional .com.Person.PhoneType type = 2 [default = HOME];</code>
          */
         public Builder setType(com.zy17.domain.AddressBookProtos.Person.PhoneType value) {
           if (value == null) {
@@ -832,7 +832,7 @@ public final class AddressBookProtos {
           return this;
         }
         /**
-         * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+         * <code>optional .com.Person.PhoneType type = 2 [default = HOME];</code>
          */
         public Builder clearType() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -841,7 +841,7 @@ public final class AddressBookProtos {
           return this;
         }
 
-        // @@protoc_insertion_point(builder_scope:tutorial.Person.PhoneNumber)
+        // @@protoc_insertion_point(builder_scope:com.Person.PhoneNumber)
       }
 
       static {
@@ -849,7 +849,7 @@ public final class AddressBookProtos {
         defaultInstance.initFields();
       }
 
-      // @@protoc_insertion_point(class_scope:tutorial.Person.PhoneNumber)
+      // @@protoc_insertion_point(class_scope:com.Person.PhoneNumber)
     }
 
     private int bitField0_;
@@ -955,36 +955,36 @@ public final class AddressBookProtos {
       }
     }
 
-    // repeated .tutorial.Person.PhoneNumber phone = 4;
+    // repeated .com.Person.PhoneNumber phone = 4;
     public static final int PHONE_FIELD_NUMBER = 4;
     private java.util.List<com.zy17.domain.AddressBookProtos.Person.PhoneNumber> phone_;
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     public java.util.List<com.zy17.domain.AddressBookProtos.Person.PhoneNumber> getPhoneList() {
       return phone_;
     }
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     public java.util.List<? extends com.zy17.domain.AddressBookProtos.Person.PhoneNumberOrBuilder> 
         getPhoneOrBuilderList() {
       return phone_;
     }
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     public int getPhoneCount() {
       return phone_.size();
     }
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     public com.zy17.domain.AddressBookProtos.Person.PhoneNumber getPhone(int index) {
       return phone_.get(index);
     }
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+     * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
     public com.zy17.domain.AddressBookProtos.Person.PhoneNumberOrBuilder getPhoneOrBuilder(
         int index) {
@@ -1139,19 +1139,19 @@ public final class AddressBookProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code tutorial.Person}
+     * Protobuf type {@code com.Person}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.zy17.domain.AddressBookProtos.PersonOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_descriptor;
+        return com.zy17.domain.AddressBookProtos.internal_static_com_Person_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_fieldAccessorTable
+        return com.zy17.domain.AddressBookProtos.internal_static_com_Person_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.zy17.domain.AddressBookProtos.Person.class, com.zy17.domain.AddressBookProtos.Person.Builder.class);
       }
@@ -1198,7 +1198,7 @@ public final class AddressBookProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.zy17.domain.AddressBookProtos.internal_static_tutorial_Person_descriptor;
+        return com.zy17.domain.AddressBookProtos.internal_static_com_Person_descriptor;
       }
 
       public com.zy17.domain.AddressBookProtos.Person getDefaultInstanceForType() {
@@ -1515,7 +1515,7 @@ public final class AddressBookProtos {
         return this;
       }
 
-      // repeated .tutorial.Person.PhoneNumber phone = 4;
+      // repeated .com.Person.PhoneNumber phone = 4;
       private java.util.List<com.zy17.domain.AddressBookProtos.Person.PhoneNumber> phone_ =
         java.util.Collections.emptyList();
       private void ensurePhoneIsMutable() {
@@ -1529,7 +1529,7 @@ public final class AddressBookProtos {
           com.zy17.domain.AddressBookProtos.Person.PhoneNumber, com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder, com.zy17.domain.AddressBookProtos.Person.PhoneNumberOrBuilder> phoneBuilder_;
 
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public java.util.List<com.zy17.domain.AddressBookProtos.Person.PhoneNumber> getPhoneList() {
         if (phoneBuilder_ == null) {
@@ -1539,7 +1539,7 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public int getPhoneCount() {
         if (phoneBuilder_ == null) {
@@ -1549,7 +1549,7 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.PhoneNumber getPhone(int index) {
         if (phoneBuilder_ == null) {
@@ -1559,7 +1559,7 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder setPhone(
           int index, com.zy17.domain.AddressBookProtos.Person.PhoneNumber value) {
@@ -1576,7 +1576,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder setPhone(
           int index, com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder builderForValue) {
@@ -1590,7 +1590,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder addPhone(com.zy17.domain.AddressBookProtos.Person.PhoneNumber value) {
         if (phoneBuilder_ == null) {
@@ -1606,7 +1606,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder addPhone(
           int index, com.zy17.domain.AddressBookProtos.Person.PhoneNumber value) {
@@ -1623,7 +1623,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder addPhone(
           com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder builderForValue) {
@@ -1637,7 +1637,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder addPhone(
           int index, com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder builderForValue) {
@@ -1651,7 +1651,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder addAllPhone(
           java.lang.Iterable<? extends com.zy17.domain.AddressBookProtos.Person.PhoneNumber> values) {
@@ -1665,7 +1665,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder clearPhone() {
         if (phoneBuilder_ == null) {
@@ -1678,7 +1678,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public Builder removePhone(int index) {
         if (phoneBuilder_ == null) {
@@ -1691,14 +1691,14 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder getPhoneBuilder(
           int index) {
         return getPhoneFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.PhoneNumberOrBuilder getPhoneOrBuilder(
           int index) {
@@ -1708,7 +1708,7 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public java.util.List<? extends com.zy17.domain.AddressBookProtos.Person.PhoneNumberOrBuilder> 
            getPhoneOrBuilderList() {
@@ -1719,14 +1719,14 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder addPhoneBuilder() {
         return getPhoneFieldBuilder().addBuilder(
             com.zy17.domain.AddressBookProtos.Person.PhoneNumber.getDefaultInstance());
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder addPhoneBuilder(
           int index) {
@@ -1734,7 +1734,7 @@ public final class AddressBookProtos {
             index, com.zy17.domain.AddressBookProtos.Person.PhoneNumber.getDefaultInstance());
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phone = 4;</code>
+       * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
        */
       public java.util.List<com.zy17.domain.AddressBookProtos.Person.PhoneNumber.Builder> 
            getPhoneBuilderList() {
@@ -1755,7 +1755,7 @@ public final class AddressBookProtos {
         return phoneBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:tutorial.Person)
+      // @@protoc_insertion_point(builder_scope:com.Person)
     }
 
     static {
@@ -1763,39 +1763,39 @@ public final class AddressBookProtos {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:tutorial.Person)
+    // @@protoc_insertion_point(class_scope:com.Person)
   }
 
   public interface AddressBookOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // repeated .tutorial.Person person = 1;
+    // repeated .com.Person person = 1;
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     java.util.List<com.zy17.domain.AddressBookProtos.Person> 
         getPersonList();
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     com.zy17.domain.AddressBookProtos.Person getPerson(int index);
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     int getPersonCount();
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     java.util.List<? extends com.zy17.domain.AddressBookProtos.PersonOrBuilder> 
         getPersonOrBuilderList();
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     com.zy17.domain.AddressBookProtos.PersonOrBuilder getPersonOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code tutorial.AddressBook}
+   * Protobuf type {@code com.AddressBook}
    */
   public static final class AddressBook extends
       com.google.protobuf.GeneratedMessage
@@ -1870,12 +1870,12 @@ public final class AddressBookProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.zy17.domain.AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
+      return com.zy17.domain.AddressBookProtos.internal_static_com_AddressBook_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.zy17.domain.AddressBookProtos.internal_static_tutorial_AddressBook_fieldAccessorTable
+      return com.zy17.domain.AddressBookProtos.internal_static_com_AddressBook_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.zy17.domain.AddressBookProtos.AddressBook.class, com.zy17.domain.AddressBookProtos.AddressBook.Builder.class);
     }
@@ -1895,36 +1895,36 @@ public final class AddressBookProtos {
       return PARSER;
     }
 
-    // repeated .tutorial.Person person = 1;
+    // repeated .com.Person person = 1;
     public static final int PERSON_FIELD_NUMBER = 1;
     private java.util.List<com.zy17.domain.AddressBookProtos.Person> person_;
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     public java.util.List<com.zy17.domain.AddressBookProtos.Person> getPersonList() {
       return person_;
     }
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     public java.util.List<? extends com.zy17.domain.AddressBookProtos.PersonOrBuilder> 
         getPersonOrBuilderList() {
       return person_;
     }
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     public int getPersonCount() {
       return person_.size();
     }
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     public com.zy17.domain.AddressBookProtos.Person getPerson(int index) {
       return person_.get(index);
     }
     /**
-     * <code>repeated .tutorial.Person person = 1;</code>
+     * <code>repeated .com.Person person = 1;</code>
      */
     public com.zy17.domain.AddressBookProtos.PersonOrBuilder getPersonOrBuilder(
         int index) {
@@ -2047,19 +2047,19 @@ public final class AddressBookProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code tutorial.AddressBook}
+     * Protobuf type {@code com.AddressBook}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements com.zy17.domain.AddressBookProtos.AddressBookOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.zy17.domain.AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
+        return com.zy17.domain.AddressBookProtos.internal_static_com_AddressBook_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.zy17.domain.AddressBookProtos.internal_static_tutorial_AddressBook_fieldAccessorTable
+        return com.zy17.domain.AddressBookProtos.internal_static_com_AddressBook_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.zy17.domain.AddressBookProtos.AddressBook.class, com.zy17.domain.AddressBookProtos.AddressBook.Builder.class);
       }
@@ -2100,7 +2100,7 @@ public final class AddressBookProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.zy17.domain.AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
+        return com.zy17.domain.AddressBookProtos.internal_static_com_AddressBook_descriptor;
       }
 
       public com.zy17.domain.AddressBookProtos.AddressBook getDefaultInstanceForType() {
@@ -2201,7 +2201,7 @@ public final class AddressBookProtos {
       }
       private int bitField0_;
 
-      // repeated .tutorial.Person person = 1;
+      // repeated .com.Person person = 1;
       private java.util.List<com.zy17.domain.AddressBookProtos.Person> person_ =
         java.util.Collections.emptyList();
       private void ensurePersonIsMutable() {
@@ -2215,7 +2215,7 @@ public final class AddressBookProtos {
           com.zy17.domain.AddressBookProtos.Person, com.zy17.domain.AddressBookProtos.Person.Builder, com.zy17.domain.AddressBookProtos.PersonOrBuilder> personBuilder_;
 
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public java.util.List<com.zy17.domain.AddressBookProtos.Person> getPersonList() {
         if (personBuilder_ == null) {
@@ -2225,7 +2225,7 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public int getPersonCount() {
         if (personBuilder_ == null) {
@@ -2235,7 +2235,7 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person getPerson(int index) {
         if (personBuilder_ == null) {
@@ -2245,7 +2245,7 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder setPerson(
           int index, com.zy17.domain.AddressBookProtos.Person value) {
@@ -2262,7 +2262,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder setPerson(
           int index, com.zy17.domain.AddressBookProtos.Person.Builder builderForValue) {
@@ -2276,7 +2276,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder addPerson(com.zy17.domain.AddressBookProtos.Person value) {
         if (personBuilder_ == null) {
@@ -2292,7 +2292,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder addPerson(
           int index, com.zy17.domain.AddressBookProtos.Person value) {
@@ -2309,7 +2309,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder addPerson(
           com.zy17.domain.AddressBookProtos.Person.Builder builderForValue) {
@@ -2323,7 +2323,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder addPerson(
           int index, com.zy17.domain.AddressBookProtos.Person.Builder builderForValue) {
@@ -2337,7 +2337,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder addAllPerson(
           java.lang.Iterable<? extends com.zy17.domain.AddressBookProtos.Person> values) {
@@ -2351,7 +2351,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder clearPerson() {
         if (personBuilder_ == null) {
@@ -2364,7 +2364,7 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public Builder removePerson(int index) {
         if (personBuilder_ == null) {
@@ -2377,14 +2377,14 @@ public final class AddressBookProtos {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.Builder getPersonBuilder(
           int index) {
         return getPersonFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public com.zy17.domain.AddressBookProtos.PersonOrBuilder getPersonOrBuilder(
           int index) {
@@ -2394,7 +2394,7 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public java.util.List<? extends com.zy17.domain.AddressBookProtos.PersonOrBuilder> 
            getPersonOrBuilderList() {
@@ -2405,14 +2405,14 @@ public final class AddressBookProtos {
         }
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.Builder addPersonBuilder() {
         return getPersonFieldBuilder().addBuilder(
             com.zy17.domain.AddressBookProtos.Person.getDefaultInstance());
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public com.zy17.domain.AddressBookProtos.Person.Builder addPersonBuilder(
           int index) {
@@ -2420,7 +2420,7 @@ public final class AddressBookProtos {
             index, com.zy17.domain.AddressBookProtos.Person.getDefaultInstance());
       }
       /**
-       * <code>repeated .tutorial.Person person = 1;</code>
+       * <code>repeated .com.Person person = 1;</code>
        */
       public java.util.List<com.zy17.domain.AddressBookProtos.Person.Builder> 
            getPersonBuilderList() {
@@ -2441,7 +2441,7 @@ public final class AddressBookProtos {
         return personBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:tutorial.AddressBook)
+      // @@protoc_insertion_point(builder_scope:com.AddressBook)
     }
 
     static {
@@ -2449,24 +2449,24 @@ public final class AddressBookProtos {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:tutorial.AddressBook)
+    // @@protoc_insertion_point(class_scope:com.AddressBook)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_tutorial_Person_descriptor;
+    internal_static_com_Person_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_tutorial_Person_fieldAccessorTable;
+      internal_static_com_Person_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_tutorial_Person_PhoneNumber_descriptor;
+    internal_static_com_Person_PhoneNumber_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable;
+      internal_static_com_Person_PhoneNumber_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_tutorial_AddressBook_descriptor;
+    internal_static_com_AddressBook_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_tutorial_AddressBook_fieldAccessorTable;
+      internal_static_com_AddressBook_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2476,38 +2476,37 @@ public final class AddressBookProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021addressbook.proto\022\010tutorial\"\332\001\n\006Person" +
-      "\022\014\n\004name\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\r\n\005email\030\003 \001(" +
-      "\t\022+\n\005phone\030\004 \003(\0132\034.tutorial.Person.Phone" +
-      "Number\032M\n\013PhoneNumber\022\016\n\006number\030\001 \002(\t\022.\n" +
-      "\004type\030\002 \001(\0162\032.tutorial.Person.PhoneType:" +
-      "\004HOME\"+\n\tPhoneType\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020\001" +
-      "\022\010\n\004WORK\020\002\"/\n\013AddressBook\022 \n\006person\030\001 \003(" +
-      "\0132\020.tutorial.PersonB$\n\017com.zy17.domainB\021" +
-      "AddressBookProtos"
+      "\n\021addressbook.proto\022\003com\"\320\001\n\006Person\022\014\n\004n" +
+      "ame\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\r\n\005email\030\003 \001(\t\022&\n\005" +
+      "phone\030\004 \003(\0132\027.com.Person.PhoneNumber\032H\n\013" +
+      "PhoneNumber\022\016\n\006number\030\001 \002(\t\022)\n\004type\030\002 \001(" +
+      "\0162\025.com.Person.PhoneType:\004HOME\"+\n\tPhoneT" +
+      "ype\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002\"*\n\013A" +
+      "ddressBook\022\033\n\006person\030\001 \003(\0132\013.com.PersonB" +
+      "$\n\017com.zy17.domainB\021AddressBookProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
         public com.google.protobuf.ExtensionRegistry assignDescriptors(
             com.google.protobuf.Descriptors.FileDescriptor root) {
           descriptor = root;
-          internal_static_tutorial_Person_descriptor =
+          internal_static_com_Person_descriptor =
             getDescriptor().getMessageTypes().get(0);
-          internal_static_tutorial_Person_fieldAccessorTable = new
+          internal_static_com_Person_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_tutorial_Person_descriptor,
+              internal_static_com_Person_descriptor,
               new java.lang.String[] { "Name", "Id", "Email", "Phone", });
-          internal_static_tutorial_Person_PhoneNumber_descriptor =
-            internal_static_tutorial_Person_descriptor.getNestedTypes().get(0);
-          internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable = new
+          internal_static_com_Person_PhoneNumber_descriptor =
+            internal_static_com_Person_descriptor.getNestedTypes().get(0);
+          internal_static_com_Person_PhoneNumber_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_tutorial_Person_PhoneNumber_descriptor,
+              internal_static_com_Person_PhoneNumber_descriptor,
               new java.lang.String[] { "Number", "Type", });
-          internal_static_tutorial_AddressBook_descriptor =
+          internal_static_com_AddressBook_descriptor =
             getDescriptor().getMessageTypes().get(1);
-          internal_static_tutorial_AddressBook_fieldAccessorTable = new
+          internal_static_com_AddressBook_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_tutorial_AddressBook_descriptor,
+              internal_static_com_AddressBook_descriptor,
               new java.lang.String[] { "Person", });
           return null;
         }

@@ -1,5 +1,7 @@
 package com.zy17.service;
 
+import com.zy17.domain.AddressBookProtos;
+import com.zy17.domain.PersonDomain;
 import com.zy17.domain.TextMessage;
 
 import java.util.List;
@@ -18,4 +20,8 @@ public interface MessageService {
     void delete(String messageid);
 
     TextMessage getMessage(String messageid);
+
+    void add(AddressBookProtos.Person person);
+
+    List<AddressBookProtos.Person>  findAllPerson();
 }
