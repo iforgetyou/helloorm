@@ -7,47 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb4ab1f-4379-49c2-8c61-e37756c16242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/ManyCallbacks.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_0_9_29.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_0_9_29.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_objectify_appengine_spring_objectify_appengine_spring_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logback.xml" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_google_appengine_appengine_api_labs_1_7_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_googlecode_objectify_objectify_4_0rc1.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__log4j_log4j_1_2_16.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\protocsrc\com\zy17\domain\AddressBookProtos.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/local_db.bin" afterPath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/local_db.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/domain/Base.java" afterPath="$PROJECT_DIR$/src/com/zy17/domain/Base.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/MessageDao.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/MessageDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/impl/MessageDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/MessageDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/MessageService.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/MessageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java" afterPath="$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/objectifyimpl/PersonDomainOfyDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/objectifyimpl/PersonDomainOfyDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/PersonJsonTest.java" afterPath="$PROJECT_DIR$/test/PersonJsonTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/protobuf/addressbook.proto" afterPath="$PROJECT_DIR$/src/protobuf/addressbook.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/datastore-indexes-auto.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/datastore-indexes-auto.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helloorm.iml" afterPath="$PROJECT_DIR$/helloorm.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/helloorm_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/helloorm_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__org_slf4j_jcl_over_slf4j_1_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_2.xml" />
-      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__org_slf4j_slf4j_api_1_7_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_2.xml" />
-      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\src\applicationContext.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
-      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\PersonDomainDao.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/PersonDao.java" />
     </list>
     <ignored path="helloorm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380185353350" ignored="false" />
+    <file path="/Dummy.txt" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380195435201" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/webapp/WEB-INF/classes/META-INF/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065910856" ignored="false" />
     <file path="/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379515695969" ignored="false" />
-    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380185339517" ignored="false" />
+    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380197089463" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/java/com/zy17/EnglishEdu/dao/impl/PMF.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065592417" ignored="false" />
     <file path="/a.dummy" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380185837186" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379066880076" ignored="false" />
@@ -146,7 +120,6 @@
     <file path="/PersonJsonTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380033310851" ignored="false" />
     <file path="$PROJECT_DIR$/../helloormbak/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380009743116" ignored="false" />
     <file path="$PROJECT_DIR$/../helloormbak/war/WEB-INF/appengine-generated/datastore-indexes-auto.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380009819792" ignored="false" />
-    <file path="$PROJECT_DIR$/war/WEB-INF/classes/META-INF/persistence.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380032924645" ignored="false" />
     <file path="/PersonDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380187077239" ignored="false" />
     <file path="/PersonDomainDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380100762385" ignored="false" />
     <file path="/PersonDomainDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380094536435" ignored="false" />
@@ -182,10 +155,11 @@
     <file path="/UpdatePullTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380189010365" ignored="false" />
     <file path="/MyEntity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380177244912" ignored="false" />
     <file path="/MyEntityBase.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380177249119" ignored="false" />
-    <file path="/PersonDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380186933453" ignored="false" />
+    <file path="/PersonDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380196458783" ignored="false" />
     <file path="/ManyCallbacks.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380182122092" ignored="false" />
     <file path="/logback.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380182390507" ignored="false" />
     <file path="/fragment.js2" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380185360742" ignored="false" />
+    <file path="/AddressBookProtos.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380195936472" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +174,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -236,9 +212,68 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java" line="57" class="com.zy17.protobuf.domain.AddressBookProtos.PersonOrBuilder" package="com.zy17.protobuf.domain">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="true" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" line="30" class="com.zy17.dao.impl.PersonDaoImpl" package="com.zy17.dao.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java" line="83" class="com.zy17.domain.PersonDomain" package="com.zy17.domain">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java" line="85" class="com.zy17.domain.PersonDomain" package="com.zy17.domain">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -248,19 +283,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Base.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/Base.java">
+      <file leaf-file-name="PersonDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+            <state line="34" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#897#923#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logger.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/0.9.29/logback-classic-0.9.29.jar!/ch/qos/logback/classic/Logger.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="185" column="16" selection-start="9867" selection-end="9867" vertical-scroll-proportion="-7.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java">
+      <file leaf-file-name="BaseDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="41" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -269,34 +316,16 @@
       <file leaf-file-name="logback.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
+            <state line="12" column="24" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml">
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.739726">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextMessage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/TextMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="27" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+            <state line="84" column="32" selection-start="3256" selection-end="3256" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -305,8 +334,21 @@
       <file leaf-file-name="PersonDomain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="13" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="88" column="47" selection-start="2477" selection-end="2477" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddressBookProtos.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1458" column="23" selection-start="50444" selection-end="50452" vertical-scroll-proportion="0.33206108">
+              <folding>
+                <element signature="e#0#89678#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -330,9 +372,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/zy17/dao/MessageDao.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/MessageDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" />
         <option value="$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/zy17/domain/MyEntityBase.java" />
@@ -342,8 +381,11 @@
         <option value="$PROJECT_DIR$/src/logback.xml" />
         <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/ManyCallbacks.java" />
         <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/war/WEB-INF/classes/META-INF/datastorecallbacks.xml" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/protocsrc/AddressBookProtos.java" />
+        <option value="$PROJECT_DIR$/protocsrc/com/zy17/domain/protobuf/AddressBookProtos.java" />
+        <option value="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java" />
         <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java" />
       </list>
@@ -373,11 +415,25 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Backend" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="1024" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -432,168 +488,51 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protobuf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy17" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy17" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy17" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/zy17/dao" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
-    <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="259" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="261" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="259" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="265" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1059" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1059" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="265" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="261" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/protocsrc/com/zy17" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -635,16 +574,10 @@
       <recent name="D:\Program Files\appengine-java-sdk-1.8.3\demos\helloorm\war\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
+  <component name="RunManager" selected="Remote.gae_debug">
     <configuration default="true" type="#org.osmorc.OsgiConfigurationType" factoryName="OSGi Bundles" vmParameters="" programParameters="" includeAllBundlesInClassPath="false" workingDir="" useAlternativeJre="false" alternativeJrePath="" frameworkStartLevel="1" defaultStartLevel="5" generateWorkingDir="false">
       <framework instance="" />
       <additinalProperties startConsole="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xms128m&#13;&#10;-Xmx750m&#13;&#10;-XX:MaxPermSize=350m&#13;&#10;-XX:ReservedCodeCacheSize=96m&#13;&#10;-XX:+UseCodeCacheFlushing&#13;&#10;-ea&#13;&#10;-Dsun.io.useCanonCaches=false&#13;&#10;-Djava.net.preferIPv4Stack=true" />
-      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -673,8 +606,8 @@
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+      <option name="HOST" value="127.0.0.1" />
+      <option name="PORT" value="9999" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -688,6 +621,25 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
+      <module name="" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -711,51 +663,30 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="CFConfiguration" factoryName="Remote">
-      <option name="PORT" value="80" />
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
       <option name="LOCAL" value="false" />
       <deployment />
       <server-settings>
-        <option name="USERNAME" value="" />
-        <option name="PASSWORD" value="" />
-        <data />
+        <data>
+          <option name="transportHostId" />
+        </data>
       </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54228" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
@@ -824,67 +755,19 @@
       </ConfigurationWrapper>
       <method />
     </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="RemoteFlashRunConfigurationType" factoryName="Flash Remote Debug">
-      <option name="BCName" value="" />
-      <option name="moduleName" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
-      <module name="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
-      <option name="LOCAL" value="false" />
-      <deployment />
-      <server-settings>
-        <data>
-          <option name="transportHostId" />
-        </data>
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+    <configuration default="false" name="gae_debug" type="Remote" factoryName="Remote">
+      <module name="helloorm" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="127.0.0.1" />
+      <option name="PORT" value="9999" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54228" />
+        <option name="DEBUG_PORT" value="9999" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="false" />
       </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
@@ -892,6 +775,7 @@
       <deployment />
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_helloorm" />
+        <option name="HTTP_PORT" value="8080" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -955,8 +839,9 @@
         <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="runserver" />
       </method>
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Remote.gae_debug" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1010,35 +895,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="1024" extended-state="7" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715377" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.59432936" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34508196" sideWeight="0.45583424" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24653149" sideWeight="0.60081464" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24672131" sideWeight="0.5986914" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40130863" sideWeight="0.31557378" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39918533" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.401222" sideWeight="0.31557378" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.67048347" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40130863" sideWeight="0.68442625" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.401222" sideWeight="0.68442625" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32790223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27868852" sideWeight="0.53435117" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3967213" sideWeight="0.5986914" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46564886" sideWeight="0.6147541" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27854857" sideWeight="0.67107946" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39647812" sideWeight="0.598778" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4653768" sideWeight="0.6147541" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.67048347" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.59432936" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1125,81 +1010,14 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/objectifyimpl/PersonDomainOfyDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="586" selection-end="586" vertical-scroll-proportion="0.22939068">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/PersonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="218" selection-end="218" vertical-scroll-proportion="0.89626557">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1938" column="0" selection-start="82165" selection-end="82165" vertical-scroll-proportion="0.33215547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/classes/com/zy17/domain/PersonDomain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="847" selection-end="847" vertical-scroll-proportion="0.47311828">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/appengine/appengine-api-1.0-sdk/1.8.3/appengine-api-1.0-sdk-1.8.3.jar!/com/google/appengine/api/datastore/DatastoreCallbacksImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="5" selection-start="4562" selection-end="4562" vertical-scroll-proportion="0.40575916">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/ManyCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="2" selection-start="744" selection-end="744" vertical-scroll-proportion="0.38297874">
-          <folding />
-        </state>
+        <state line="64" column="5" selection-start="4562" selection-end="4562" vertical-scroll-proportion="0.40575916" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/Base.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="19" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="38" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.38329238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/classes/com/zy17/dao/impl/PersonDaoImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1211,31 +1029,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="41" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+        <state line="37" column="24" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/ManyCallbacks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="13" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0">
+        <state line="14" column="20" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="312" column="36" selection-start="10747" selection-end="10747" vertical-scroll-proportion="-60.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="24" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/0.9.29/logback-classic-0.9.29.jar!/ch/qos/logback/classic/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="16" selection-start="9867" selection-end="9867" vertical-scroll-proportion="-7.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.5/datanucleus-core-1.1.5-sources.jar!/org/datanucleus/jdo/JDOPersistenceManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="556" column="0" selection-start="21665" selection-end="21665" vertical-scroll-proportion="0.18597236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.5/datanucleus-core-1.1.5-sources.jar!/org/datanucleus/jdo/JDOPersistenceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1233" column="0" selection-start="37883" selection-end="37883" vertical-scroll-proportion="0.18597236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/datanucleus/datanucleus-core/1.1.5/datanucleus-core-1.1.5-sources.jar!/org/datanucleus/jdo/JDOQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="0" selection-start="5816" selection-end="5816" vertical-scroll-proportion="0.18597236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="18" selection-start="2489" selection-end="2489" vertical-scroll-proportion="0.33333334">
+        <state line="84" column="32" selection-start="3256" selection-end="3256" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.739726">
-          <folding />
+        <state line="34" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#897#923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="47" selection-start="2477" selection-end="2477" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1458" column="23" selection-start="50444" selection-end="50452" vertical-scroll-proportion="0.33206108">
+          <folding>
+            <element signature="e#0#89678#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1270,7 +1158,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>android-support-v4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1294,11 +1182,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Protobuf Facet|helloorm</last-edited>
+          <last-edited>helloorm</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
