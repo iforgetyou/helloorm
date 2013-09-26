@@ -1,6 +1,6 @@
 package com;
 
-option java_package = "com.zy17.domain";
+option java_package = "com.zy17.protobuf.domain";
 
 option java_outer_classname = "AddressBookProtos";
 

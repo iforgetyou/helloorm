@@ -1,8 +1,8 @@
 package com.zy17.service;
 
-import com.zy17.domain.AddressBookProtos;
 import com.zy17.domain.PersonDomain;
 import com.zy17.domain.TextMessage;
+import com.zy17.protobuf.domain.AddressBookProtos;
 
 import java.util.List;
 

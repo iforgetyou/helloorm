@@ -34,15 +34,16 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:3.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: com.googlecode.objectify-appengine-spring:objectify-appengine-spring:1.1.1" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.12" />
           <element id="library" level="project" name="Maven: org.json:json:20080701" />
-          <element id="library" level="project" name="Maven: log4j:log4j:1.2.16" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.2" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.6.2" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:0.9.29" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:0.9.29" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-mongodb:1.2.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.5.1.RELEASE" />
-          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.1" />
           <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:2.10.1" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:r09" />
           <element id="library" level="project" name="Maven: com.ryantenney.metrics:metrics-spring:3.0.0-RC1" />
@@ -63,8 +64,6 @@
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
           <element id="library" level="project" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" />
-          <element id="library" level="project" name="Maven: com.googlecode.objectify:objectify:4.0rc1" />
-          <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-labs:1.7.6" />
         </element>
       </element>
     </root>

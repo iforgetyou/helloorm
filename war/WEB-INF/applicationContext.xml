@@ -18,17 +18,7 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <!--<mvc:resources mapping="/static/**" location="/statics/"/>-->
-
-    <!--<mvc:annotation-driven content-negotiation-manager="contentNegotiationManager"/>-->
     <mvc:annotation-driven/>
-    <!--<bean id="pmf" class="com.zy17.dao.impl.PMFHelper" init-method="init">-->
-    <!--</bean>-->
-
-
-
-
-    <context:component-scan base-package="com.zy17"/>
 
     <bean id="defalutViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>

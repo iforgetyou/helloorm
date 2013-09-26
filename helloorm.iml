@@ -17,6 +17,10 @@
       <facet type="google-app-engine" name="Google App Engine">
         <configuration>
           <sdk-home-path>D:/Program Files/appengine-java-sdk-1.8.3</sdk-home-path>
+          <files-to-enhance>
+            <file path="$MODULE_DIR$/protocsrc" />
+            <file path="$MODULE_DIR$/src" />
+          </files-to-enhance>
         </configuration>
       </facet>
     </facet>
@@ -81,15 +85,16 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:3.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-taglibs:3.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:3.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.objectify-appengine-spring:objectify-appengine-spring:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.12" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20080701" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:0.9.29" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:0.9.29" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-mongodb:1.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.5.1.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:2.10.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-all:1.9.5" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:r09" level="project" />
@@ -115,8 +120,6 @@
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.8.2" level="project" />
-    <orderEntry type="library" name="Maven: com.googlecode.objectify:objectify:4.0rc1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.appengine:appengine-api-labs:1.7.6" level="project" />
   </component>
 </module>
 

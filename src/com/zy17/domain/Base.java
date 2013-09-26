@@ -1,27 +1,25 @@
 package com.zy17.domain;
 
-import com.googlecode.objectify.annotation.Entity;
-import com.googlecode.objectify.annotation.Id;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.jdo.annotations.*;
 import java.util.Date;
 
 @PersistenceCapable
 @Inheritance(strategy=InheritanceStrategy.SUBCLASS_TABLE)
-@Entity
 public class Base {
+    final static Logger logger = LoggerFactory
+            .getLogger(Base.class);
 
     @PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
     @Extension(vendorName="datanucleus", key="gae.encoded-pk", value="true")
-    @Id
     private String encodedKey;
 
 //    @Persistent
 //    @Extension(vendorName="datanucleus", key="gae.pk-name", value="true")
 //    private String keyName;
-
-
 
     @Persistent
     private Date createdAt;

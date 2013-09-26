@@ -1,9 +1,8 @@
 package com.zy17.controller;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.zy17.domain.AddressBookProtos;
-import com.zy17.domain.PersonDomain;
 import com.zy17.domain.TextMessage;
+import com.zy17.protobuf.domain.AddressBookProtos;
 import com.zy17.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -93,18 +92,6 @@ public class MessageController {
     public
     @ResponseBody
     List<AddressBookProtos.Person> getPersons() {
-        AddressBookProtos.Person john =
-                AddressBookProtos.Person.newBuilder()
-                        .setId(1234)
-                        .setName("John Doe")
-                        .setEmail("jdoe@example.com")
-                        .addPhone(
-                                AddressBookProtos.Person.PhoneNumber.newBuilder()
-                                        .setNumber("555-4321")
-                                        .setType(AddressBookProtos.Person.PhoneType.HOME))
-                        .build();
-
-        System.out.println(john);
         return messageService.findAllPerson();
     }
 

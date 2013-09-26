@@ -10,11 +10,12 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
+    <context:component-scan base-package="com.zy17"/>
+
     <bean class="com.zy17.controller.jsonview.JsonViewSupportFactoryBean" />
 
     <bean id="validator"
           class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
-
 
     <bean id="pmf" class="org.datanucleus.jdo.JDOPersistenceManagerFactory" destroy-method="close">
         <!--<property name="connectionFactory" ref="dataSource"/>-->
@@ -24,7 +25,16 @@
         <property name="nontransactionalRead" value="true"/>
     </bean>
 
-    <context:component-scan base-package="com.zy17"/>
+    <!--<bean class="com.googlecode.objectify.spring.ObjectifyFactoryBean" p:basePackage="com.zy17.domain"/>-->
+
+    <!--<bean class="com.googlecode.objectify.spring.ObjectifyFactoryBean">-->
+        <!--<property name="classes">-->
+            <!--<list>-->
+                <!--<value>com.mycompany.domain.Person</value>-->
+                <!--<value>com.mycompany.domain.Address</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
 
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
     </bean>

@@ -1,6 +1,5 @@
 package com.zy17.dao;
 
-import com.zy17.domain.PersonDomain;
 import com.zy17.domain.TextMessage;
 
 import java.util.List;

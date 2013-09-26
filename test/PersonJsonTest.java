@@ -1,4 +1,4 @@
-import com.zy17.domain.AddressBookProtos;
+import com.zy17.protobuf.domain.AddressBookProtos;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;
