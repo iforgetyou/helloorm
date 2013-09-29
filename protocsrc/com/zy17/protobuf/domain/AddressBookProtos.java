@@ -55,7 +55,11 @@ public final class AddressBookProtos {
     /**
      * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
      */
+<<<<<<< HEAD
     java.util.List<com.zy17.protobuf.domain.AddressBookProtos.Person.PhoneNumber> 
+=======
+    java.util.List<com.zy17.protobuf.domain.AddressBookProtos.Person.PhoneNumber>
+>>>>>>> bc966ec3da5ae705a4f5c089885b8a1e628feac3
         getPhoneList();
     /**
      * <code>repeated .com.Person.PhoneNumber phone = 4;</code>
@@ -2483,8 +2487,12 @@ public final class AddressBookProtos {
       "\0162\025.com.Person.PhoneType:\004HOME\"+\n\tPhoneT" +
       "ype\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002\"*\n\013A" +
       "ddressBook\022\033\n\006person\030\001 \003(\0132\013.com.PersonB" +
+<<<<<<< HEAD
       "-\n\030com.zy17.protobuf.domainB\021AddressBook" +
       "Protos"
+=======
+      "$\n\017com.zy17.protobuf.domainB\021AddressBookProtos"
+>>>>>>> bc966ec3da5ae705a4f5c089885b8a1e628feac3
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
