@@ -1,3 +1,4 @@
+import com.google.appengine.repackaged.com.google.protobuf.ByteString;
 import com.zy17.protobuf.domain.AddressBookProtos;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -31,6 +32,7 @@ public class PersonJsonTest {
                         .build();
 
         byte[] bytes = john.toByteArray();
+
         System.out.println(bytes.length);
     }
 }

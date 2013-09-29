@@ -91,7 +91,7 @@ public class MessageController {
     @RequestMapping(value = "/person", method = RequestMethod.GET)
     public
     @ResponseBody
-    List<AddressBookProtos.Person> getPersons() {
+    List<byte[]> getPersons() {
         return messageService.findAllPerson();
     }
 

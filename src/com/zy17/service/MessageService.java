@@ -23,5 +23,5 @@ public interface MessageService {
 
     void add(AddressBookProtos.Person person);
 
-    List<AddressBookProtos.Person>  findAllPerson();
+    List<byte[]>  findAllPerson();
 }

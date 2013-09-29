@@ -12,5 +12,5 @@ import java.util.List;
  */
 public interface PersonDao {
     void insert(AddressBookProtos.Person person);
-    List<AddressBookProtos.Person> findAllPerson();
+    List<byte[]> findAllPerson();
 }

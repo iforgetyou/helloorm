@@ -49,7 +49,7 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
-    public   List<AddressBookProtos.Person>  findAllPerson() {
+    public   List<byte[]>  findAllPerson() {
         return personDomainDao.findAllPerson();
     }
 }
