@@ -7,30 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb4ab1f-4379-49c2-8c61-e37756c16242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/LocalDatastoreTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/zy17/controller/MessageControllerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/controller/protobufview/PBMessageConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/controller/protobufview/PBMessageConverter1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/local_db.bin" afterPath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/local_db.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java" afterPath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/MessageService.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/MessageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/PersonDao.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/PersonDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/objectifyimpl/PersonDomainOfyDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/objectifyimpl/PersonDomainOfyDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/PersonJsonTest.java" afterPath="$PROJECT_DIR$/test/PersonJsonTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/protobuf/addressbook.proto" afterPath="$PROJECT_DIR$/src/protobuf/addressbook.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/datastore-indexes-auto.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/datastore-indexes-auto.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helloorm.iml" afterPath="$PROJECT_DIR$/helloorm.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/helloorm_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/helloorm_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="helloorm.iws" />
@@ -228,7 +212,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" line="94" class="com.zy17.controller.MessageController" package="com.zy17.controller">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" line="118" class="com.zy17.controller.MessageController" package="com.zy17.controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -318,7 +302,7 @@
       <file leaf-file-name="PersonDaoImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="23" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+            <state line="36" column="23" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -349,7 +333,7 @@
       <file leaf-file-name="PersonDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/PersonDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="39" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+            <state line="20" column="39" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -358,8 +342,11 @@
       <file leaf-file-name="MessageController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="10" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="131" column="5" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1380529654128" expanded="true" signature="2336:2429" placeholder="/**...*/" />
+                <marker date="1380529654128" expanded="true" signature="2733:2823" placeholder="/**...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -500,23 +487,6 @@
     <option name="width" value="1280" />
     <option name="height" value="1024" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Android Lint</id>
-          </State>
-          <State>
-            <id>Internationalization issues</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -531,14 +501,6 @@
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
-  </component>
-  <component name="ProjectStructureProblems">
-    <ignored-problems>
-      <problem id="library-invalid-classes-path(library:project:Maven: net.sf.json-lib:json-lib:2.4)" />
-      <problem id="library-missing-from-artifact(artifact:helloorm:war,WEB-INF/classes/module-output)" />
-      <problem id="unused-library(library:project:Maven: org.springframework.data:spring-data-mongodb:1.2.1.RELEASE2)" />
-      <problem id="unused-library(library:project:Maven: org.springframework.security:spring-security-taglibs:3.1.4.RELEASE2)" />
-    </ignored-problems>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -1339,23 +1301,6 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ccb4ab1f-4379-49c2-8c61-e37756c16242" name="Default" comment="" />
@@ -1488,18 +1433,16 @@
     <buildFile url="file://$PROJECT_DIR$/build.xml">
       <targetFilters>
         <filter targetName="copyjars" isVisible="true" />
+        <filter targetName="complieProtocol" isVisible="true" />
         <filter targetName="compile" isVisible="true" />
         <filter targetName="datanucleusenhance" isVisible="true" />
         <filter targetName="runserver" isVisible="true" />
+        <filter targetName="deploy-app" isVisible="true" />
         <filter targetName="update" isVisible="true" />
         <filter targetName="update_indexes" isVisible="true" />
         <filter targetName="rollback" isVisible="true" />
         <filter targetName="request_logs" isVisible="true" />
-        <filter targetName="complieProtocol" isVisible="true" />
-        <filter targetName="deploy-app" isVisible="true" />
       </targetFilters>
-      <treeView value="false" />
-      <verbose value="false" />
       <expanded value="true" />
     </buildFile>
   </component>
@@ -1569,14 +1512,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/PersonDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+        <state line="20" column="39" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="23" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+        <state line="36" column="23" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1597,8 +1540,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="10" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="131" column="5" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1380529654128" expanded="true" signature="2336:2429" placeholder="/**...*/" />
+            <marker date="1380529654128" expanded="true" signature="2733:2823" placeholder="/**...*/" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -84,6 +84,7 @@ public class MessageController {
 
 
     /**
+     * 获取某个消息
      * 获取所有消息
      *
      * @return
@@ -102,14 +103,19 @@ public class MessageController {
     @RequestMapping(value = "/person", method = RequestMethod.GET)
     public
     @ResponseBody
+    List<byte[]> getPersons() {
+        return messageService.findAllPerson();
     AddressBookProtos.PersonList getPersons() {
         return messageService.findPersonList();
     }
 
     @ResponseStatus(value = HttpStatus.CREATED)
+    @RequestMapping(value = "person",method = RequestMethod.POST)
     @RequestMapping(value = "/person",method = RequestMethod.POST)
     public
     @ResponseBody
+    void createPerson(@RequestBody byte[] bytes) throws InvalidProtocolBufferException {
+        AddressBookProtos.Person person = AddressBookProtos.Person.parseFrom(bytes);
     void createPerson(@RequestBody AddressBookProtos.Person person) throws InvalidProtocolBufferException {
         this.messageService.add(person);
     }
