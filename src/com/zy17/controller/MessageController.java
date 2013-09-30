@@ -84,25 +84,48 @@ public class MessageController {
 
 
     /**
-     * 获取某个消息
+     * 获取所有消息
+     *
+     * @return
+     */
+    @RequestMapping(value = "/personbytes", method = RequestMethod.GET)
+    public
+    @ResponseBody
+    List<byte[]> getPersonsBytes() {
+        return messageService.findAllPersonBytes();
+    }
+
+    /**
      *
      * @return
      */
     @RequestMapping(value = "/person", method = RequestMethod.GET)
     public
     @ResponseBody
-    List<byte[]> getPersons() {
-        return messageService.findAllPerson();
+    AddressBookProtos.PersonList getPersons() {
+        return messageService.findPersonList();
     }
 
     @ResponseStatus(value = HttpStatus.CREATED)
-    @RequestMapping(value = "person",method = RequestMethod.POST)
+    @RequestMapping(value = "/person",method = RequestMethod.POST)
     public
     @ResponseBody
-    void createPerson(@RequestBody byte[] bytes) throws InvalidProtocolBufferException {
-        AddressBookProtos.Person person = AddressBookProtos.Person.parseFrom(bytes);
+    void createPerson(@RequestBody AddressBookProtos.Person person) throws InvalidProtocolBufferException {
         this.messageService.add(person);
     }
+
+
+//    @RequestMapping("connected")
+//    public void connected(@RequestBody UseClientInfo useClientInfo, HttpServletRequest request, HttpServletResponse response) throws IOException {
+//        log.info(useClientInfo);
+//    }
+//
+//    @ResponseBody
+//    @RequestMapping("get_useclientinfo")
+//    public UseClientInfo getUseClientInfo(HttpServletResponse response) throws IOException{
+//        UseClientInfo.Builder useClientInfoBuilder = UseClientInfo.newBuilder();
+//        return useClientInfoBuilder.build();
+//    }
 
 
 }

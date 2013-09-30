@@ -49,7 +49,12 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
-    public   List<byte[]>  findAllPerson() {
-        return personDomainDao.findAllPerson();
+    public AddressBookProtos.PersonList findPersonList() {
+        return personDomainDao.findPersonList();
+    }
+
+    @Override
+    public List<byte[]> findAllPersonBytes() {
+        return personDomainDao.findAllPersonBytes();
     }
 }

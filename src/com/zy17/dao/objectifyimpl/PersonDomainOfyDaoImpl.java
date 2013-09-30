@@ -33,7 +33,7 @@
 //    }
 //
 //    @Override
-//    public List<AddressBookProtos.Person> findAllPerson() {
+//    public List<AddressBookProtos.Person> findAllPersonBytes() {
 ///*        List<PersonDomain> list = objectifyFactory.begin().load().type(PersonDomain.class).list();
 //
 //        List<AddressBookProtos.Person> persons = new ArrayList<AddressBookProtos.Person>(list.size());

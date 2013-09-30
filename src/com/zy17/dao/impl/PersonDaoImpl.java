@@ -26,12 +26,22 @@ public class PersonDaoImpl extends BaseDaoImpl<PersonDomain> implements PersonDa
     }
 
     @Override
-    public List<byte[]> findAllPerson() {
+    public List<byte[]> findAllPersonBytes() {
         ArrayList<byte[]> persons = new ArrayList<byte[]>();
         List<PersonDomain> all = findAll();
         for (PersonDomain personDomain : all) {
             persons.add(personDomain.getBytes());
         }
         return persons;
+    }
+
+    @Override
+    public AddressBookProtos.PersonList findPersonList() {
+        AddressBookProtos.PersonList.Builder builder = AddressBookProtos.PersonList.newBuilder();
+        List< PersonDomain > all = findAll();
+        for (PersonDomain personDomain : all) {
+            builder.addPerson(personDomain.getPerson());
+        }
+        return builder.build();
     }
 }
