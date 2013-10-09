@@ -1,7 +1,8 @@
+import com.zy17.controller.protobufview.PBMessageConverter;
 import com.zy17.protobuf.domain.AddressBookProtos;
-import org.apache.commons.logging.LogFactory;
 import org.apache.http.Header;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ByteArrayEntity;
@@ -16,7 +17,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.List;
 
 /**
  * This class is the same as the ApacheHttpRestClient2 class, but with
@@ -28,9 +28,10 @@ public class ApacheHttpRestClient {
 
     public HttpPost post;
     public HttpGet get;
+    public HttpDelete delete;
     public DefaultHttpClient httpclient;
-
-    public String remoteUrl="http://127.0.0.1:8080/";
+    public AddressBookProtos.Person john;
+    public String remoteUrl = "http://127.0.0.1:8080/";
 
     @Before
     public void init() {
@@ -44,18 +45,32 @@ public class ApacheHttpRestClient {
         get.setHeader("Accept", "application/x-protobuf");
         get.setHeader("Content-Type", "application/x-protobuf");
 
+        delete = new HttpDelete(remoteUrl);
+        get.setHeader("Accept", "application/x-protobuf");
+        get.setHeader("Content-Type", "application/x-protobuf");
+
+        john =
+                AddressBookProtos.Person.newBuilder()
+                        .setId(1234)
+                        .setName("John Doe")
+                        .setEmail("jdoe@example.com")
+                        .addPhone(
+                                AddressBookProtos.Person.PhoneNumber.newBuilder()
+                                        .setNumber("555-4321")
+                                        .setType(AddressBookProtos.Person.PhoneType.HOME))
+                        .build();
     }
 
     @Test
     public void postTest() throws IOException, URISyntaxException {
-        post.setURI(new URI(remoteUrl+"message/person"));
+        post.setURI(new URI(remoteUrl + "message/person"));
         post.setEntity(new ByteArrayEntity(getPersonBytes()));
 //      System.out.println(post.getEntity().getContent());
         CloseableHttpResponse response = httpclient.execute(post);
         org.apache.http.HttpEntity entity = response.getEntity();
 
 
-        assert(response.getStatusLine().getStatusCode()==201);
+        assert (response.getStatusLine().getStatusCode() == 201);
 //        System.out.println("post get result: " + response.getStatusLine().getStatusCode());
         if (entity != null) {
             EntityUtils.consume(entity);
@@ -66,10 +81,12 @@ public class ApacheHttpRestClient {
     public void getTest() throws URISyntaxException, IOException {
         this.postTest();
 
-        get.setURI(new URI(remoteUrl+"message/person"));
+        get.setURI(new URI(remoteUrl + "message/person"));
         CloseableHttpResponse response = httpclient.execute(get);
         org.apache.http.HttpEntity entity = response.getEntity();
-        assert(response.getStatusLine().getStatusCode()==200);
+        assert (response.getStatusLine().getStatusCode() == 200);
+
+        PBMessageConverter pbMessageConverter = new PBMessageConverter();
 
 
         Header firstHeader = response.getFirstHeader("Content-Length");
@@ -79,8 +96,7 @@ public class ApacheHttpRestClient {
         content.read(bytes);
         AddressBookProtos.PersonList personList = AddressBookProtos.PersonList.parseFrom(bytes);
         log.debug("persons: \n\r" + personList.toString());
-        assert( personList.getPersonList().size()!=0);
-
+        assert (personList.getPersonList().size() != 0);
 
         if (entity != null) {
             EntityUtils.consume(entity);
@@ -89,17 +105,19 @@ public class ApacheHttpRestClient {
 
     }
 
+    @Test
+    public void deleteTest() throws Exception {
+        this.postTest();
+
+        String replace = john.getName().replaceAll(" ", "%20");
+        delete.setURI(new URI(remoteUrl + "message/person/" +replace));
+        CloseableHttpResponse response = httpclient.execute(delete);
+        org.apache.http.HttpEntity entity = response.getEntity();
+        assert (response.getStatusLine().getStatusCode() == 200);
+    }
+
     private byte[] getPersonBytes() {
-        AddressBookProtos.Person john =
-                AddressBookProtos.Person.newBuilder()
-                        .setId(1234)
-                        .setName("John Doe")
-                        .setEmail("jdoe@example.com")
-                        .addPhone(
-                                AddressBookProtos.Person.PhoneNumber.newBuilder()
-                                        .setNumber("555-4321")
-                                        .setType(AddressBookProtos.Person.PhoneType.HOME))
-                        .build();
+
         byte[] bytes = john.toByteArray();
         return bytes;
     }

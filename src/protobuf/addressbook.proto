@@ -30,3 +30,7 @@ message PersonList {
 message AddressBook {
     repeated Person person = 1;
 }
+
+message Voice {
+
+}

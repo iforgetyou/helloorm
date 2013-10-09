@@ -57,4 +57,9 @@ public class MessageServiceImpl implements MessageService {
     public List<byte[]> findAllPersonBytes() {
         return personDomainDao.findAllPersonBytes();
     }
+
+    @Override
+    public void deletePerson(String personName) {
+        personDomainDao.deletePerson(personName);
+    }
 }

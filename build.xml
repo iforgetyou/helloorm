@@ -1,6 +1,6 @@
 <project name="Hello ORM" default="datanucleusenhance">
-    <property name="sdk.dir" location="/Applications/appengine-java-sdk-1.8.3"/>
-    <!--<property name="sdk.dir" location="D:\\Program Files\\appengine-java-sdk-1.8.3"/>-->
+    <!--<property name="sdk.dir" location="/Applications/appengine-java-sdk-1.8.3"/>-->
+    <property name="sdk.dir" location="D:\\Program Files\\appengine-java-sdk-1.8.3"/>
     <property name="project.name" value="war" />
 
     <import file="${sdk.dir}/config/user/ant-macros.xml"/>

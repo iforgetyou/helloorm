@@ -26,4 +26,6 @@ public interface MessageService {
     AddressBookProtos.PersonList findPersonList();
 
     List<byte[]> findAllPersonBytes();
+
+    void deletePerson(String messageid);
 }

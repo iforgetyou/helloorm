@@ -3172,11 +3172,6 @@ public final class AddressBookProtos {
       "phone\030\004 \003(\0132\027.com.Person.PhoneNumber\032H\n\013" +
       "PhoneNumber\022\016\n\006number\030\001 \002(\t\022)\n\004type\030\002 \001(" +
       "\0162\025.com.Person.PhoneType:\004HOME\"+\n\tPhoneT" +
-      "ype\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002\"*\n\013A" +
-      "ddressBook\022\033\n\006person\030\001 \003(\0132\013.com.PersonB" +
-      "-\n\030com.zy17.protobuf.domainB\021AddressBook" +
-      "Protos"
-
       "ype\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002\")\n\nP" +
       "ersonList\022\033\n\006person\030\001 \003(\0132\013.com.Person\"*" +
       "\n\013AddressBook\022\033\n\006person\030\001 \003(\0132\013.com.Pers" +
@@ -3207,7 +3202,6 @@ public final class AddressBookProtos {
               internal_static_com_PersonList_descriptor,
               new java.lang.String[] { "Person", });
           internal_static_com_AddressBook_descriptor =
-            getDescriptor().getMessageTypes().get(1);
             getDescriptor().getMessageTypes().get(2);
           internal_static_com_AddressBook_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(

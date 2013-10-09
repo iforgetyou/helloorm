@@ -18,10 +18,7 @@ import org.springframework.http.converter.HttpMessageNotWritableException;
 import com.google.protobuf.GeneratedMessage;
 
 /**
- * pb对象转换，自动完成pb对象的序列化与反序列化，让controller的接口脱离这些重复工作
- * @author shannon
- * @time Dec 6, 2012 12:16:11 PM
- * @email shannonchou@126.com
+ * pb对象转换，自动完成pb对象的序列化与反序列化
  */
 public class PBMessageConverter extends AbstractHttpMessageConverter<GeneratedMessage> {
 

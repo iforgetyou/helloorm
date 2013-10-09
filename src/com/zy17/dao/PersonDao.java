@@ -12,7 +12,10 @@ import java.util.List;
  */
 public interface PersonDao {
     void insert(AddressBookProtos.Person person);
+
     List<byte[]> findAllPersonBytes();
 
     AddressBookProtos.PersonList findPersonList();
+
+    void deletePerson(String messageid);
 }

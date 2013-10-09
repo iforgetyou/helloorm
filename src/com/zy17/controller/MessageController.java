@@ -97,29 +97,36 @@ public class MessageController {
     }
 
     /**
-     *
      * @return
      */
     @RequestMapping(value = "/person", method = RequestMethod.GET)
     public
     @ResponseBody
-    List<byte[]> getPersons() {
-        return messageService.findAllPerson();
     AddressBookProtos.PersonList getPersons() {
         return messageService.findPersonList();
     }
 
     @ResponseStatus(value = HttpStatus.CREATED)
-    @RequestMapping(value = "person",method = RequestMethod.POST)
-    @RequestMapping(value = "/person",method = RequestMethod.POST)
+    @RequestMapping(value = "/person", method = RequestMethod.POST)
     public
     @ResponseBody
-    void createPerson(@RequestBody byte[] bytes) throws InvalidProtocolBufferException {
-        AddressBookProtos.Person person = AddressBookProtos.Person.parseFrom(bytes);
     void createPerson(@RequestBody AddressBookProtos.Person person) throws InvalidProtocolBufferException {
         this.messageService.add(person);
     }
 
+
+    /**
+     * 删除消息
+     *
+     * @return
+     */
+    @ResponseStatus(value = HttpStatus.OK)
+    @RequestMapping(value = "/person/{personname}", method = RequestMethod.DELETE)
+    public
+    @ResponseBody
+    void deletePerson(@PathVariable(value = "personname") String personname) {
+        messageService.deletePerson(personname);
+    }
 
 //    @RequestMapping("connected")
 //    public void connected(@RequestBody UseClientInfo useClientInfo, HttpServletRequest request, HttpServletResponse response) throws IOException {
