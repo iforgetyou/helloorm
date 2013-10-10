@@ -7,19 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb4ab1f-4379-49c2-8c61-e37756c16242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/filter/UrlFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/local_db.bin" afterPath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/local_db.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java" afterPath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ApacheHttpRestClient.java" afterPath="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/MessageService.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/MessageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/protobufview/PBMessageConverter.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/protobufview/PBMessageConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/PersonDao.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/PersonDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/protobuf/addressbook.proto" afterPath="$PROJECT_DIR$/src/protobuf/addressbook.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/datastore-indexes-auto.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/appengine-generated/datastore-indexes-auto.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helloorm.iml" afterPath="$PROJECT_DIR$/helloorm.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/helloorm_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/helloorm_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="helloorm.iws" />
@@ -27,11 +19,11 @@
     <file path="/Dummy.txt" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381309872916" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/webapp/WEB-INF/classes/META-INF/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065910856" ignored="false" />
     <file path="/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379515695969" ignored="false" />
-    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380510268071" ignored="false" />
+    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381389411100" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/java/com/zy17/EnglishEdu/dao/impl/PMF.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065592417" ignored="false" />
     <file path="/a.dummy" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380513472169" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379066880076" ignored="false" />
-    <file path="/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380508824374" ignored="false" />
+    <file path="/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381384392975" ignored="false" />
     <file path="/QSort.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379296385127" ignored="false" />
     <file path="$PROJECT_DIR$/src/QSort.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379295452861" ignored="false" />
     <file path="/build.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380185469398" ignored="false" />
@@ -165,9 +157,10 @@
     <file path="/PBMessageConverter1.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380506237069" ignored="false" />
     <file path="/MessageControllerTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380508124495" ignored="false" />
     <file path="/ApacheHttpRestClient3.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380522883923" ignored="false" />
-    <file path="/ApacheHttpRestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381312252884" ignored="false" />
+    <file path="/ApacheHttpRestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381396693658" ignored="false" />
     <file path="/PersonDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381310848265" ignored="false" />
     <file path="/UrlFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381312874689" ignored="false" />
+    <file path="D:/Program Files/lucene-4.4.0/demo/src/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381375140394" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,22 +258,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/protobufview/PBMessageConverter.java" line="27" class="com.zy17.controller.protobufview.PBMessageConverter" package="com.zy17.controller.protobufview">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="94" class="ApacheHttpRestClient" package="">
+      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="110" class="ApacheHttpRestClient" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -396,55 +374,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PBMessageConverter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/protobufview/PBMessageConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="32" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="802" selection-end="802" vertical-scroll-proportion="-12.342857">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="35" selection-start="2996" selection-end="3008" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="18" selection-start="2489" selection-end="2489" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ApacheHttpRestClient.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="9" selection-start="3943" selection-end="3943" vertical-scroll-proportion="0.97126436">
+            <state line="61" column="34" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.79078454">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="211" column="0" selection-start="7464" selection-end="7464" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EofSensorInputStream.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3-sources.jar!/org/apache/http/conn/EofSensorInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="151" column="0" selection-start="4934" selection-end="4934" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#9333#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChunkedInputStream.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar!/org/apache/http/impl/io/ChunkedInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="47" selection-start="3054" selection-end="3054" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -453,43 +417,7 @@
       <file leaf-file-name="MessageServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="36" selection-start="1501" selection-end="1513" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="46" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Base.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/Base.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="20" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="25" selection-start="1777" selection-end="1777" vertical-scroll-proportion="0.0">
+            <state line="52" column="43" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -516,7 +444,6 @@
       <list>
         <option value="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/test/PersonJsonTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/test/ApacheHttpRestClient3.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/build.xml" />
@@ -529,6 +456,7 @@
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/zy17/UrlFilter.java" />
         <option value="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
       </list>
     </option>
@@ -587,6 +515,26 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="protoc" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Backend" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -656,6 +604,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -779,66 +741,9 @@
     </key>
   </component>
   <component name="RestClientSettings">
-    <option name="LAST_HOST" value="http://localhost:8080/" />
+    <option name="LAST_HOST" value="http://iforgetyou529.appsp0t.com" />
   </component>
-  <component name="RunManager" selected="JUnit.ApacheHttpRestClient.deleteTest">
-    <configuration default="false" name="PersonJsonTest.protobufBytesConvert" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="helloorm" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PersonJsonTest" />
-      <option name="METHOD_NAME" value="protobufBytesConvert" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MessageControllerTest.testGetPersons" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.zy17.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="helloorm" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.zy17.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.zy17.controller.MessageControllerTest" />
-      <option name="METHOD_NAME" value="testGetPersons" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ApacheHttpRestClient.getTest">
     <configuration default="false" name="ApacheHttpRestClient.postTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="helloorm" />
@@ -858,7 +763,13 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -912,6 +823,49 @@
       <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApacheHttpRestClient" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="helloorm" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ApacheHttpRestClient" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ClientChunkEncodedPost" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.apache.http.examples.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.apache.http.examples.client.ClientChunkEncodedPost" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.osmorc.OsgiConfigurationType" factoryName="OSGi Bundles" vmParameters="" programParameters="" includeAllBundlesInClassPath="false" workingDir="" useAlternativeJre="false" alternativeJrePath="" frameworkStartLevel="1" defaultStartLevel="5" generateWorkingDir="false">
@@ -1401,19 +1355,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Remote.gae_local" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PersonJsonTest.protobufBytesConvert" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MessageControllerTest.testGetPersons" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.postTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.getTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.deleteTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.postTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.getTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.deleteTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient" />
+      <item index="6" class="java.lang.String" itemvalue="Application.ClientChunkEncodedPost" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.deleteTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.getTest" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.postTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.getTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MessageControllerTest.testGetPersons" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PersonJsonTest.protobufBytesConvert" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ClientChunkEncodedPost" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient.deleteTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ApacheHttpRestClient" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1474,29 +1428,29 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715377" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.59432936" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24672131" sideWeight="0.53435117" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40130863" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24672131" sideWeight="0.5986914" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44711015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40130863" sideWeight="0.31557378" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.67048347" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40130863" sideWeight="0.68442625" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5103599" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2967213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2967213" sideWeight="0.5528899" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27868852" sideWeight="0.5986914" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3967213" sideWeight="0.53435117" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46564886" sideWeight="0.6147541" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3967213" sideWeight="0.5528899" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46564886" sideWeight="0.6147541" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34508196" sideWeight="0.45583424" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5103599" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1587,68 +1541,68 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/lang/String.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1-sources.jar!/org/apache/http/io/SessionInputBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2188" column="36" selection-start="83537" selection-end="83537" vertical-scroll-proportion="0.37634408">
+        <state line="47" column="13" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.67764705">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1-sources.jar!/org/apache/http/impl/io/ChunkedInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="18" selection-start="2489" selection-end="2489" vertical-scroll-proportion="0.0">
+        <state line="62" column="35" selection-start="2510" selection-end="2510" vertical-scroll-proportion="0.5468278">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3-sources.jar!/org/apache/http/impl/client/CloseableHttpResponseProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="20" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0">
+        <state line="62" column="0" selection-start="2217" selection-end="2217" vertical-scroll-proportion="0.1882353">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="25" selection-start="1777" selection-end="1777" vertical-scroll-proportion="0.0">
+        <state line="215" column="48" selection-start="10296" selection-end="10296" vertical-scroll-proportion="0.10352941">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/Base.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar!/org/apache/http/impl/io/ChunkedInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+        <state line="87" column="47" selection-start="3054" selection-end="3054" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="929" column="21" selection-start="41803" selection-end="41803" vertical-scroll-proportion="0.74429226">
+        <state line="45" column="24" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.71411765">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3-sources.jar!/org/apache/http/conn/EofSensorInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="16" selection-start="2845" selection-end="2845" vertical-scroll-proportion="0.79317695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/PersonDomain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="40" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/filter/UrlFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
+        <state line="151" column="0" selection-start="4934" selection-end="4934" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#9333#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3-sources.jar!/org/apache/http/HttpEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="59" selection-start="7357" selection-end="7357" vertical-scroll-proportion="0.67176473">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/io/ByteArrayInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="11" selection-start="2810" selection-end="2810" vertical-scroll-proportion="-0.42941177">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1660,7 +1614,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="802" selection-end="802" vertical-scroll-proportion="-12.342857">
+        <state line="26" column="0" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.46134663">
           <folding />
         </state>
       </provider>
@@ -1668,45 +1622,49 @@
         <state />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.0.RELEASE/spring-context-3.2.0.RELEASE-sources.jar!/org/springframework/stereotype/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/filter/UrlFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="28" selection-start="1618" selection-end="1628" vertical-scroll-proportion="0.33333334">
+        <state line="11" column="13" selection-start="183" selection-end="183" vertical-scroll-proportion="0.30824372">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/jre/lib/rt.jar!/sun/misc/IOUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.30107528">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/protobufview/PBMessageConverter.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="32" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.0">
+        <state line="211" column="0" selection-start="7464" selection-end="7464" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/org/apache/commons/io/IOUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="35" selection-start="2996" selection-end="3008" vertical-scroll-proportion="0.0">
+        <state line="43" column="25" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/MessageServiceImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4-sources.jar!/org/apache/commons/io/IOUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="36" selection-start="1501" selection-end="1513" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="46" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.0">
+        <state line="462" column="36" selection-start="15050" selection-end="15050" vertical-scroll-proportion="0.4623656">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="9" selection-start="3943" selection-end="3943" vertical-scroll-proportion="0.97126436">
-          <folding />
+        <state line="61" column="34" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.79078454">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

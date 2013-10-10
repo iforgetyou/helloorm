@@ -1,7 +1,7 @@
-import com.zy17.controller.protobufview.PBMessageConverter;
 import com.zy17.protobuf.domain.AddressBookProtos;
-import org.apache.http.Header;
-import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.commons.io.IOUtils;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -18,6 +18,10 @@ import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+//import org.apache.http.client.methods.CloseableHttpResponse;
+
+//import org.apache.http.client.methods.CloseableHttpResponse;
+
 /**
  * This class is the same as the ApacheHttpRestClient2 class, but with
  * fewer try/catch clauses, and fewer comments.
@@ -31,7 +35,8 @@ public class ApacheHttpRestClient {
     public HttpDelete delete;
     public DefaultHttpClient httpclient;
     public AddressBookProtos.Person john;
-    public String remoteUrl = "http://127.0.0.1:8080/";
+    //    public String remoteUrl = "http://127.0.0.1:8080/";
+    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
 
     @Before
     public void init() {
@@ -46,8 +51,8 @@ public class ApacheHttpRestClient {
         get.setHeader("Content-Type", "application/x-protobuf");
 
         delete = new HttpDelete(remoteUrl);
-        get.setHeader("Accept", "application/x-protobuf");
-        get.setHeader("Content-Type", "application/x-protobuf");
+        delete.setHeader("Accept", "application/x-protobuf");
+        delete.setHeader("Content-Type", "application/x-protobuf");
 
         john =
                 AddressBookProtos.Person.newBuilder()
@@ -66,7 +71,7 @@ public class ApacheHttpRestClient {
         post.setURI(new URI(remoteUrl + "message/person"));
         post.setEntity(new ByteArrayEntity(getPersonBytes()));
 //      System.out.println(post.getEntity().getContent());
-        CloseableHttpResponse response = httpclient.execute(post);
+        HttpResponse response = httpclient.execute(post);
         org.apache.http.HttpEntity entity = response.getEntity();
 
 
@@ -79,29 +84,29 @@ public class ApacheHttpRestClient {
 
     @Test
     public void getTest() throws URISyntaxException, IOException {
-        this.postTest();
+//        this.postTest();
 
         get.setURI(new URI(remoteUrl + "message/person"));
-        CloseableHttpResponse response = httpclient.execute(get);
-        org.apache.http.HttpEntity entity = response.getEntity();
+        HttpResponse response = httpclient.execute(get);
+//        org.apache.http.HttpEntity entity = response.getEntity();
         assert (response.getStatusLine().getStatusCode() == 200);
 
-        PBMessageConverter pbMessageConverter = new PBMessageConverter();
 
-
-        Header firstHeader = response.getFirstHeader("Content-Length");
-
+        HttpEntity entity = response.getEntity();
         InputStream content = entity.getContent();
-        byte[] bytes = new byte[Integer.parseInt(firstHeader.getValue())];
-        content.read(bytes);
+
+
+//        if (entity.isChunked()){
+        //为了处理chunked数据，Todo 为了提升效率可以对非chunked 数据进行单独处理
+        byte[] bytes = IOUtils.toByteArray(content);
+//        }else{
+//            bytes=new byte[content.available()];
+//            content.read(bytes);
+//        }
+
         AddressBookProtos.PersonList personList = AddressBookProtos.PersonList.parseFrom(bytes);
         log.debug("persons: \n\r" + personList.toString());
         assert (personList.getPersonList().size() != 0);
-
-        if (entity != null) {
-            EntityUtils.consume(entity);
-//            entity.consumeContent();
-        }
 
     }
 
@@ -110,8 +115,8 @@ public class ApacheHttpRestClient {
         this.postTest();
 
         String replace = john.getName().replaceAll(" ", "%20");
-        delete.setURI(new URI(remoteUrl + "message/person/" +replace));
-        CloseableHttpResponse response = httpclient.execute(delete);
+        delete.setURI(new URI(remoteUrl + "message/person/" + replace));
+        HttpResponse response = httpclient.execute(delete);
         org.apache.http.HttpEntity entity = response.getEntity();
         assert (response.getStatusLine().getStatusCode() == 200);
     }
@@ -121,5 +126,6 @@ public class ApacheHttpRestClient {
         byte[] bytes = john.toByteArray();
         return bytes;
     }
+
 
 }
