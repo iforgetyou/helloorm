@@ -50,6 +50,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: com.google.appengine:appengine-api-1.0-sdk:1.8.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.appengine:appengine-api-labs:1.8.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" name="Maven: javax.jdo:jdo2-api:2.3-eb" level="project" />
     <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-jpa:1.1.5" level="project" />
@@ -78,6 +79,7 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-taglibs:3.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:3.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.objectify-appengine-spring:objectify-appengine-spring:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jsr107cache:jsr107cache:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.12" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20080701" level="project" />

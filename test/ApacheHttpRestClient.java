@@ -1,4 +1,5 @@
 import com.zy17.protobuf.domain.AddressBookProtos;
+import com.zy17.protobuf.domain.Eng;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -17,6 +18,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Date;
 
 //import org.apache.http.client.methods.CloseableHttpResponse;
 
@@ -35,8 +37,9 @@ public class ApacheHttpRestClient {
     public HttpDelete delete;
     public DefaultHttpClient httpclient;
     public AddressBookProtos.Person john;
-    //    public String remoteUrl = "http://127.0.0.1:8080/";
-    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
+    Eng.Card card;
+        public String remoteUrl = "http://127.0.0.1:8080/";
+//    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
 
     @Before
     public void init() {
@@ -64,6 +67,81 @@ public class ApacheHttpRestClient {
                                         .setNumber("555-4321")
                                         .setType(AddressBookProtos.Person.PhoneType.HOME))
                         .build();
+        card = Eng.Card.newBuilder().setChiText("中文").setEngText("English"+new Date()).build();
+    }
+
+    @Test
+    public void testPostCard() throws URISyntaxException, IOException {
+        post.setURI(new URI(remoteUrl + "cards"));
+        post.setEntity(new ByteArrayEntity(card.toByteArray()));
+        HttpResponse response = httpclient.execute(post);
+        org.apache.http.HttpEntity entity = response.getEntity();
+
+        if (entity != null) {
+            EntityUtils.consume(entity);
+        }
+        assert (response.getStatusLine().getStatusCode() == 201);
+//        System.out.println("post get result: " + response.getStatusLine().getStatusCode());
+
+    }
+
+    @Test
+    public void testGetOneCard() throws URISyntaxException, IOException {
+        this.testPostCard();
+        get.setURI(new URI(remoteUrl + "cards/random"));
+        HttpResponse response = httpclient.execute(get);
+
+        assert (response.getStatusLine().getStatusCode() == 200);
+
+
+        HttpEntity entity = response.getEntity();
+        InputStream content = entity.getContent();
+
+
+//        if (entity.isChunked()){
+        //为了处理chunked数据，Todo 为了提升效率可以对非chunked 数据进行单独处理
+        byte[] bytes = IOUtils.toByteArray(content);
+
+        Eng.Card cart = Eng.Card.parseFrom(bytes);
+        System.out.println(cart);
+//        assert (list.getCardCount() != 0);
+        if (entity != null) {
+            EntityUtils.consume(entity);
+        }
+    }
+
+    @Test
+    public void testGetCard() throws URISyntaxException, IOException {
+        this.testPostCard();
+        get.setURI(new URI(remoteUrl + "cards"));
+        HttpResponse response = httpclient.execute(get);
+//        org.apache.http.HttpEntity entity = response.getEntity();
+        assert (response.getStatusLine().getStatusCode() == 200);
+
+
+        HttpEntity entity = response.getEntity();
+        InputStream content = entity.getContent();
+
+
+//        if (entity.isChunked()){
+        //为了处理chunked数据，Todo 为了提升效率可以对非chunked 数据进行单独处理
+        byte[] bytes = IOUtils.toByteArray(content);
+
+        Eng.CardList list = Eng.CardList.parseFrom(bytes);
+        log.debug("CardList: \n\r" + list.toString());
+//        assert (list.getCardCount() != 0);
+        if (entity != null) {
+            EntityUtils.consume(entity);
+        }
+    }
+
+    @Test
+    public void testAll() throws Exception {
+        for (int i = 0; i < 10; i++) {
+            postTest();
+            getTest();
+        }
+        deleteTest();
     }
 
     @Test
@@ -84,7 +162,7 @@ public class ApacheHttpRestClient {
 
     @Test
     public void getTest() throws URISyntaxException, IOException {
-//        this.postTest();
+        this.postTest();
 
         get.setURI(new URI(remoteUrl + "message/person"));
         HttpResponse response = httpclient.execute(get);
@@ -107,7 +185,9 @@ public class ApacheHttpRestClient {
         AddressBookProtos.PersonList personList = AddressBookProtos.PersonList.parseFrom(bytes);
         log.debug("persons: \n\r" + personList.toString());
         assert (personList.getPersonList().size() != 0);
-
+        if (entity != null) {
+            EntityUtils.consume(entity);
+        }
     }
 
     @Test

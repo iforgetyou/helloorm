@@ -20,8 +20,7 @@ import java.util.List;
  */
 @Repository
 public class PersonDaoImpl extends BaseDaoImpl<PersonDomain> implements PersonDao {
-    final static Logger logger = LoggerFactory
-            .getLogger(PersonDaoImpl.class);
+
     @Override
     public void insert(AddressBookProtos.Person person) {
         super.insertOne(new PersonDomain(person));

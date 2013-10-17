@@ -1,0 +1,25 @@
+package com;
+
+option java_package = "com.zy17.protobuf.domain";
+
+option java_outer_classname = "Eng";
+
+message Card {
+    required string engText = 1;
+    optional string chiText = 2;
+    optional string imageurl = 3;
+    optional PbImage image = 4;
+}
+
+message CardList {
+    repeated Card card = 1;
+}
+
+message PbImage {
+    required string name = 1;
+    required bytes imageBytes = 2;
+}
+
+message PbImageList {
+    repeated PbImage image = 1;
+}

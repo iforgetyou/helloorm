@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" build-on-make="true" name="helloorm:war exploded">
-    <output-path>$PROJECT_DIR$/target/Backend</output-path>
+    <output-path>$PROJECT_DIR$/war</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="helloorm/web/Web" />
       <element id="directory" name="WEB-INF">
@@ -9,6 +9,7 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-1.0-sdk:1.8.3" />
+          <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-labs:1.8.3" />
           <element id="library" level="project" name="Maven: javax.jdo:jdo2-api:2.3-eb" />
           <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-jpa:1.1.5" />
           <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jpa_3.0_spec:1.1.1" />
@@ -35,6 +36,7 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:3.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: com.googlecode.objectify-appengine-spring:objectify-appengine-spring:1.1.1" />
+          <element id="library" level="project" name="Maven: net.sf.jsr107cache:jsr107cache:1.0" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.12" />
           <element id="library" level="project" name="Maven: org.json:json:20080701" />

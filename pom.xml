@@ -21,20 +21,20 @@
             <artifactId>appengine-api-1.0-sdk</artifactId>
             <version>${age-version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-labs</artifactId>
+            <version>${age-version}</version>
+        </dependency>
         <!--<dependency>-->
-            <!--<groupId>com.google.appengine</groupId>-->
-            <!--<artifactId>appengine-api-labs</artifactId>-->
-            <!--<version>${age-version}</version>-->
+        <!--<groupId>com.google.appengine</groupId>-->
+        <!--<artifactId>appengine-api-stubs</artifactId>-->
+        <!--<version>${age-version}</version>-->
         <!--</dependency>-->
         <!--<dependency>-->
-            <!--<groupId>com.google.appengine</groupId>-->
-            <!--<artifactId>appengine-api-stubs</artifactId>-->
-            <!--<version>${age-version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>com.google.appengine</groupId>-->
-            <!--<artifactId>appengine-testing</artifactId>-->
-            <!--<version>${age-version}</version>-->
+        <!--<groupId>com.google.appengine</groupId>-->
+        <!--<artifactId>appengine-testing</artifactId>-->
+        <!--<version>${age-version}</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -167,6 +167,12 @@
         <!--</dependency>-->
 
         <dependency>
+            <groupId>net.sf.jsr107cache</groupId>
+            <artifactId>jsr107cache</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-core-asl</artifactId>
             <version>1.9.12</version>
@@ -288,6 +294,8 @@
             <version>4.3</version>
         </dependency>
 
+
+
     </dependencies>
 
     <!--<repositories>-->
@@ -369,51 +377,6 @@
                     </outputDirectory>
                 </configuration>
             </plugin>
-
-            <!--     <plugin>
-                     <groupId>com.google.protobuf.tools</groupId>
-                     <artifactId>maven-protoc-plugin</artifactId>
-                     <executions>
-                         <execution>
-                             <id>generate proto sources</id>
-                             <goals>
-                                 <goal>compile</goal>
-                             </goals>
-                             <phase>generate-sources</phase>
-                             <configuration>
-                                 <protoSourceRoot>${basedir}/src/main/proto/</protoSourceRoot>
-                                 <includes>
-                                     <param>**/*.proto</param>
-                                 </includes>
-                             </configuration>
-                         </execution>
-                     </executions>
-                 </plugin>-->
-
-            <!--            <plugin>
-                            <groupId>com.google.protobuf.tools</groupId>
-                            <artifactId>maven-protoc-plugin</artifactId>
-                            <version>0.3.1</version>
-                            <configuration>
-                                <protocExecutable>protoc</protocExecutable>
-                                <protoSourceRoot>${project.basedir}/src/main/resources/</protoSourceRoot>
-                                <languageSpecifications>
-                                    <LanguageSpecification>
-                                        <language>JAVA</language>
-                                        <outputDirectory>
-                                            ${project.basedir}/target/generated-sources/java
-                                        </outputDirectory>
-                                    </LanguageSpecification>
-                                </languageSpecifications>
-                            </configuration>
-                            <executions>
-                                <execution>
-                                    <goals>
-                                        <goal>compile</goal>
-                                    </goals>
-                                </execution>
-                            </executions>
-                        </plugin>-->
 
         </plugins>
 

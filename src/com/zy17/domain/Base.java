@@ -1,14 +1,17 @@
 package com.zy17.domain;
 
+import com.google.protobuf.GeneratedMessage;
+import com.zy17.protobuf.domain.AddressBookProtos;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.jdo.annotations.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @PersistenceCapable
 @Inheritance(strategy=InheritanceStrategy.SUBCLASS_TABLE)
-public class Base {
+public class Base implements Serializable {
     final static Logger logger = LoggerFactory
             .getLogger(Base.class);
 
