@@ -1,7 +1,4 @@
-import com.google.appengine.repackaged.com.google.protobuf.ByteString;
-import com.google.protobuf.Message;
 import com.zy17.protobuf.domain.AddressBookProtos;
-import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
@@ -16,9 +13,14 @@ import java.io.IOException;
  * Time: 下午3:42
  */
 public class PersonJsonTest {
+    @Test
+    public void testReplace() {
+        String url = "http://iforgetyou529.appspot.com/_ah/upload/AMmfu6bRTM4038tEJAaBXyvte-O9bpoDpIhzBL5uadMFJfZLRJq8QdWjMzp4tF1M2aUPzZpOoswLqXqnbVZr-XaLlFaZtqHltgnURSkXNhhdxhuOvIgkQ44lKf2qIrhJwc9wO327rMtL/ALBNUaYAAAAAUmc-U2-gxMb4m4alZAS16ItN5ZPXULvC/".replace("appspot", "appsp0t");
+        System.out.println(url);
+    }
 
     @Test
-    public  void protobufBytesConvert() throws IOException {
+    public void protobufBytesConvert() throws IOException {
         ObjectMapper mapper;
         mapper = new ObjectMapper(); // can reuse, share globally
         mapper.configure(SerializationConfig.Feature.DEFAULT_VIEW_INCLUSION, true);
@@ -42,15 +44,15 @@ public class PersonJsonTest {
         String str = "CghKb2huIERvZRDSCRoQamRvZUBleGFtcGxlLmNvbSIMCgg1NTUtNDMyMRAB";
         Byte.parseByte(str);
         byte[] bytes1 = str.getBytes("utf-8");
-        System.out.println("str:"+new String(bytes,"utf-8"));
+        System.out.println("str:" + new String(bytes, "utf-8"));
         AddressBookProtos.Person personCopy = AddressBookProtos.Person.parseFrom(bytes1);
-        assert(personCopy.getName().equals(john.getName()));
-        assert(personCopy.getEmail().equals(john.getEmail()));
-        assert(personCopy.getPhone(0).equals(john.getPhone(0)));
+        assert (personCopy.getName().equals(john.getName()));
+        assert (personCopy.getEmail().equals(john.getEmail()));
+        assert (personCopy.getPhone(0).equals(john.getPhone(0)));
     }
 
     @Test
-    public void MediaTest(){
+    public void MediaTest() {
         System.out.println();
     }
 }

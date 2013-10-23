@@ -39,10 +39,6 @@ public class CardDaoImpl extends BaseDaoImpl<CardDomain> implements CardDao {
 
     @Override
     public void add(Eng.Card card) {
-//        insert image
-        String uploadUrl = blobstoreService.createUploadUrl("uploadImage");
-        BlobKey key = blobstoreService.createGsBlobKey("/gs/key");
-        CardDomain base = new CardDomain(card);
-        super.insertOne(base);
+        super.insertOne(new CardDomain(card));
     }
 }

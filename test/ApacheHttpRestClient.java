@@ -1,3 +1,4 @@
+import com.google.appengine.api.urlfetch.HTTPHeader;
 import com.zy17.protobuf.domain.AddressBookProtos;
 import com.zy17.protobuf.domain.Eng;
 import org.apache.commons.io.IOUtils;
@@ -7,6 +8,10 @@ import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ByteArrayEntity;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.entity.mime.content.ByteArrayBody;
+import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.junit.Before;
@@ -14,6 +19,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
@@ -38,8 +44,8 @@ public class ApacheHttpRestClient {
     public DefaultHttpClient httpclient;
     public AddressBookProtos.Person john;
     Eng.Card card;
-        public String remoteUrl = "http://127.0.0.1:8080/";
-//    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
+//    public String remoteUrl = "http://127.0.0.1:8080/";
+    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
 
     @Before
     public void init() {
@@ -67,7 +73,34 @@ public class ApacheHttpRestClient {
                                         .setNumber("555-4321")
                                         .setType(AddressBookProtos.Person.PhoneType.HOME))
                         .build();
-        card = Eng.Card.newBuilder().setChiText("中文").setEngText("English"+new Date()).build();
+        card = Eng.Card.newBuilder().setChiText("中文").setEngText("English" + new Date()).build();
+    }
+
+    @Test
+    public void MultipartTest() throws Exception {
+
+//        获取上传地址
+        get.setURI(new URI(remoteUrl + "blobs"));
+        HttpResponse response = httpclient.execute(get);
+        HttpEntity entity = response.getEntity();
+        InputStream content = entity.getContent();
+        byte[] bytes = IOUtils.toByteArray(content);
+        Eng.BlobMessage blobMessage = Eng.BlobMessage.parseFrom(bytes);
+        System.out.println(blobMessage);
+//        上传多媒体
+        HttpPost multipartPost= new HttpPost();
+
+        multipartPost.setURI(new URI(blobMessage.getBlobUploadUrl()));
+        FileBody contentBody = new FileBody(new File("E:\\test.png"), ContentType.create("image/png"),"test.png");
+        FileBody soundContentBody = new FileBody(new File("E:\\test1.mp3"), ContentType.create("audio/mp3"),"test1.mp3");
+//        ByteArrayBody contentBody = new ByteArrayBody(new byte[1024 ], ContentType.create("image/png"), "test.png");
+        HttpEntity postEntity = MultipartEntityBuilder.create().addPart("image1", contentBody).addPart("sound", soundContentBody).build();
+        multipartPost.addHeader("Content-Type", postEntity.getContentType().getValue());
+        multipartPost.setEntity(postEntity);
+        HttpResponse postResponse = httpclient.execute(multipartPost);
+        byte[] bytes1 = IOUtils.toByteArray(postResponse.getEntity().getContent());
+        Eng.PbBlobKeyList pbBlobKeyList = Eng.PbBlobKeyList.parseFrom(bytes1);
+        System.out.println(pbBlobKeyList);
     }
 
     @Test
@@ -81,8 +114,6 @@ public class ApacheHttpRestClient {
             EntityUtils.consume(entity);
         }
         assert (response.getStatusLine().getStatusCode() == 201);
-//        System.out.println("post get result: " + response.getStatusLine().getStatusCode());
-
     }
 
     @Test

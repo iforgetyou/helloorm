@@ -8,6 +8,98 @@ public final class Eng {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
+  /**
+   * Protobuf enum {@code com.ContentType}
+   */
+  public enum ContentType
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>UNKNOWN = 0;</code>
+     */
+    UNKNOWN(0, 0),
+    /**
+     * <code>STARTED = 1;</code>
+     */
+    STARTED(1, 1),
+    ;
+
+    /**
+     * <code>RUNNING = 1;</code>
+     */
+    public static final ContentType RUNNING = STARTED;
+    /**
+     * <code>UNKNOWN = 0;</code>
+     */
+    public static final int UNKNOWN_VALUE = 0;
+    /**
+     * <code>STARTED = 1;</code>
+     */
+    public static final int STARTED_VALUE = 1;
+    /**
+     * <code>RUNNING = 1;</code>
+     */
+    public static final int RUNNING_VALUE = 1;
+
+
+    public final int getNumber() { return value; }
+
+    public static ContentType valueOf(int value) {
+      switch (value) {
+        case 0: return UNKNOWN;
+        case 1: return STARTED;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<ContentType>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<ContentType>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ContentType>() {
+            public ContentType findValueByNumber(int number) {
+              return ContentType.valueOf(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return com.zy17.protobuf.domain.Eng.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final ContentType[] VALUES = {
+      UNKNOWN, STARTED, RUNNING, 
+    };
+
+    public static ContentType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int index;
+    private final int value;
+
+    private ContentType(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:com.ContentType)
+  }
+
   public interface CardOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
@@ -26,49 +118,34 @@ public final class Eng {
     com.google.protobuf.ByteString
         getEngTextBytes();
 
-    // optional string chiText = 2;
+    // optional string chiText = 3;
     /**
-     * <code>optional string chiText = 2;</code>
+     * <code>optional string chiText = 3;</code>
      */
     boolean hasChiText();
     /**
-     * <code>optional string chiText = 2;</code>
+     * <code>optional string chiText = 3;</code>
      */
     java.lang.String getChiText();
     /**
-     * <code>optional string chiText = 2;</code>
+     * <code>optional string chiText = 3;</code>
      */
     com.google.protobuf.ByteString
         getChiTextBytes();
 
-    // optional string imageurl = 3;
+    // optional .com.PbBlobKeyList pbBlobKeyList = 5;
     /**
-     * <code>optional string imageurl = 3;</code>
+     * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
      */
-    boolean hasImageurl();
+    boolean hasPbBlobKeyList();
     /**
-     * <code>optional string imageurl = 3;</code>
+     * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
      */
-    java.lang.String getImageurl();
+    com.zy17.protobuf.domain.Eng.PbBlobKeyList getPbBlobKeyList();
     /**
-     * <code>optional string imageurl = 3;</code>
+     * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
      */
-    com.google.protobuf.ByteString
-        getImageurlBytes();
-
-    // optional .com.PbImage image = 4;
-    /**
-     * <code>optional .com.PbImage image = 4;</code>
-     */
-    boolean hasImage();
-    /**
-     * <code>optional .com.PbImage image = 4;</code>
-     */
-    com.zy17.protobuf.domain.Eng.PbImage getImage();
-    /**
-     * <code>optional .com.PbImage image = 4;</code>
-     */
-    com.zy17.protobuf.domain.Eng.PbImageOrBuilder getImageOrBuilder();
+    com.zy17.protobuf.domain.Eng.PbBlobKeyListOrBuilder getPbBlobKeyListOrBuilder();
   }
   /**
    * Protobuf type {@code com.Card}
@@ -126,27 +203,22 @@ public final class Eng {
               engText_ = input.readBytes();
               break;
             }
-            case 18: {
+            case 26: {
               bitField0_ |= 0x00000002;
               chiText_ = input.readBytes();
               break;
             }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              imageurl_ = input.readBytes();
-              break;
-            }
-            case 34: {
-              com.zy17.protobuf.domain.Eng.PbImage.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000008) == 0x00000008)) {
-                subBuilder = image_.toBuilder();
+            case 42: {
+              com.zy17.protobuf.domain.Eng.PbBlobKeyList.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = pbBlobKeyList_.toBuilder();
               }
-              image_ = input.readMessage(com.zy17.protobuf.domain.Eng.PbImage.PARSER, extensionRegistry);
+              pbBlobKeyList_ = input.readMessage(com.zy17.protobuf.domain.Eng.PbBlobKeyList.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(image_);
-                image_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(pbBlobKeyList_);
+                pbBlobKeyList_ = subBuilder.buildPartial();
               }
-              bitField0_ |= 0x00000008;
+              bitField0_ |= 0x00000004;
               break;
             }
           }
@@ -232,17 +304,17 @@ public final class Eng {
       }
     }
 
-    // optional string chiText = 2;
-    public static final int CHITEXT_FIELD_NUMBER = 2;
+    // optional string chiText = 3;
+    public static final int CHITEXT_FIELD_NUMBER = 3;
     private java.lang.Object chiText_;
     /**
-     * <code>optional string chiText = 2;</code>
+     * <code>optional string chiText = 3;</code>
      */
     public boolean hasChiText() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional string chiText = 2;</code>
+     * <code>optional string chiText = 3;</code>
      */
     public java.lang.String getChiText() {
       java.lang.Object ref = chiText_;
@@ -259,7 +331,7 @@ public final class Eng {
       }
     }
     /**
-     * <code>optional string chiText = 2;</code>
+     * <code>optional string chiText = 3;</code>
      */
     public com.google.protobuf.ByteString
         getChiTextBytes() {
@@ -275,76 +347,32 @@ public final class Eng {
       }
     }
 
-    // optional string imageurl = 3;
-    public static final int IMAGEURL_FIELD_NUMBER = 3;
-    private java.lang.Object imageurl_;
+    // optional .com.PbBlobKeyList pbBlobKeyList = 5;
+    public static final int PBBLOBKEYLIST_FIELD_NUMBER = 5;
+    private com.zy17.protobuf.domain.Eng.PbBlobKeyList pbBlobKeyList_;
     /**
-     * <code>optional string imageurl = 3;</code>
+     * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
      */
-    public boolean hasImageurl() {
+    public boolean hasPbBlobKeyList() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional string imageurl = 3;</code>
+     * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
      */
-    public java.lang.String getImageurl() {
-      java.lang.Object ref = imageurl_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          imageurl_ = s;
-        }
-        return s;
-      }
+    public com.zy17.protobuf.domain.Eng.PbBlobKeyList getPbBlobKeyList() {
+      return pbBlobKeyList_;
     }
     /**
-     * <code>optional string imageurl = 3;</code>
+     * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
      */
-    public com.google.protobuf.ByteString
-        getImageurlBytes() {
-      java.lang.Object ref = imageurl_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        imageurl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional .com.PbImage image = 4;
-    public static final int IMAGE_FIELD_NUMBER = 4;
-    private com.zy17.protobuf.domain.Eng.PbImage image_;
-    /**
-     * <code>optional .com.PbImage image = 4;</code>
-     */
-    public boolean hasImage() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional .com.PbImage image = 4;</code>
-     */
-    public com.zy17.protobuf.domain.Eng.PbImage getImage() {
-      return image_;
-    }
-    /**
-     * <code>optional .com.PbImage image = 4;</code>
-     */
-    public com.zy17.protobuf.domain.Eng.PbImageOrBuilder getImageOrBuilder() {
-      return image_;
+    public com.zy17.protobuf.domain.Eng.PbBlobKeyListOrBuilder getPbBlobKeyListOrBuilder() {
+      return pbBlobKeyList_;
     }
 
     private void initFields() {
       engText_ = "";
       chiText_ = "";
-      imageurl_ = "";
-      image_ = com.zy17.protobuf.domain.Eng.PbImage.getDefaultInstance();
+      pbBlobKeyList_ = com.zy17.protobuf.domain.Eng.PbBlobKeyList.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -355,8 +383,8 @@ public final class Eng {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (hasImage()) {
-        if (!getImage().isInitialized()) {
+      if (hasPbBlobKeyList()) {
+        if (!getPbBlobKeyList().isInitialized()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -372,13 +400,10 @@ public final class Eng {
         output.writeBytes(1, getEngTextBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getChiTextBytes());
+        output.writeBytes(3, getChiTextBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getImageurlBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeMessage(4, image_);
+        output.writeMessage(5, pbBlobKeyList_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -395,15 +420,11 @@ public final class Eng {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getChiTextBytes());
+          .computeBytesSize(3, getChiTextBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getImageurlBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, image_);
+          .computeMessageSize(5, pbBlobKeyList_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -513,7 +534,7 @@ public final class Eng {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getImageFieldBuilder();
+          getPbBlobKeyListFieldBuilder();
         }
       }
       private static Builder create() {
@@ -526,14 +547,12 @@ public final class Eng {
         bitField0_ = (bitField0_ & ~0x00000001);
         chiText_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        imageurl_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        if (imageBuilder_ == null) {
-          image_ = com.zy17.protobuf.domain.Eng.PbImage.getDefaultInstance();
+        if (pbBlobKeyListBuilder_ == null) {
+          pbBlobKeyList_ = com.zy17.protobuf.domain.Eng.PbBlobKeyList.getDefaultInstance();
         } else {
-          imageBuilder_.clear();
+          pbBlobKeyListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -573,14 +592,10 @@ public final class Eng {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.imageurl_ = imageurl_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        if (imageBuilder_ == null) {
-          result.image_ = image_;
+        if (pbBlobKeyListBuilder_ == null) {
+          result.pbBlobKeyList_ = pbBlobKeyList_;
         } else {
-          result.image_ = imageBuilder_.build();
+          result.pbBlobKeyList_ = pbBlobKeyListBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -608,13 +623,8 @@ public final class Eng {
           chiText_ = other.chiText_;
           onChanged();
         }
-        if (other.hasImageurl()) {
-          bitField0_ |= 0x00000004;
-          imageurl_ = other.imageurl_;
-          onChanged();
-        }
-        if (other.hasImage()) {
-          mergeImage(other.getImage());
+        if (other.hasPbBlobKeyList()) {
+          mergePbBlobKeyList(other.getPbBlobKeyList());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -625,8 +635,8 @@ public final class Eng {
           
           return false;
         }
-        if (hasImage()) {
-          if (!getImage().isInitialized()) {
+        if (hasPbBlobKeyList()) {
+          if (!getPbBlobKeyList().isInitialized()) {
             
             return false;
           }
@@ -727,16 +737,16 @@ public final class Eng {
         return this;
       }
 
-      // optional string chiText = 2;
+      // optional string chiText = 3;
       private java.lang.Object chiText_ = "";
       /**
-       * <code>optional string chiText = 2;</code>
+       * <code>optional string chiText = 3;</code>
        */
       public boolean hasChiText() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional string chiText = 2;</code>
+       * <code>optional string chiText = 3;</code>
        */
       public java.lang.String getChiText() {
         java.lang.Object ref = chiText_;
@@ -750,7 +760,7 @@ public final class Eng {
         }
       }
       /**
-       * <code>optional string chiText = 2;</code>
+       * <code>optional string chiText = 3;</code>
        */
       public com.google.protobuf.ByteString
           getChiTextBytes() {
@@ -766,7 +776,7 @@ public final class Eng {
         }
       }
       /**
-       * <code>optional string chiText = 2;</code>
+       * <code>optional string chiText = 3;</code>
        */
       public Builder setChiText(
           java.lang.String value) {
@@ -779,7 +789,7 @@ public final class Eng {
         return this;
       }
       /**
-       * <code>optional string chiText = 2;</code>
+       * <code>optional string chiText = 3;</code>
        */
       public Builder clearChiText() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -788,7 +798,7 @@ public final class Eng {
         return this;
       }
       /**
-       * <code>optional string chiText = 2;</code>
+       * <code>optional string chiText = 3;</code>
        */
       public Builder setChiTextBytes(
           com.google.protobuf.ByteString value) {
@@ -801,195 +811,121 @@ public final class Eng {
         return this;
       }
 
-      // optional string imageurl = 3;
-      private java.lang.Object imageurl_ = "";
+      // optional .com.PbBlobKeyList pbBlobKeyList = 5;
+      private com.zy17.protobuf.domain.Eng.PbBlobKeyList pbBlobKeyList_ = com.zy17.protobuf.domain.Eng.PbBlobKeyList.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.zy17.protobuf.domain.Eng.PbBlobKeyList, com.zy17.protobuf.domain.Eng.PbBlobKeyList.Builder, com.zy17.protobuf.domain.Eng.PbBlobKeyListOrBuilder> pbBlobKeyListBuilder_;
       /**
-       * <code>optional string imageurl = 3;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
-      public boolean hasImageurl() {
+      public boolean hasPbBlobKeyList() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional string imageurl = 3;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
-      public java.lang.String getImageurl() {
-        java.lang.Object ref = imageurl_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          imageurl_ = s;
-          return s;
+      public com.zy17.protobuf.domain.Eng.PbBlobKeyList getPbBlobKeyList() {
+        if (pbBlobKeyListBuilder_ == null) {
+          return pbBlobKeyList_;
         } else {
-          return (java.lang.String) ref;
+          return pbBlobKeyListBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional string imageurl = 3;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
-      public com.google.protobuf.ByteString
-          getImageurlBytes() {
-        java.lang.Object ref = imageurl_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          imageurl_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string imageurl = 3;</code>
-       */
-      public Builder setImageurl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        imageurl_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string imageurl = 3;</code>
-       */
-      public Builder clearImageurl() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        imageurl_ = getDefaultInstance().getImageurl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string imageurl = 3;</code>
-       */
-      public Builder setImageurlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        imageurl_ = value;
-        onChanged();
-        return this;
-      }
-
-      // optional .com.PbImage image = 4;
-      private com.zy17.protobuf.domain.Eng.PbImage image_ = com.zy17.protobuf.domain.Eng.PbImage.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          com.zy17.protobuf.domain.Eng.PbImage, com.zy17.protobuf.domain.Eng.PbImage.Builder, com.zy17.protobuf.domain.Eng.PbImageOrBuilder> imageBuilder_;
-      /**
-       * <code>optional .com.PbImage image = 4;</code>
-       */
-      public boolean hasImage() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional .com.PbImage image = 4;</code>
-       */
-      public com.zy17.protobuf.domain.Eng.PbImage getImage() {
-        if (imageBuilder_ == null) {
-          return image_;
-        } else {
-          return imageBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>optional .com.PbImage image = 4;</code>
-       */
-      public Builder setImage(com.zy17.protobuf.domain.Eng.PbImage value) {
-        if (imageBuilder_ == null) {
+      public Builder setPbBlobKeyList(com.zy17.protobuf.domain.Eng.PbBlobKeyList value) {
+        if (pbBlobKeyListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          image_ = value;
+          pbBlobKeyList_ = value;
           onChanged();
         } else {
-          imageBuilder_.setMessage(value);
+          pbBlobKeyListBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000004;
         return this;
       }
       /**
-       * <code>optional .com.PbImage image = 4;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
-      public Builder setImage(
-          com.zy17.protobuf.domain.Eng.PbImage.Builder builderForValue) {
-        if (imageBuilder_ == null) {
-          image_ = builderForValue.build();
+      public Builder setPbBlobKeyList(
+          com.zy17.protobuf.domain.Eng.PbBlobKeyList.Builder builderForValue) {
+        if (pbBlobKeyListBuilder_ == null) {
+          pbBlobKeyList_ = builderForValue.build();
           onChanged();
         } else {
-          imageBuilder_.setMessage(builderForValue.build());
+          pbBlobKeyListBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000004;
         return this;
       }
       /**
-       * <code>optional .com.PbImage image = 4;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
-      public Builder mergeImage(com.zy17.protobuf.domain.Eng.PbImage value) {
-        if (imageBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) == 0x00000008) &&
-              image_ != com.zy17.protobuf.domain.Eng.PbImage.getDefaultInstance()) {
-            image_ =
-              com.zy17.protobuf.domain.Eng.PbImage.newBuilder(image_).mergeFrom(value).buildPartial();
+      public Builder mergePbBlobKeyList(com.zy17.protobuf.domain.Eng.PbBlobKeyList value) {
+        if (pbBlobKeyListBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              pbBlobKeyList_ != com.zy17.protobuf.domain.Eng.PbBlobKeyList.getDefaultInstance()) {
+            pbBlobKeyList_ =
+              com.zy17.protobuf.domain.Eng.PbBlobKeyList.newBuilder(pbBlobKeyList_).mergeFrom(value).buildPartial();
           } else {
-            image_ = value;
+            pbBlobKeyList_ = value;
           }
           onChanged();
         } else {
-          imageBuilder_.mergeFrom(value);
+          pbBlobKeyListBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000004;
         return this;
       }
       /**
-       * <code>optional .com.PbImage image = 4;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
-      public Builder clearImage() {
-        if (imageBuilder_ == null) {
-          image_ = com.zy17.protobuf.domain.Eng.PbImage.getDefaultInstance();
+      public Builder clearPbBlobKeyList() {
+        if (pbBlobKeyListBuilder_ == null) {
+          pbBlobKeyList_ = com.zy17.protobuf.domain.Eng.PbBlobKeyList.getDefaultInstance();
           onChanged();
         } else {
-          imageBuilder_.clear();
+          pbBlobKeyListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
       /**
-       * <code>optional .com.PbImage image = 4;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
-      public com.zy17.protobuf.domain.Eng.PbImage.Builder getImageBuilder() {
-        bitField0_ |= 0x00000008;
+      public com.zy17.protobuf.domain.Eng.PbBlobKeyList.Builder getPbBlobKeyListBuilder() {
+        bitField0_ |= 0x00000004;
         onChanged();
-        return getImageFieldBuilder().getBuilder();
+        return getPbBlobKeyListFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .com.PbImage image = 4;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
-      public com.zy17.protobuf.domain.Eng.PbImageOrBuilder getImageOrBuilder() {
-        if (imageBuilder_ != null) {
-          return imageBuilder_.getMessageOrBuilder();
+      public com.zy17.protobuf.domain.Eng.PbBlobKeyListOrBuilder getPbBlobKeyListOrBuilder() {
+        if (pbBlobKeyListBuilder_ != null) {
+          return pbBlobKeyListBuilder_.getMessageOrBuilder();
         } else {
-          return image_;
+          return pbBlobKeyList_;
         }
       }
       /**
-       * <code>optional .com.PbImage image = 4;</code>
+       * <code>optional .com.PbBlobKeyList pbBlobKeyList = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.zy17.protobuf.domain.Eng.PbImage, com.zy17.protobuf.domain.Eng.PbImage.Builder, com.zy17.protobuf.domain.Eng.PbImageOrBuilder> 
-          getImageFieldBuilder() {
-        if (imageBuilder_ == null) {
-          imageBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.zy17.protobuf.domain.Eng.PbImage, com.zy17.protobuf.domain.Eng.PbImage.Builder, com.zy17.protobuf.domain.Eng.PbImageOrBuilder>(
-                  image_,
+          com.zy17.protobuf.domain.Eng.PbBlobKeyList, com.zy17.protobuf.domain.Eng.PbBlobKeyList.Builder, com.zy17.protobuf.domain.Eng.PbBlobKeyListOrBuilder> 
+          getPbBlobKeyListFieldBuilder() {
+        if (pbBlobKeyListBuilder_ == null) {
+          pbBlobKeyListBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.zy17.protobuf.domain.Eng.PbBlobKeyList, com.zy17.protobuf.domain.Eng.PbBlobKeyList.Builder, com.zy17.protobuf.domain.Eng.PbBlobKeyListOrBuilder>(
+                  pbBlobKeyList_,
                   getParentForChildren(),
                   isClean());
-          image_ = null;
+          pbBlobKeyList_ = null;
         }
-        return imageBuilder_;
+        return pbBlobKeyListBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:com.Card)
@@ -1689,23 +1625,2337 @@ public final class Eng {
     // @@protoc_insertion_point(class_scope:com.CardList)
   }
 
+  public interface BlobMessageOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required string blobUploadUrl = 1;
+    /**
+     * <code>required string blobUploadUrl = 1;</code>
+     */
+    boolean hasBlobUploadUrl();
+    /**
+     * <code>required string blobUploadUrl = 1;</code>
+     */
+    java.lang.String getBlobUploadUrl();
+    /**
+     * <code>required string blobUploadUrl = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getBlobUploadUrlBytes();
+  }
+  /**
+   * Protobuf type {@code com.BlobMessage}
+   */
+  public static final class BlobMessage extends
+      com.google.protobuf.GeneratedMessage
+      implements BlobMessageOrBuilder {
+    // Use BlobMessage.newBuilder() to construct.
+    private BlobMessage(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private BlobMessage(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final BlobMessage defaultInstance;
+    public static BlobMessage getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public BlobMessage getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private BlobMessage(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              blobUploadUrl_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.zy17.protobuf.domain.Eng.internal_static_com_BlobMessage_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.zy17.protobuf.domain.Eng.internal_static_com_BlobMessage_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.zy17.protobuf.domain.Eng.BlobMessage.class, com.zy17.protobuf.domain.Eng.BlobMessage.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<BlobMessage> PARSER =
+        new com.google.protobuf.AbstractParser<BlobMessage>() {
+      public BlobMessage parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new BlobMessage(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BlobMessage> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required string blobUploadUrl = 1;
+    public static final int BLOBUPLOADURL_FIELD_NUMBER = 1;
+    private java.lang.Object blobUploadUrl_;
+    /**
+     * <code>required string blobUploadUrl = 1;</code>
+     */
+    public boolean hasBlobUploadUrl() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string blobUploadUrl = 1;</code>
+     */
+    public java.lang.String getBlobUploadUrl() {
+      java.lang.Object ref = blobUploadUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          blobUploadUrl_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string blobUploadUrl = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getBlobUploadUrlBytes() {
+      java.lang.Object ref = blobUploadUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        blobUploadUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      blobUploadUrl_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasBlobUploadUrl()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getBlobUploadUrlBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getBlobUploadUrlBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.BlobMessage parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.zy17.protobuf.domain.Eng.BlobMessage prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.BlobMessage}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.zy17.protobuf.domain.Eng.BlobMessageOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_BlobMessage_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_BlobMessage_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.zy17.protobuf.domain.Eng.BlobMessage.class, com.zy17.protobuf.domain.Eng.BlobMessage.Builder.class);
+      }
+
+      // Construct using com.zy17.protobuf.domain.Eng.BlobMessage.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        blobUploadUrl_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_BlobMessage_descriptor;
+      }
+
+      public com.zy17.protobuf.domain.Eng.BlobMessage getDefaultInstanceForType() {
+        return com.zy17.protobuf.domain.Eng.BlobMessage.getDefaultInstance();
+      }
+
+      public com.zy17.protobuf.domain.Eng.BlobMessage build() {
+        com.zy17.protobuf.domain.Eng.BlobMessage result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.zy17.protobuf.domain.Eng.BlobMessage buildPartial() {
+        com.zy17.protobuf.domain.Eng.BlobMessage result = new com.zy17.protobuf.domain.Eng.BlobMessage(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.blobUploadUrl_ = blobUploadUrl_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.zy17.protobuf.domain.Eng.BlobMessage) {
+          return mergeFrom((com.zy17.protobuf.domain.Eng.BlobMessage)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.zy17.protobuf.domain.Eng.BlobMessage other) {
+        if (other == com.zy17.protobuf.domain.Eng.BlobMessage.getDefaultInstance()) return this;
+        if (other.hasBlobUploadUrl()) {
+          bitField0_ |= 0x00000001;
+          blobUploadUrl_ = other.blobUploadUrl_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasBlobUploadUrl()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.zy17.protobuf.domain.Eng.BlobMessage parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.zy17.protobuf.domain.Eng.BlobMessage) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required string blobUploadUrl = 1;
+      private java.lang.Object blobUploadUrl_ = "";
+      /**
+       * <code>required string blobUploadUrl = 1;</code>
+       */
+      public boolean hasBlobUploadUrl() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string blobUploadUrl = 1;</code>
+       */
+      public java.lang.String getBlobUploadUrl() {
+        java.lang.Object ref = blobUploadUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          blobUploadUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string blobUploadUrl = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getBlobUploadUrlBytes() {
+        java.lang.Object ref = blobUploadUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          blobUploadUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string blobUploadUrl = 1;</code>
+       */
+      public Builder setBlobUploadUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        blobUploadUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string blobUploadUrl = 1;</code>
+       */
+      public Builder clearBlobUploadUrl() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        blobUploadUrl_ = getDefaultInstance().getBlobUploadUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string blobUploadUrl = 1;</code>
+       */
+      public Builder setBlobUploadUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        blobUploadUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.BlobMessage)
+    }
+
+    static {
+      defaultInstance = new BlobMessage(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.BlobMessage)
+  }
+
+  public interface PbBlobKeyOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required string blobkey = 1;
+    /**
+     * <code>required string blobkey = 1;</code>
+     */
+    boolean hasBlobkey();
+    /**
+     * <code>required string blobkey = 1;</code>
+     */
+    java.lang.String getBlobkey();
+    /**
+     * <code>required string blobkey = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getBlobkeyBytes();
+
+    // required string oldFileName = 2;
+    /**
+     * <code>required string oldFileName = 2;</code>
+     */
+    boolean hasOldFileName();
+    /**
+     * <code>required string oldFileName = 2;</code>
+     */
+    java.lang.String getOldFileName();
+    /**
+     * <code>required string oldFileName = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getOldFileNameBytes();
+
+    // required string fileName = 3;
+    /**
+     * <code>required string fileName = 3;</code>
+     */
+    boolean hasFileName();
+    /**
+     * <code>required string fileName = 3;</code>
+     */
+    java.lang.String getFileName();
+    /**
+     * <code>required string fileName = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getFileNameBytes();
+
+    // required string contentType = 5;
+    /**
+     * <code>required string contentType = 5;</code>
+     */
+    boolean hasContentType();
+    /**
+     * <code>required string contentType = 5;</code>
+     */
+    java.lang.String getContentType();
+    /**
+     * <code>required string contentType = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getContentTypeBytes();
+
+    // required int64 fileSize = 7;
+    /**
+     * <code>required int64 fileSize = 7;</code>
+     */
+    boolean hasFileSize();
+    /**
+     * <code>required int64 fileSize = 7;</code>
+     */
+    long getFileSize();
+
+    // required int64 createDate = 9;
+    /**
+     * <code>required int64 createDate = 9;</code>
+     */
+    boolean hasCreateDate();
+    /**
+     * <code>required int64 createDate = 9;</code>
+     */
+    long getCreateDate();
+  }
+  /**
+   * Protobuf type {@code com.PbBlobKey}
+   */
+  public static final class PbBlobKey extends
+      com.google.protobuf.GeneratedMessage
+      implements PbBlobKeyOrBuilder {
+    // Use PbBlobKey.newBuilder() to construct.
+    private PbBlobKey(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private PbBlobKey(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final PbBlobKey defaultInstance;
+    public static PbBlobKey getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public PbBlobKey getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private PbBlobKey(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              blobkey_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              oldFileName_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              fileName_ = input.readBytes();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000008;
+              contentType_ = input.readBytes();
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000010;
+              fileSize_ = input.readInt64();
+              break;
+            }
+            case 72: {
+              bitField0_ |= 0x00000020;
+              createDate_ = input.readInt64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKey_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKey_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.zy17.protobuf.domain.Eng.PbBlobKey.class, com.zy17.protobuf.domain.Eng.PbBlobKey.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<PbBlobKey> PARSER =
+        new com.google.protobuf.AbstractParser<PbBlobKey>() {
+      public PbBlobKey parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new PbBlobKey(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PbBlobKey> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required string blobkey = 1;
+    public static final int BLOBKEY_FIELD_NUMBER = 1;
+    private java.lang.Object blobkey_;
+    /**
+     * <code>required string blobkey = 1;</code>
+     */
+    public boolean hasBlobkey() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string blobkey = 1;</code>
+     */
+    public java.lang.String getBlobkey() {
+      java.lang.Object ref = blobkey_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          blobkey_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string blobkey = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getBlobkeyBytes() {
+      java.lang.Object ref = blobkey_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        blobkey_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required string oldFileName = 2;
+    public static final int OLDFILENAME_FIELD_NUMBER = 2;
+    private java.lang.Object oldFileName_;
+    /**
+     * <code>required string oldFileName = 2;</code>
+     */
+    public boolean hasOldFileName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string oldFileName = 2;</code>
+     */
+    public java.lang.String getOldFileName() {
+      java.lang.Object ref = oldFileName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          oldFileName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string oldFileName = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getOldFileNameBytes() {
+      java.lang.Object ref = oldFileName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        oldFileName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required string fileName = 3;
+    public static final int FILENAME_FIELD_NUMBER = 3;
+    private java.lang.Object fileName_;
+    /**
+     * <code>required string fileName = 3;</code>
+     */
+    public boolean hasFileName() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required string fileName = 3;</code>
+     */
+    public java.lang.String getFileName() {
+      java.lang.Object ref = fileName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          fileName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string fileName = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getFileNameBytes() {
+      java.lang.Object ref = fileName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        fileName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required string contentType = 5;
+    public static final int CONTENTTYPE_FIELD_NUMBER = 5;
+    private java.lang.Object contentType_;
+    /**
+     * <code>required string contentType = 5;</code>
+     */
+    public boolean hasContentType() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required string contentType = 5;</code>
+     */
+    public java.lang.String getContentType() {
+      java.lang.Object ref = contentType_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          contentType_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string contentType = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getContentTypeBytes() {
+      java.lang.Object ref = contentType_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        contentType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required int64 fileSize = 7;
+    public static final int FILESIZE_FIELD_NUMBER = 7;
+    private long fileSize_;
+    /**
+     * <code>required int64 fileSize = 7;</code>
+     */
+    public boolean hasFileSize() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>required int64 fileSize = 7;</code>
+     */
+    public long getFileSize() {
+      return fileSize_;
+    }
+
+    // required int64 createDate = 9;
+    public static final int CREATEDATE_FIELD_NUMBER = 9;
+    private long createDate_;
+    /**
+     * <code>required int64 createDate = 9;</code>
+     */
+    public boolean hasCreateDate() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>required int64 createDate = 9;</code>
+     */
+    public long getCreateDate() {
+      return createDate_;
+    }
+
+    private void initFields() {
+      blobkey_ = "";
+      oldFileName_ = "";
+      fileName_ = "";
+      contentType_ = "";
+      fileSize_ = 0L;
+      createDate_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasBlobkey()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOldFileName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasFileName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasContentType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasFileSize()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasCreateDate()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getBlobkeyBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getOldFileNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getFileNameBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(5, getContentTypeBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt64(7, fileSize_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt64(9, createDate_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getBlobkeyBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getOldFileNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getFileNameBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getContentTypeBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(7, fileSize_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(9, createDate_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKey parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.zy17.protobuf.domain.Eng.PbBlobKey prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.PbBlobKey}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKey_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKey_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.zy17.protobuf.domain.Eng.PbBlobKey.class, com.zy17.protobuf.domain.Eng.PbBlobKey.Builder.class);
+      }
+
+      // Construct using com.zy17.protobuf.domain.Eng.PbBlobKey.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        blobkey_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        oldFileName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        fileName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        contentType_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        fileSize_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        createDate_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKey_descriptor;
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbBlobKey getDefaultInstanceForType() {
+        return com.zy17.protobuf.domain.Eng.PbBlobKey.getDefaultInstance();
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbBlobKey build() {
+        com.zy17.protobuf.domain.Eng.PbBlobKey result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbBlobKey buildPartial() {
+        com.zy17.protobuf.domain.Eng.PbBlobKey result = new com.zy17.protobuf.domain.Eng.PbBlobKey(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.blobkey_ = blobkey_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.oldFileName_ = oldFileName_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.fileName_ = fileName_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.contentType_ = contentType_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.fileSize_ = fileSize_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.createDate_ = createDate_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.zy17.protobuf.domain.Eng.PbBlobKey) {
+          return mergeFrom((com.zy17.protobuf.domain.Eng.PbBlobKey)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.zy17.protobuf.domain.Eng.PbBlobKey other) {
+        if (other == com.zy17.protobuf.domain.Eng.PbBlobKey.getDefaultInstance()) return this;
+        if (other.hasBlobkey()) {
+          bitField0_ |= 0x00000001;
+          blobkey_ = other.blobkey_;
+          onChanged();
+        }
+        if (other.hasOldFileName()) {
+          bitField0_ |= 0x00000002;
+          oldFileName_ = other.oldFileName_;
+          onChanged();
+        }
+        if (other.hasFileName()) {
+          bitField0_ |= 0x00000004;
+          fileName_ = other.fileName_;
+          onChanged();
+        }
+        if (other.hasContentType()) {
+          bitField0_ |= 0x00000008;
+          contentType_ = other.contentType_;
+          onChanged();
+        }
+        if (other.hasFileSize()) {
+          setFileSize(other.getFileSize());
+        }
+        if (other.hasCreateDate()) {
+          setCreateDate(other.getCreateDate());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasBlobkey()) {
+          
+          return false;
+        }
+        if (!hasOldFileName()) {
+          
+          return false;
+        }
+        if (!hasFileName()) {
+          
+          return false;
+        }
+        if (!hasContentType()) {
+          
+          return false;
+        }
+        if (!hasFileSize()) {
+          
+          return false;
+        }
+        if (!hasCreateDate()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.zy17.protobuf.domain.Eng.PbBlobKey parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.zy17.protobuf.domain.Eng.PbBlobKey) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required string blobkey = 1;
+      private java.lang.Object blobkey_ = "";
+      /**
+       * <code>required string blobkey = 1;</code>
+       */
+      public boolean hasBlobkey() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string blobkey = 1;</code>
+       */
+      public java.lang.String getBlobkey() {
+        java.lang.Object ref = blobkey_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          blobkey_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string blobkey = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getBlobkeyBytes() {
+        java.lang.Object ref = blobkey_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          blobkey_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string blobkey = 1;</code>
+       */
+      public Builder setBlobkey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        blobkey_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string blobkey = 1;</code>
+       */
+      public Builder clearBlobkey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        blobkey_ = getDefaultInstance().getBlobkey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string blobkey = 1;</code>
+       */
+      public Builder setBlobkeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        blobkey_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string oldFileName = 2;
+      private java.lang.Object oldFileName_ = "";
+      /**
+       * <code>required string oldFileName = 2;</code>
+       */
+      public boolean hasOldFileName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string oldFileName = 2;</code>
+       */
+      public java.lang.String getOldFileName() {
+        java.lang.Object ref = oldFileName_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          oldFileName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string oldFileName = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getOldFileNameBytes() {
+        java.lang.Object ref = oldFileName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          oldFileName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string oldFileName = 2;</code>
+       */
+      public Builder setOldFileName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        oldFileName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string oldFileName = 2;</code>
+       */
+      public Builder clearOldFileName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        oldFileName_ = getDefaultInstance().getOldFileName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string oldFileName = 2;</code>
+       */
+      public Builder setOldFileNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        oldFileName_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string fileName = 3;
+      private java.lang.Object fileName_ = "";
+      /**
+       * <code>required string fileName = 3;</code>
+       */
+      public boolean hasFileName() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required string fileName = 3;</code>
+       */
+      public java.lang.String getFileName() {
+        java.lang.Object ref = fileName_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          fileName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string fileName = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getFileNameBytes() {
+        java.lang.Object ref = fileName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          fileName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string fileName = 3;</code>
+       */
+      public Builder setFileName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        fileName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string fileName = 3;</code>
+       */
+      public Builder clearFileName() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        fileName_ = getDefaultInstance().getFileName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string fileName = 3;</code>
+       */
+      public Builder setFileNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        fileName_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string contentType = 5;
+      private java.lang.Object contentType_ = "";
+      /**
+       * <code>required string contentType = 5;</code>
+       */
+      public boolean hasContentType() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required string contentType = 5;</code>
+       */
+      public java.lang.String getContentType() {
+        java.lang.Object ref = contentType_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          contentType_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string contentType = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getContentTypeBytes() {
+        java.lang.Object ref = contentType_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          contentType_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string contentType = 5;</code>
+       */
+      public Builder setContentType(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        contentType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string contentType = 5;</code>
+       */
+      public Builder clearContentType() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        contentType_ = getDefaultInstance().getContentType();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string contentType = 5;</code>
+       */
+      public Builder setContentTypeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        contentType_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required int64 fileSize = 7;
+      private long fileSize_ ;
+      /**
+       * <code>required int64 fileSize = 7;</code>
+       */
+      public boolean hasFileSize() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>required int64 fileSize = 7;</code>
+       */
+      public long getFileSize() {
+        return fileSize_;
+      }
+      /**
+       * <code>required int64 fileSize = 7;</code>
+       */
+      public Builder setFileSize(long value) {
+        bitField0_ |= 0x00000010;
+        fileSize_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int64 fileSize = 7;</code>
+       */
+      public Builder clearFileSize() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        fileSize_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // required int64 createDate = 9;
+      private long createDate_ ;
+      /**
+       * <code>required int64 createDate = 9;</code>
+       */
+      public boolean hasCreateDate() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>required int64 createDate = 9;</code>
+       */
+      public long getCreateDate() {
+        return createDate_;
+      }
+      /**
+       * <code>required int64 createDate = 9;</code>
+       */
+      public Builder setCreateDate(long value) {
+        bitField0_ |= 0x00000020;
+        createDate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int64 createDate = 9;</code>
+       */
+      public Builder clearCreateDate() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        createDate_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.PbBlobKey)
+    }
+
+    static {
+      defaultInstance = new PbBlobKey(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.PbBlobKey)
+  }
+
+  public interface PbBlobKeyListOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // repeated .com.PbBlobKey blobkeys = 1;
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    java.util.List<com.zy17.protobuf.domain.Eng.PbBlobKey> 
+        getBlobkeysList();
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    com.zy17.protobuf.domain.Eng.PbBlobKey getBlobkeys(int index);
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    int getBlobkeysCount();
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    java.util.List<? extends com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder> 
+        getBlobkeysOrBuilderList();
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder getBlobkeysOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code com.PbBlobKeyList}
+   */
+  public static final class PbBlobKeyList extends
+      com.google.protobuf.GeneratedMessage
+      implements PbBlobKeyListOrBuilder {
+    // Use PbBlobKeyList.newBuilder() to construct.
+    private PbBlobKeyList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private PbBlobKeyList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final PbBlobKeyList defaultInstance;
+    public static PbBlobKeyList getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public PbBlobKeyList getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private PbBlobKeyList(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                blobkeys_ = new java.util.ArrayList<com.zy17.protobuf.domain.Eng.PbBlobKey>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              blobkeys_.add(input.readMessage(com.zy17.protobuf.domain.Eng.PbBlobKey.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          blobkeys_ = java.util.Collections.unmodifiableList(blobkeys_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKeyList_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKeyList_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.zy17.protobuf.domain.Eng.PbBlobKeyList.class, com.zy17.protobuf.domain.Eng.PbBlobKeyList.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<PbBlobKeyList> PARSER =
+        new com.google.protobuf.AbstractParser<PbBlobKeyList>() {
+      public PbBlobKeyList parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new PbBlobKeyList(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PbBlobKeyList> getParserForType() {
+      return PARSER;
+    }
+
+    // repeated .com.PbBlobKey blobkeys = 1;
+    public static final int BLOBKEYS_FIELD_NUMBER = 1;
+    private java.util.List<com.zy17.protobuf.domain.Eng.PbBlobKey> blobkeys_;
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    public java.util.List<com.zy17.protobuf.domain.Eng.PbBlobKey> getBlobkeysList() {
+      return blobkeys_;
+    }
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    public java.util.List<? extends com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder> 
+        getBlobkeysOrBuilderList() {
+      return blobkeys_;
+    }
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    public int getBlobkeysCount() {
+      return blobkeys_.size();
+    }
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    public com.zy17.protobuf.domain.Eng.PbBlobKey getBlobkeys(int index) {
+      return blobkeys_.get(index);
+    }
+    /**
+     * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+     */
+    public com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder getBlobkeysOrBuilder(
+        int index) {
+      return blobkeys_.get(index);
+    }
+
+    private void initFields() {
+      blobkeys_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      for (int i = 0; i < getBlobkeysCount(); i++) {
+        if (!getBlobkeys(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < blobkeys_.size(); i++) {
+        output.writeMessage(1, blobkeys_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < blobkeys_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, blobkeys_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbBlobKeyList parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.zy17.protobuf.domain.Eng.PbBlobKeyList prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.PbBlobKeyList}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.zy17.protobuf.domain.Eng.PbBlobKeyListOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKeyList_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKeyList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.zy17.protobuf.domain.Eng.PbBlobKeyList.class, com.zy17.protobuf.domain.Eng.PbBlobKeyList.Builder.class);
+      }
+
+      // Construct using com.zy17.protobuf.domain.Eng.PbBlobKeyList.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getBlobkeysFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (blobkeysBuilder_ == null) {
+          blobkeys_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          blobkeysBuilder_.clear();
+        }
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbBlobKeyList_descriptor;
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbBlobKeyList getDefaultInstanceForType() {
+        return com.zy17.protobuf.domain.Eng.PbBlobKeyList.getDefaultInstance();
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbBlobKeyList build() {
+        com.zy17.protobuf.domain.Eng.PbBlobKeyList result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbBlobKeyList buildPartial() {
+        com.zy17.protobuf.domain.Eng.PbBlobKeyList result = new com.zy17.protobuf.domain.Eng.PbBlobKeyList(this);
+        int from_bitField0_ = bitField0_;
+        if (blobkeysBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            blobkeys_ = java.util.Collections.unmodifiableList(blobkeys_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.blobkeys_ = blobkeys_;
+        } else {
+          result.blobkeys_ = blobkeysBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.zy17.protobuf.domain.Eng.PbBlobKeyList) {
+          return mergeFrom((com.zy17.protobuf.domain.Eng.PbBlobKeyList)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.zy17.protobuf.domain.Eng.PbBlobKeyList other) {
+        if (other == com.zy17.protobuf.domain.Eng.PbBlobKeyList.getDefaultInstance()) return this;
+        if (blobkeysBuilder_ == null) {
+          if (!other.blobkeys_.isEmpty()) {
+            if (blobkeys_.isEmpty()) {
+              blobkeys_ = other.blobkeys_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureBlobkeysIsMutable();
+              blobkeys_.addAll(other.blobkeys_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.blobkeys_.isEmpty()) {
+            if (blobkeysBuilder_.isEmpty()) {
+              blobkeysBuilder_.dispose();
+              blobkeysBuilder_ = null;
+              blobkeys_ = other.blobkeys_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              blobkeysBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getBlobkeysFieldBuilder() : null;
+            } else {
+              blobkeysBuilder_.addAllMessages(other.blobkeys_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        for (int i = 0; i < getBlobkeysCount(); i++) {
+          if (!getBlobkeys(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.zy17.protobuf.domain.Eng.PbBlobKeyList parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.zy17.protobuf.domain.Eng.PbBlobKeyList) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // repeated .com.PbBlobKey blobkeys = 1;
+      private java.util.List<com.zy17.protobuf.domain.Eng.PbBlobKey> blobkeys_ =
+        java.util.Collections.emptyList();
+      private void ensureBlobkeysIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          blobkeys_ = new java.util.ArrayList<com.zy17.protobuf.domain.Eng.PbBlobKey>(blobkeys_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zy17.protobuf.domain.Eng.PbBlobKey, com.zy17.protobuf.domain.Eng.PbBlobKey.Builder, com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder> blobkeysBuilder_;
+
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public java.util.List<com.zy17.protobuf.domain.Eng.PbBlobKey> getBlobkeysList() {
+        if (blobkeysBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(blobkeys_);
+        } else {
+          return blobkeysBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public int getBlobkeysCount() {
+        if (blobkeysBuilder_ == null) {
+          return blobkeys_.size();
+        } else {
+          return blobkeysBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public com.zy17.protobuf.domain.Eng.PbBlobKey getBlobkeys(int index) {
+        if (blobkeysBuilder_ == null) {
+          return blobkeys_.get(index);
+        } else {
+          return blobkeysBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder setBlobkeys(
+          int index, com.zy17.protobuf.domain.Eng.PbBlobKey value) {
+        if (blobkeysBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBlobkeysIsMutable();
+          blobkeys_.set(index, value);
+          onChanged();
+        } else {
+          blobkeysBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder setBlobkeys(
+          int index, com.zy17.protobuf.domain.Eng.PbBlobKey.Builder builderForValue) {
+        if (blobkeysBuilder_ == null) {
+          ensureBlobkeysIsMutable();
+          blobkeys_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          blobkeysBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder addBlobkeys(com.zy17.protobuf.domain.Eng.PbBlobKey value) {
+        if (blobkeysBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBlobkeysIsMutable();
+          blobkeys_.add(value);
+          onChanged();
+        } else {
+          blobkeysBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder addBlobkeys(
+          int index, com.zy17.protobuf.domain.Eng.PbBlobKey value) {
+        if (blobkeysBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBlobkeysIsMutable();
+          blobkeys_.add(index, value);
+          onChanged();
+        } else {
+          blobkeysBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder addBlobkeys(
+          com.zy17.protobuf.domain.Eng.PbBlobKey.Builder builderForValue) {
+        if (blobkeysBuilder_ == null) {
+          ensureBlobkeysIsMutable();
+          blobkeys_.add(builderForValue.build());
+          onChanged();
+        } else {
+          blobkeysBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder addBlobkeys(
+          int index, com.zy17.protobuf.domain.Eng.PbBlobKey.Builder builderForValue) {
+        if (blobkeysBuilder_ == null) {
+          ensureBlobkeysIsMutable();
+          blobkeys_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          blobkeysBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder addAllBlobkeys(
+          java.lang.Iterable<? extends com.zy17.protobuf.domain.Eng.PbBlobKey> values) {
+        if (blobkeysBuilder_ == null) {
+          ensureBlobkeysIsMutable();
+          super.addAll(values, blobkeys_);
+          onChanged();
+        } else {
+          blobkeysBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder clearBlobkeys() {
+        if (blobkeysBuilder_ == null) {
+          blobkeys_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          blobkeysBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public Builder removeBlobkeys(int index) {
+        if (blobkeysBuilder_ == null) {
+          ensureBlobkeysIsMutable();
+          blobkeys_.remove(index);
+          onChanged();
+        } else {
+          blobkeysBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public com.zy17.protobuf.domain.Eng.PbBlobKey.Builder getBlobkeysBuilder(
+          int index) {
+        return getBlobkeysFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder getBlobkeysOrBuilder(
+          int index) {
+        if (blobkeysBuilder_ == null) {
+          return blobkeys_.get(index);  } else {
+          return blobkeysBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public java.util.List<? extends com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder> 
+           getBlobkeysOrBuilderList() {
+        if (blobkeysBuilder_ != null) {
+          return blobkeysBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(blobkeys_);
+        }
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public com.zy17.protobuf.domain.Eng.PbBlobKey.Builder addBlobkeysBuilder() {
+        return getBlobkeysFieldBuilder().addBuilder(
+            com.zy17.protobuf.domain.Eng.PbBlobKey.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public com.zy17.protobuf.domain.Eng.PbBlobKey.Builder addBlobkeysBuilder(
+          int index) {
+        return getBlobkeysFieldBuilder().addBuilder(
+            index, com.zy17.protobuf.domain.Eng.PbBlobKey.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .com.PbBlobKey blobkeys = 1;</code>
+       */
+      public java.util.List<com.zy17.protobuf.domain.Eng.PbBlobKey.Builder> 
+           getBlobkeysBuilderList() {
+        return getBlobkeysFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zy17.protobuf.domain.Eng.PbBlobKey, com.zy17.protobuf.domain.Eng.PbBlobKey.Builder, com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder> 
+          getBlobkeysFieldBuilder() {
+        if (blobkeysBuilder_ == null) {
+          blobkeysBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.zy17.protobuf.domain.Eng.PbBlobKey, com.zy17.protobuf.domain.Eng.PbBlobKey.Builder, com.zy17.protobuf.domain.Eng.PbBlobKeyOrBuilder>(
+                  blobkeys_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          blobkeys_ = null;
+        }
+        return blobkeysBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.PbBlobKeyList)
+    }
+
+    static {
+      defaultInstance = new PbBlobKeyList(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.PbBlobKeyList)
+  }
+
   public interface PbImageOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required string name = 1;
+    // required string imageName = 1;
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string imageName = 1;</code>
      */
-    boolean hasName();
+    boolean hasImageName();
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string imageName = 1;</code>
      */
-    java.lang.String getName();
+    java.lang.String getImageName();
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string imageName = 1;</code>
      */
     com.google.protobuf.ByteString
-        getNameBytes();
+        getImageNameBytes();
 
     // required bytes imageBytes = 2;
     /**
@@ -1716,6 +3966,21 @@ public final class Eng {
      * <code>required bytes imageBytes = 2;</code>
      */
     com.google.protobuf.ByteString getImageBytes();
+
+    // optional string blobkey = 3;
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    boolean hasBlobkey();
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    java.lang.String getBlobkey();
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getBlobkeyBytes();
   }
   /**
    * Protobuf type {@code com.PbImage}
@@ -1770,12 +4035,17 @@ public final class Eng {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              name_ = input.readBytes();
+              imageName_ = input.readBytes();
               break;
             }
             case 18: {
               bitField0_ |= 0x00000002;
               imageBytes_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              blobkey_ = input.readBytes();
               break;
             }
           }
@@ -1818,20 +4088,20 @@ public final class Eng {
     }
 
     private int bitField0_;
-    // required string name = 1;
-    public static final int NAME_FIELD_NUMBER = 1;
-    private java.lang.Object name_;
+    // required string imageName = 1;
+    public static final int IMAGENAME_FIELD_NUMBER = 1;
+    private java.lang.Object imageName_;
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string imageName = 1;</code>
      */
-    public boolean hasName() {
+    public boolean hasImageName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string imageName = 1;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
+    public java.lang.String getImageName() {
+      java.lang.Object ref = imageName_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
@@ -1839,22 +4109,22 @@ public final class Eng {
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
-          name_ = s;
+          imageName_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string imageName = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
+        getImageNameBytes() {
+      java.lang.Object ref = imageName_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        name_ = b;
+        imageName_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1877,16 +4147,60 @@ public final class Eng {
       return imageBytes_;
     }
 
+    // optional string blobkey = 3;
+    public static final int BLOBKEY_FIELD_NUMBER = 3;
+    private java.lang.Object blobkey_;
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    public boolean hasBlobkey() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    public java.lang.String getBlobkey() {
+      java.lang.Object ref = blobkey_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          blobkey_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getBlobkeyBytes() {
+      java.lang.Object ref = blobkey_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        blobkey_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private void initFields() {
-      name_ = "";
+      imageName_ = "";
       imageBytes_ = com.google.protobuf.ByteString.EMPTY;
+      blobkey_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasName()) {
+      if (!hasImageName()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1902,10 +4216,13 @@ public final class Eng {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getNameBytes());
+        output.writeBytes(1, getImageNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBytes(2, imageBytes_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getBlobkeyBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -1918,11 +4235,15 @@ public final class Eng {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getNameBytes());
+          .computeBytesSize(1, getImageNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, imageBytes_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getBlobkeyBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2040,10 +4361,12 @@ public final class Eng {
 
       public Builder clear() {
         super.clear();
-        name_ = "";
+        imageName_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         imageBytes_ = com.google.protobuf.ByteString.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000002);
+        blobkey_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -2075,11 +4398,15 @@ public final class Eng {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.name_ = name_;
+        result.imageName_ = imageName_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
         result.imageBytes_ = imageBytes_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.blobkey_ = blobkey_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2096,20 +4423,25 @@ public final class Eng {
 
       public Builder mergeFrom(com.zy17.protobuf.domain.Eng.PbImage other) {
         if (other == com.zy17.protobuf.domain.Eng.PbImage.getDefaultInstance()) return this;
-        if (other.hasName()) {
+        if (other.hasImageName()) {
           bitField0_ |= 0x00000001;
-          name_ = other.name_;
+          imageName_ = other.imageName_;
           onChanged();
         }
         if (other.hasImageBytes()) {
           setImageBytes(other.getImageBytes());
+        }
+        if (other.hasBlobkey()) {
+          bitField0_ |= 0x00000004;
+          blobkey_ = other.blobkey_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasName()) {
+        if (!hasImageName()) {
           
           return false;
         }
@@ -2139,76 +4471,76 @@ public final class Eng {
       }
       private int bitField0_;
 
-      // required string name = 1;
-      private java.lang.Object name_ = "";
+      // required string imageName = 1;
+      private java.lang.Object imageName_ = "";
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string imageName = 1;</code>
        */
-      public boolean hasName() {
+      public boolean hasImageName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string imageName = 1;</code>
        */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
+      public java.lang.String getImageName() {
+        java.lang.Object ref = imageName_;
         if (!(ref instanceof java.lang.String)) {
           java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
-          name_ = s;
+          imageName_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string imageName = 1;</code>
        */
       public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
+          getImageNameBytes() {
+        java.lang.Object ref = imageName_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          name_ = b;
+          imageName_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string imageName = 1;</code>
        */
-      public Builder setName(
+      public Builder setImageName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        name_ = value;
+        imageName_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string imageName = 1;</code>
        */
-      public Builder clearName() {
+      public Builder clearImageName() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        name_ = getDefaultInstance().getName();
+        imageName_ = getDefaultInstance().getImageName();
         onChanged();
         return this;
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string imageName = 1;</code>
        */
-      public Builder setNameBytes(
+      public Builder setImageNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        name_ = value;
+        imageName_ = value;
         onChanged();
         return this;
       }
@@ -2249,6 +4581,80 @@ public final class Eng {
         return this;
       }
 
+      // optional string blobkey = 3;
+      private java.lang.Object blobkey_ = "";
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public boolean hasBlobkey() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public java.lang.String getBlobkey() {
+        java.lang.Object ref = blobkey_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          blobkey_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getBlobkeyBytes() {
+        java.lang.Object ref = blobkey_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          blobkey_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public Builder setBlobkey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        blobkey_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public Builder clearBlobkey() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        blobkey_ = getDefaultInstance().getBlobkey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public Builder setBlobkeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        blobkey_ = value;
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:com.PbImage)
     }
 
@@ -2258,6 +4664,733 @@ public final class Eng {
     }
 
     // @@protoc_insertion_point(class_scope:com.PbImage)
+  }
+
+  public interface PbSoundOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required string soundName = 1;
+    /**
+     * <code>required string soundName = 1;</code>
+     */
+    boolean hasSoundName();
+    /**
+     * <code>required string soundName = 1;</code>
+     */
+    java.lang.String getSoundName();
+    /**
+     * <code>required string soundName = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getSoundNameBytes();
+
+    // required bytes soundBytes = 2;
+    /**
+     * <code>required bytes soundBytes = 2;</code>
+     */
+    boolean hasSoundBytes();
+    /**
+     * <code>required bytes soundBytes = 2;</code>
+     */
+    com.google.protobuf.ByteString getSoundBytes();
+
+    // optional string blobkey = 3;
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    boolean hasBlobkey();
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    java.lang.String getBlobkey();
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getBlobkeyBytes();
+  }
+  /**
+   * Protobuf type {@code com.PbSound}
+   */
+  public static final class PbSound extends
+      com.google.protobuf.GeneratedMessage
+      implements PbSoundOrBuilder {
+    // Use PbSound.newBuilder() to construct.
+    private PbSound(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private PbSound(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final PbSound defaultInstance;
+    public static PbSound getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public PbSound getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private PbSound(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              soundName_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              soundBytes_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              blobkey_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.zy17.protobuf.domain.Eng.internal_static_com_PbSound_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.zy17.protobuf.domain.Eng.internal_static_com_PbSound_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.zy17.protobuf.domain.Eng.PbSound.class, com.zy17.protobuf.domain.Eng.PbSound.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<PbSound> PARSER =
+        new com.google.protobuf.AbstractParser<PbSound>() {
+      public PbSound parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new PbSound(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PbSound> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required string soundName = 1;
+    public static final int SOUNDNAME_FIELD_NUMBER = 1;
+    private java.lang.Object soundName_;
+    /**
+     * <code>required string soundName = 1;</code>
+     */
+    public boolean hasSoundName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string soundName = 1;</code>
+     */
+    public java.lang.String getSoundName() {
+      java.lang.Object ref = soundName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          soundName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string soundName = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSoundNameBytes() {
+      java.lang.Object ref = soundName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        soundName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required bytes soundBytes = 2;
+    public static final int SOUNDBYTES_FIELD_NUMBER = 2;
+    private com.google.protobuf.ByteString soundBytes_;
+    /**
+     * <code>required bytes soundBytes = 2;</code>
+     */
+    public boolean hasSoundBytes() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required bytes soundBytes = 2;</code>
+     */
+    public com.google.protobuf.ByteString getSoundBytes() {
+      return soundBytes_;
+    }
+
+    // optional string blobkey = 3;
+    public static final int BLOBKEY_FIELD_NUMBER = 3;
+    private java.lang.Object blobkey_;
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    public boolean hasBlobkey() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    public java.lang.String getBlobkey() {
+      java.lang.Object ref = blobkey_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          blobkey_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string blobkey = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getBlobkeyBytes() {
+      java.lang.Object ref = blobkey_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        blobkey_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      soundName_ = "";
+      soundBytes_ = com.google.protobuf.ByteString.EMPTY;
+      blobkey_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasSoundName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasSoundBytes()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getSoundNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, soundBytes_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getBlobkeyBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getSoundNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, soundBytes_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getBlobkeyBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.zy17.protobuf.domain.Eng.PbSound parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.zy17.protobuf.domain.Eng.PbSound parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.zy17.protobuf.domain.Eng.PbSound prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.PbSound}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.zy17.protobuf.domain.Eng.PbSoundOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbSound_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbSound_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.zy17.protobuf.domain.Eng.PbSound.class, com.zy17.protobuf.domain.Eng.PbSound.Builder.class);
+      }
+
+      // Construct using com.zy17.protobuf.domain.Eng.PbSound.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        soundName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        soundBytes_ = com.google.protobuf.ByteString.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        blobkey_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.zy17.protobuf.domain.Eng.internal_static_com_PbSound_descriptor;
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbSound getDefaultInstanceForType() {
+        return com.zy17.protobuf.domain.Eng.PbSound.getDefaultInstance();
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbSound build() {
+        com.zy17.protobuf.domain.Eng.PbSound result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.zy17.protobuf.domain.Eng.PbSound buildPartial() {
+        com.zy17.protobuf.domain.Eng.PbSound result = new com.zy17.protobuf.domain.Eng.PbSound(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.soundName_ = soundName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.soundBytes_ = soundBytes_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.blobkey_ = blobkey_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.zy17.protobuf.domain.Eng.PbSound) {
+          return mergeFrom((com.zy17.protobuf.domain.Eng.PbSound)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.zy17.protobuf.domain.Eng.PbSound other) {
+        if (other == com.zy17.protobuf.domain.Eng.PbSound.getDefaultInstance()) return this;
+        if (other.hasSoundName()) {
+          bitField0_ |= 0x00000001;
+          soundName_ = other.soundName_;
+          onChanged();
+        }
+        if (other.hasSoundBytes()) {
+          setSoundBytes(other.getSoundBytes());
+        }
+        if (other.hasBlobkey()) {
+          bitField0_ |= 0x00000004;
+          blobkey_ = other.blobkey_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasSoundName()) {
+          
+          return false;
+        }
+        if (!hasSoundBytes()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.zy17.protobuf.domain.Eng.PbSound parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.zy17.protobuf.domain.Eng.PbSound) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required string soundName = 1;
+      private java.lang.Object soundName_ = "";
+      /**
+       * <code>required string soundName = 1;</code>
+       */
+      public boolean hasSoundName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string soundName = 1;</code>
+       */
+      public java.lang.String getSoundName() {
+        java.lang.Object ref = soundName_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          soundName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string soundName = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getSoundNameBytes() {
+        java.lang.Object ref = soundName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          soundName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string soundName = 1;</code>
+       */
+      public Builder setSoundName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        soundName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string soundName = 1;</code>
+       */
+      public Builder clearSoundName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        soundName_ = getDefaultInstance().getSoundName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string soundName = 1;</code>
+       */
+      public Builder setSoundNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        soundName_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required bytes soundBytes = 2;
+      private com.google.protobuf.ByteString soundBytes_ = com.google.protobuf.ByteString.EMPTY;
+      /**
+       * <code>required bytes soundBytes = 2;</code>
+       */
+      public boolean hasSoundBytes() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required bytes soundBytes = 2;</code>
+       */
+      public com.google.protobuf.ByteString getSoundBytes() {
+        return soundBytes_;
+      }
+      /**
+       * <code>required bytes soundBytes = 2;</code>
+       */
+      public Builder setSoundBytes(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        soundBytes_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required bytes soundBytes = 2;</code>
+       */
+      public Builder clearSoundBytes() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        soundBytes_ = getDefaultInstance().getSoundBytes();
+        onChanged();
+        return this;
+      }
+
+      // optional string blobkey = 3;
+      private java.lang.Object blobkey_ = "";
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public boolean hasBlobkey() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public java.lang.String getBlobkey() {
+        java.lang.Object ref = blobkey_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          blobkey_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getBlobkeyBytes() {
+        java.lang.Object ref = blobkey_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          blobkey_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public Builder setBlobkey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        blobkey_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public Builder clearBlobkey() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        blobkey_ = getDefaultInstance().getBlobkey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string blobkey = 3;</code>
+       */
+      public Builder setBlobkeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        blobkey_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.PbSound)
+    }
+
+    static {
+      defaultInstance = new PbSound(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.PbSound)
   }
 
   public interface PbImageListOrBuilder
@@ -2957,10 +6090,30 @@ public final class Eng {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_CardList_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_BlobMessage_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_BlobMessage_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_PbBlobKey_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_PbBlobKey_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_PbBlobKeyList_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_PbBlobKeyList_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_com_PbImage_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_PbImage_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_PbSound_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_PbSound_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_com_PbImageList_descriptor;
   private static
@@ -2975,12 +6128,21 @@ public final class Eng {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\nCard.proto\022\003com\"W\n\004Card\022\017\n\007engText\030\001 \002" +
-      "(\t\022\017\n\007chiText\030\002 \001(\t\022\020\n\010imageurl\030\003 \001(\t\022\033\n" +
-      "\005image\030\004 \001(\0132\014.com.PbImage\"#\n\010CardList\022\027" +
-      "\n\004card\030\001 \003(\0132\t.com.Card\"+\n\007PbImage\022\014\n\004na" +
-      "me\030\001 \002(\t\022\022\n\nimageBytes\030\002 \002(\014\"*\n\013PbImageL" +
-      "ist\022\033\n\005image\030\001 \003(\0132\014.com.PbImageB\037\n\030com." +
+      "\n\nCard.proto\022\003com\"S\n\004Card\022\017\n\007engText\030\001 \002" +
+      "(\t\022\017\n\007chiText\030\003 \001(\t\022)\n\rpbBlobKeyList\030\005 \001" +
+      "(\0132\022.com.PbBlobKeyList\"#\n\010CardList\022\027\n\004ca" +
+      "rd\030\001 \003(\0132\t.com.Card\"$\n\013BlobMessage\022\025\n\rbl" +
+      "obUploadUrl\030\001 \002(\t\"~\n\tPbBlobKey\022\017\n\007blobke" +
+      "y\030\001 \002(\t\022\023\n\013oldFileName\030\002 \002(\t\022\020\n\010fileName" +
+      "\030\003 \002(\t\022\023\n\013contentType\030\005 \002(\t\022\020\n\010fileSize\030" +
+      "\007 \002(\003\022\022\n\ncreateDate\030\t \002(\003\"1\n\rPbBlobKeyLi" +
+      "st\022 \n\010blobkeys\030\001 \003(\0132\016.com.PbBlobKey\"A\n\007" +
+      "PbImage\022\021\n\timageName\030\001 \002(\t\022\022\n\nimageBytes",
+      "\030\002 \002(\014\022\017\n\007blobkey\030\003 \001(\t\"A\n\007PbSound\022\021\n\tso" +
+      "undName\030\001 \002(\t\022\022\n\nsoundBytes\030\002 \002(\014\022\017\n\007blo" +
+      "bkey\030\003 \001(\t\"*\n\013PbImageList\022\033\n\005image\030\001 \003(\013" +
+      "2\014.com.PbImage*8\n\013ContentType\022\013\n\007UNKNOWN" +
+      "\020\000\022\013\n\007STARTED\020\001\022\013\n\007RUNNING\020\001\032\002\020\001B\037\n\030com." +
       "zy17.protobuf.domainB\003Eng"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
@@ -2993,21 +6155,45 @@ public final class Eng {
           internal_static_com_Card_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_Card_descriptor,
-              new java.lang.String[] { "EngText", "ChiText", "Imageurl", "Image", });
+              new java.lang.String[] { "EngText", "ChiText", "PbBlobKeyList", });
           internal_static_com_CardList_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_com_CardList_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_CardList_descriptor,
               new java.lang.String[] { "Card", });
-          internal_static_com_PbImage_descriptor =
+          internal_static_com_BlobMessage_descriptor =
             getDescriptor().getMessageTypes().get(2);
+          internal_static_com_BlobMessage_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_BlobMessage_descriptor,
+              new java.lang.String[] { "BlobUploadUrl", });
+          internal_static_com_PbBlobKey_descriptor =
+            getDescriptor().getMessageTypes().get(3);
+          internal_static_com_PbBlobKey_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_PbBlobKey_descriptor,
+              new java.lang.String[] { "Blobkey", "OldFileName", "FileName", "ContentType", "FileSize", "CreateDate", });
+          internal_static_com_PbBlobKeyList_descriptor =
+            getDescriptor().getMessageTypes().get(4);
+          internal_static_com_PbBlobKeyList_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_PbBlobKeyList_descriptor,
+              new java.lang.String[] { "Blobkeys", });
+          internal_static_com_PbImage_descriptor =
+            getDescriptor().getMessageTypes().get(5);
           internal_static_com_PbImage_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_PbImage_descriptor,
-              new java.lang.String[] { "Name", "ImageBytes", });
+              new java.lang.String[] { "ImageName", "ImageBytes", "Blobkey", });
+          internal_static_com_PbSound_descriptor =
+            getDescriptor().getMessageTypes().get(6);
+          internal_static_com_PbSound_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_PbSound_descriptor,
+              new java.lang.String[] { "SoundName", "SoundBytes", "Blobkey", });
           internal_static_com_PbImageList_descriptor =
-            getDescriptor().getMessageTypes().get(3);
+            getDescriptor().getMessageTypes().get(7);
           internal_static_com_PbImageList_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_PbImageList_descriptor,

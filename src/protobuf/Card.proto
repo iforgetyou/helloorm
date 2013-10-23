@@ -3,23 +3,59 @@ package com;
 option java_package = "com.zy17.protobuf.domain";
 
 option java_outer_classname = "Eng";
+//option java_generic_services = true;
 
 message Card {
     required string engText = 1;
-    optional string chiText = 2;
-    optional string imageurl = 3;
-    optional PbImage image = 4;
+    optional string chiText = 3;
+    optional PbBlobKeyList pbBlobKeyList = 5;
 }
 
 message CardList {
     repeated Card card = 1;
 }
 
+message BlobMessage {
+    required string blobUploadUrl = 1;
+}
+
+message PbBlobKey {
+    required string blobkey =1;
+    required string oldFileName =2;
+    required string fileName = 3;
+    required string contentType = 5;
+    required int64 fileSize = 7;
+    required int64 createDate = 9;
+
+}
+
+message PbBlobKeyList {
+    repeated PbBlobKey blobkeys = 1;
+}
+
+enum ContentType {
+    option allow_alias = true;
+    UNKNOWN = 0;
+    STARTED = 1;
+    RUNNING = 1;
+}
+
 message PbImage {
-    required string name = 1;
+    required string imageName = 1;
     required bytes imageBytes = 2;
+    optional string blobkey = 3;
+}
+
+message PbSound {
+    required string soundName = 1;
+    required bytes soundBytes = 2;
+    optional string blobkey = 3;
 }
 
 message PbImageList {
     repeated PbImage image = 1;
 }
+
+//service SearchService {
+//    rpc UploadCard (Card) returns (Card);
+//}

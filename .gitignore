@@ -223,3 +223,4 @@ pip-log.txt
 test/test/com/example/GaeClient/JSONUtils.java
 
 test/test/com/example/GaeClient/TextMessageResponderFragmentTest.java
+/war/WEB-INF/appengine-generated

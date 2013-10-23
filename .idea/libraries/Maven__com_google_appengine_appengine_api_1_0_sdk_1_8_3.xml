@@ -8,6 +8,8 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/google/appengine/appengine-api-1.0-sdk/1.8.3/appengine-api-1.0-sdk-1.8.3-sources.jar!/" />
+      <root url="jar://D:/Program Files/appengine-java-sdk-1.8.3/src/user/appengine-api-1.0-sdk-1.8.3-src.zip!/" />
+      <root url="jar://D:/Program Files/appengine-java-sdk-1.8.3/src/user/appengine-api-1.0-sdk-1.8.3-src.zip!/" />
     </SOURCES>
   </library>
 </component>

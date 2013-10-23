@@ -19,19 +19,12 @@ import javax.jdo.annotations.Persistent;
 public class CardDomain extends Base {
     private Eng.Card card;
     @Persistent
-    private String imageUrl;
     private byte[] bytes;
+    @Persistent
+    private String blobkey;
 
     public CardDomain(Eng.Card card) {
         this.setCard(card);
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
     }
 
     public Eng.Card getCard() {

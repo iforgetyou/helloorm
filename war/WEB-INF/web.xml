@@ -41,6 +41,10 @@
             <role-name>admin</role-name>
         </auth-constraint>
     </security-constraint>-->
+    <servlet>
+        <servlet-name>post</servlet-name>
+        <servlet-class>com.zy17.filter.UploadPost</servlet-class>
+    </servlet>
 
     <servlet>
         <servlet-name>mvc-dispatcher</servlet-name>
@@ -52,4 +56,10 @@
         <servlet-name>mvc-dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>post</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
 </web-app>
