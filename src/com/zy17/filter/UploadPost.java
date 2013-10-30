@@ -15,9 +15,11 @@
 package com.zy17.filter;
 
 import com.google.appengine.api.blobstore.BlobInfo;
-import com.google.appengine.api.blobstore.BlobKey;
 import com.google.appengine.api.blobstore.BlobstoreService;
 import com.google.appengine.api.blobstore.BlobstoreServiceFactory;
+import com.google.appengine.api.images.ImagesService;
+import com.google.appengine.api.images.ImagesServiceFactory;
+import com.google.appengine.api.images.ServingUrlOptions;
 import com.zy17.controller.protobufview.PBMessageConverter;
 import com.zy17.protobuf.domain.Eng;
 
@@ -33,33 +35,36 @@ public class UploadPost extends HttpServlet {
 
     private BlobstoreService blobstoreService =
             BlobstoreServiceFactory.getBlobstoreService();
+    private ImagesService imagesService = ImagesServiceFactory.getImagesService();
 
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws
             IOException {
 
-        Eng.PbBlobKeyList.Builder pbBlobKeysBuilder = Eng.PbBlobKeyList.newBuilder();
+        Eng.MediaBlobInfoList.Builder infoList = Eng.MediaBlobInfoList.newBuilder();
 
-        Map<String, List<BlobKey>> uploads = blobstoreService.getUploads(req);
         Map<String, List<BlobInfo>> blobInfos = blobstoreService.getBlobInfos(req);
         System.out.println(blobInfos);
         for (String key : blobInfos.keySet()) {
             List<BlobInfo> blobInfosList = blobInfos.get(key);
             for (BlobInfo blobInfo : blobInfosList) {
-                Eng.PbBlobKey.Builder blobkeyBuilder = Eng.PbBlobKey.newBuilder()
+                String servingUrl = "";
+                if (blobInfo.getContentType().contains("image")) {
+                    servingUrl = imagesService.getServingUrl(ServingUrlOptions.Builder.withBlobKey(blobInfo.getBlobKey()));
+                }
+                Eng.MediaBlobInfo.Builder blobkeyBuilder = Eng.MediaBlobInfo.newBuilder()
                         .setBlobkey(blobInfo.getBlobKey().getKeyString())
                         .setOldFileName(key)
                         .setFileName(blobInfo.getFilename())
                         .setContentType(blobInfo.getContentType())
                         .setCreateDate(blobInfo.getCreation().getTime())
-                        .setFileSize(blobInfo.getSize());
-                pbBlobKeysBuilder.addBlobkeys(blobkeyBuilder);
+                        .setFileSize(blobInfo.getSize()).setRevert1(servingUrl);
+                infoList.addMediaBlobInfos(blobkeyBuilder);
             }
         }
 
-
 //      构建响应信息
         resp.setContentType(PBMessageConverter.CONTENTTYPE + "/" + PBMessageConverter.SUBTYPE);
-        byte[] bytes = pbBlobKeysBuilder.build().toByteArray();
+        byte[] bytes = infoList.build().toByteArray();
         resp.setContentLength(bytes.length);
         resp.getOutputStream().write(bytes);
     }

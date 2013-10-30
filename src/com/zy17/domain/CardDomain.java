@@ -3,10 +3,7 @@ package com.zy17.domain;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.zy17.protobuf.domain.Eng;
 
-import javax.jdo.annotations.Inheritance;
-import javax.jdo.annotations.InheritanceStrategy;
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,14 +14,19 @@ import javax.jdo.annotations.Persistent;
 @PersistenceCapable(detachable = "true")
 @Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 public class CardDomain extends Base {
+    @NotPersistent
     private Eng.Card card;
     @Persistent
     private byte[] bytes;
     @Persistent
-    private String blobkey;
+    private boolean imageFlag;
+    @Persistent
+    private boolean soundFlag;
 
     public CardDomain(Eng.Card card) {
         this.setCard(card);
+        this.setImageFlag(card.getImage() == null);
+        this.setSoundFlag(card.getSound() == null);
     }
 
     public Eng.Card getCard() {
@@ -37,7 +39,7 @@ public class CardDomain extends Base {
     }
 
     public void setCard(Eng.Card card) {
-        this.bytes= card.toByteArray();
+        this.bytes = card.toByteArray();
         this.card = card;
     }
 
@@ -47,5 +49,21 @@ public class CardDomain extends Base {
 
     public void setBytes(byte[] bytes) {
         this.bytes = bytes;
+    }
+
+    public boolean isImageFlag() {
+        return imageFlag;
+    }
+
+    public void setImageFlag(boolean imageFlag) {
+        this.imageFlag = imageFlag;
+    }
+
+    public boolean isSoundFlag() {
+        return soundFlag;
+    }
+
+    public void setSoundFlag(boolean soundFlag) {
+        this.soundFlag = soundFlag;
     }
 }

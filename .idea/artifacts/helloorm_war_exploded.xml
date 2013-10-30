@@ -2,10 +2,10 @@
   <artifact type="exploded-war" build-on-make="true" name="helloorm:war exploded">
     <output-path>$PROJECT_DIR$/war</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="helloorm/web/Web" />
+      <element id="javaee-facet-resources" facet="MobileBackend/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="helloorm" />
+          <element id="module-output" name="MobileBackend" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-1.0-sdk:1.8.3" />

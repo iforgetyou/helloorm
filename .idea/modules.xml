@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/helloorm.iml" filepath="$PROJECT_DIR$/helloorm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MobileBackend.iml" filepath="$PROJECT_DIR$/MobileBackend.iml" />
     </modules>
   </component>
 </project>

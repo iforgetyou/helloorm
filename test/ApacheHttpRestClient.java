@@ -99,8 +99,9 @@ public class ApacheHttpRestClient {
         multipartPost.setEntity(postEntity);
         HttpResponse postResponse = httpclient.execute(multipartPost);
         byte[] bytes1 = IOUtils.toByteArray(postResponse.getEntity().getContent());
-        Eng.PbBlobKeyList pbBlobKeyList = Eng.PbBlobKeyList.parseFrom(bytes1);
-        System.out.println(pbBlobKeyList);
+        Eng.MediaBlobInfoList mediaBlobInfoList = Eng.MediaBlobInfoList.parseFrom(bytes1);
+        System.out.println(mediaBlobInfoList);
+        testPostCard();
     }
 
     @Test

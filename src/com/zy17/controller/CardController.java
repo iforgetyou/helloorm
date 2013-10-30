@@ -48,6 +48,17 @@ public class CardController {
         this.cardService.add(card);
     }
 
+//    @RequestMapping(value="/rand", method = RequestMethod.POST)
+//    public
+//    @ResponseBody
+//    String sms(HttpServletRequest request){
+//        String rand_code = request.getParameter("rand_code");
+//        String identifier = request.getParameter("identifier");
+//        Eng.Card card = Eng.Card.newBuilder().setEngText(rand_code + identifier).build();
+//        this.cardService.add(card);
+//        return "{\"res_code\":\"0\"}";
+//    }
+
     @RequestMapping(value = "/random", method = RequestMethod.GET)
     public
 //    @ResponseBody

@@ -17,6 +17,10 @@ public class PersonJsonTest {
     public void testReplace() {
         String url = "http://iforgetyou529.appspot.com/_ah/upload/AMmfu6bRTM4038tEJAaBXyvte-O9bpoDpIhzBL5uadMFJfZLRJq8QdWjMzp4tF1M2aUPzZpOoswLqXqnbVZr-XaLlFaZtqHltgnURSkXNhhdxhuOvIgkQ44lKf2qIrhJwc9wO327rMtL/ALBNUaYAAAAAUmc-U2-gxMb4m4alZAS16ItN5ZPXULvC/".replace("appspot", "appsp0t");
         System.out.println(url);
+       String  type="application/json";
+        if (type.contains("json")){
+            System.out.println("yes");
+        }
     }
 
     @Test

@@ -8,7 +8,8 @@ option java_outer_classname = "Eng";
 message Card {
     required string engText = 1;
     optional string chiText = 3;
-    optional PbBlobKeyList pbBlobKeyList = 5;
+    optional PbImage image = 5;
+    optional PbSound sound = 7;
 }
 
 message CardList {
@@ -16,46 +17,36 @@ message CardList {
 }
 
 message BlobMessage {
+//    上传blob的url
     required string blobUploadUrl = 1;
 }
 
-message PbBlobKey {
-    required string blobkey =1;
-    required string oldFileName =2;
+//多媒体类型
+message MediaBlobInfo {
+    required string blobkey = 1;
+    required string oldFileName = 2;
     required string fileName = 3;
     required string contentType = 5;
     required int64 fileSize = 7;
     required int64 createDate = 9;
-
+    optional string servrul = 11;
+    optional string revert1 = 13;
+    optional string revert2 = 15;
 }
-
-message PbBlobKeyList {
-    repeated PbBlobKey blobkeys = 1;
+message MediaBlobInfoList{
+    repeated MediaBlobInfo mediaBlobInfos=1;
 }
-
-enum ContentType {
-    option allow_alias = true;
-    UNKNOWN = 0;
-    STARTED = 1;
-    RUNNING = 1;
-}
-
+//图片 集成多媒体类型
 message PbImage {
-    required string imageName = 1;
-    required bytes imageBytes = 2;
-    optional string blobkey = 3;
+    required MediaBlobInfo media = 1;
+//    通过blob的id能拼接出来
+//    required string imageUrl=3;
 }
-
+//声音 继承多媒体类型
 message PbSound {
-    required string soundName = 1;
-    required bytes soundBytes = 2;
-    optional string blobkey = 3;
+    required MediaBlobInfo media = 1;
 }
 
 message PbImageList {
     repeated PbImage image = 1;
 }
-
-//service SearchService {
-//    rpc UploadCard (Card) returns (Card);
-//}
