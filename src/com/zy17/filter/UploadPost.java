@@ -57,7 +57,7 @@ public class UploadPost extends HttpServlet {
                         .setFileName(blobInfo.getFilename())
                         .setContentType(blobInfo.getContentType())
                         .setCreateDate(blobInfo.getCreation().getTime())
-                        .setFileSize(blobInfo.getSize()).setRevert1(servingUrl);
+                        .setFileSize(blobInfo.getSize()).setServUrl(servingUrl);
                 infoList.addMediaBlobInfos(blobkeyBuilder);
             }
         }

@@ -1,4 +1,4 @@
-import com.google.appengine.api.urlfetch.HTTPHeader;
+import com.google.protobuf.InvalidProtocolBufferException;
 import com.zy17.protobuf.domain.AddressBookProtos;
 import com.zy17.protobuf.domain.Eng;
 import org.apache.commons.io.IOUtils;
@@ -10,7 +10,6 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
-import org.apache.http.entity.mime.content.ByteArrayBody;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
@@ -22,6 +21,7 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Date;
@@ -44,8 +44,8 @@ public class ApacheHttpRestClient {
     public DefaultHttpClient httpclient;
     public AddressBookProtos.Person john;
     Eng.Card card;
-//    public String remoteUrl = "http://127.0.0.1:8080/";
-    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
+    public String remoteUrl = "http://127.0.0.1:8080/";
+//    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
 
     @Before
     public void init() {
@@ -66,7 +66,7 @@ public class ApacheHttpRestClient {
         john =
                 AddressBookProtos.Person.newBuilder()
                         .setId(1234)
-                        .setName("John Doe")
+                        .setName("乔约翰")
                         .setEmail("jdoe@example.com")
                         .addPhone(
                                 AddressBookProtos.Person.PhoneNumber.newBuilder()
@@ -88,11 +88,11 @@ public class ApacheHttpRestClient {
         Eng.BlobMessage blobMessage = Eng.BlobMessage.parseFrom(bytes);
         System.out.println(blobMessage);
 //        上传多媒体
-        HttpPost multipartPost= new HttpPost();
+        HttpPost multipartPost = new HttpPost();
 
         multipartPost.setURI(new URI(blobMessage.getBlobUploadUrl()));
-        FileBody contentBody = new FileBody(new File("E:\\test.png"), ContentType.create("image/png"),"test.png");
-        FileBody soundContentBody = new FileBody(new File("E:\\test1.mp3"), ContentType.create("audio/mp3"),"test1.mp3");
+        FileBody contentBody = new FileBody(new File("E:\\test.png"), ContentType.create("image/png"), "test.png");
+        FileBody soundContentBody = new FileBody(new File("E:\\test1.mp3"), ContentType.create("audio/mp3"), "test1.mp3");
 //        ByteArrayBody contentBody = new ByteArrayBody(new byte[1024 ], ContentType.create("image/png"), "test.png");
         HttpEntity postEntity = MultipartEntityBuilder.create().addPart("image1", contentBody).addPart("sound", soundContentBody).build();
         multipartPost.addHeader("Content-Type", postEntity.getContentType().getValue());
@@ -101,7 +101,27 @@ public class ApacheHttpRestClient {
         byte[] bytes1 = IOUtils.toByteArray(postResponse.getEntity().getContent());
         Eng.MediaBlobInfoList mediaBlobInfoList = Eng.MediaBlobInfoList.parseFrom(bytes1);
         System.out.println(mediaBlobInfoList);
-        testPostCard();
+
+        Eng.Card.Builder builder = card.toBuilder();
+        for (Eng.MediaBlobInfo mediaBlobInfo : mediaBlobInfoList.getMediaBlobInfosList()) {
+            if (mediaBlobInfo.getContentType().contains("png")) {
+                builder.setImage(Eng.PbImage.newBuilder().setMediaInfo(mediaBlobInfo));
+            }
+            if (mediaBlobInfo.getContentType().contains("mp3")) {
+                builder.setSound(Eng.PbSound.newBuilder().setMediaInfo(mediaBlobInfo));
+            }
+        }
+        System.out.println("send card" + builder.build().getChiText().toString());
+        post.setURI(new URI(remoteUrl + "cards"));
+//        post.setEntity(new ByteArrayEntity(builder.build().toByteArray()));
+        post.setEntity(new ByteArrayEntity(builder.build().toByteArray()));
+        HttpResponse response1 = httpclient.execute(post);
+        org.apache.http.HttpEntity entity1 = response1.getEntity();
+
+        if (entity1 != null) {
+            EntityUtils.consume(entity1);
+        }
+        assert (response1.getStatusLine().getStatusCode() == 201);
     }
 
     @Test
@@ -144,7 +164,7 @@ public class ApacheHttpRestClient {
 
     @Test
     public void testGetCard() throws URISyntaxException, IOException {
-        this.testPostCard();
+//        this.testPostCard();
         get.setURI(new URI(remoteUrl + "cards"));
         HttpResponse response = httpclient.execute(get);
 //        org.apache.http.HttpEntity entity = response.getEntity();
@@ -196,7 +216,7 @@ public class ApacheHttpRestClient {
     public void getTest() throws URISyntaxException, IOException {
         this.postTest();
 
-        get.setURI(new URI(remoteUrl + "message/person"));
+        get.setURI(new URI(remoteUrl + "/cards"));
         HttpResponse response = httpclient.execute(get);
 //        org.apache.http.HttpEntity entity = response.getEntity();
         assert (response.getStatusLine().getStatusCode() == 200);
@@ -214,9 +234,10 @@ public class ApacheHttpRestClient {
 //            content.read(bytes);
 //        }
 
-        AddressBookProtos.PersonList personList = AddressBookProtos.PersonList.parseFrom(bytes);
-        log.debug("persons: \n\r" + personList.toString());
-        assert (personList.getPersonList().size() != 0);
+//        AddressBookProtos.PersonList personList = AddressBookProtos.PersonList.parseFrom(bytes);
+        Eng.Card card1 = Eng.Card.parseFrom(bytes);
+        log.debug("card1: \n\r" + card1.toString());
+        log.debug("中文: " + card1.getChiText().getBytes());
         if (entity != null) {
             EntityUtils.consume(entity);
         }
@@ -234,9 +255,19 @@ public class ApacheHttpRestClient {
     }
 
     private byte[] getPersonBytes() {
-
         byte[] bytes = john.toByteArray();
         return bytes;
+    }
+
+    @Test
+    public void ChineaseTest() throws InvalidProtocolBufferException, UnsupportedEncodingException {
+        byte[] bytes = john.toByteArray();
+        AddressBookProtos.Person person = AddressBookProtos.Person.parseFrom(bytes);
+        System.out.println(person.getName());
+
+        byte[] unicodes = person.getName().getBytes("unicode");
+        System.out.println(new String(unicodes,"unicode"));
+
     }
 
 

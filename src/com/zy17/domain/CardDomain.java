@@ -3,7 +3,11 @@ package com.zy17.domain;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.zy17.protobuf.domain.Eng;
 
-import javax.jdo.annotations.*;
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import java.io.UnsupportedEncodingException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,56 +18,38 @@ import javax.jdo.annotations.*;
 @PersistenceCapable(detachable = "true")
 @Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 public class CardDomain extends Base {
-    @NotPersistent
-    private Eng.Card card;
     @Persistent
-    private byte[] bytes;
+    private String engText;
     @Persistent
-    private boolean imageFlag;
+    private String chiText;
     @Persistent
-    private boolean soundFlag;
+    private byte[] imageBytes;
+    @Persistent
+    private byte[] soundBytes;
 
     public CardDomain(Eng.Card card) {
-        this.setCard(card);
-        this.setImageFlag(card.getImage() == null);
-        this.setSoundFlag(card.getSound() == null);
+        this.engText = card.getEngText();
+        // gae string use unicode ,but this is utf-8 todo
+        this.chiText = card.getChiText();
+        this.imageBytes = card.getImage().toByteArray();
+        this.soundBytes = card.getSound().toByteArray();
     }
 
     public Eng.Card getCard() {
         try {
-            this.card = Eng.Card.parseFrom(this.bytes);
+            return Eng.Card.newBuilder()
+                    .setEngText(this.engText)
+                    .setChiText(new String(this.chiText.getBytes("unicode"), "utf-8"))
+                    .setImage(Eng.PbImage.parseFrom(imageBytes))
+                    .setSound(Eng.PbSound.parseFrom(soundBytes))
+                    .build();
         } catch (InvalidProtocolBufferException e) {
-            logger.error("ProtocolBuffer反序列化失败", e);
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
         }
-        return card;
+        return null;
     }
 
-    public void setCard(Eng.Card card) {
-        this.bytes = card.toByteArray();
-        this.card = card;
-    }
 
-    public byte[] getBytes() {
-        return bytes;
-    }
-
-    public void setBytes(byte[] bytes) {
-        this.bytes = bytes;
-    }
-
-    public boolean isImageFlag() {
-        return imageFlag;
-    }
-
-    public void setImageFlag(boolean imageFlag) {
-        this.imageFlag = imageFlag;
-    }
-
-    public boolean isSoundFlag() {
-        return soundFlag;
-    }
-
-    public void setSoundFlag(boolean soundFlag) {
-        this.soundFlag = soundFlag;
-    }
 }
