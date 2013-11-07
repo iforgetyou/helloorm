@@ -17,7 +17,7 @@ public class BlobDaoImpl implements BlobDao {
 
     @Override
     public String getUploadUrl() {
-        String url = blobstoreService.createUploadUrl("/upload").replace("appspot", "appsp0t");
+        String url = blobstoreService.createUploadUrl("/blobs").replace("appspot", "appsp0t");
         return url;
     }
 }

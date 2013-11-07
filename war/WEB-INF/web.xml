@@ -58,8 +58,8 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>post</servlet-name>
-        <url-pattern>/upload</url-pattern>
-    </servlet-mapping>
+    <servlet-name>post</servlet-name>
+    <url-pattern>/upload</url-pattern>
+</servlet-mapping>
 
 </web-app>

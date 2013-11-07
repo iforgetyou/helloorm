@@ -87,11 +87,12 @@ public class ApacheHttpRestClient {
         byte[] bytes = IOUtils.toByteArray(content);
         Eng.BlobMessage blobMessage = Eng.BlobMessage.parseFrom(bytes);
         System.out.println(blobMessage);
+
 //        上传多媒体
         HttpPost multipartPost = new HttpPost();
 
         multipartPost.setURI(new URI(blobMessage.getBlobUploadUrl()));
-        FileBody contentBody = new FileBody(new File("E:\\test.png"), ContentType.create("image/png"), "test.png");
+        FileBody contentBody = new FileBody(new File("E:\\test2.png"), ContentType.create("image/png"), "test.png");
         FileBody soundContentBody = new FileBody(new File("E:\\test1.mp3"), ContentType.create("audio/mp3"), "test1.mp3");
 //        ByteArrayBody contentBody = new ByteArrayBody(new byte[1024 ], ContentType.create("image/png"), "test.png");
         HttpEntity postEntity = MultipartEntityBuilder.create().addPart("image1", contentBody).addPart("sound", soundContentBody).build();
@@ -214,7 +215,7 @@ public class ApacheHttpRestClient {
 
     @Test
     public void getTest() throws URISyntaxException, IOException {
-        this.postTest();
+//        this.postTest();
 
         get.setURI(new URI(remoteUrl + "/cards"));
         HttpResponse response = httpclient.execute(get);
@@ -237,7 +238,7 @@ public class ApacheHttpRestClient {
 //        AddressBookProtos.PersonList personList = AddressBookProtos.PersonList.parseFrom(bytes);
         Eng.Card card1 = Eng.Card.parseFrom(bytes);
         log.debug("card1: \n\r" + card1.toString());
-        log.debug("中文: " + card1.getChiText().getBytes());
+        log.debug("中文: " + card1.getChiText());
         if (entity != null) {
             EntityUtils.consume(entity);
         }
