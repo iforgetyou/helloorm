@@ -7,23 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb4ab1f-4379-49c2-8c61-e37756c16242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/auth/AllSecurityFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/auth/AuthorizationHeaderSecurityFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/auth/CustomAccessDeniedHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/auth/Encrypt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/auth/RestToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/user/User.java" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\artifacts\MobileBackend_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\artifacts\MobileBackend_war_exploded.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/protobuf/User.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\protocsrc\com\zy17\protobuf\domain\AddressBookProtos.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\controller\MessageController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\PersonDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\impl\PersonDaoImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\domain\PersonDomain.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\service\MessageService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\service\impl\MessageServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\protobuf\addressbook.proto" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBackend.iml" afterPath="$PROJECT_DIR$/MobileBackend.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/log4j.properties" afterPath="$PROJECT_DIR$/war/WEB-INF/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="helloorm.iws" />
@@ -31,7 +27,7 @@
     <file path="/Dummy.txt" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384502791475" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/webapp/WEB-INF/classes/META-INF/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065910856" ignored="false" />
     <file path="/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379515695969" ignored="false" />
-    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383795568475" ignored="false" />
+    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507146625" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/java/com/zy17/EnglishEdu/dao/impl/PMF.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065592417" ignored="false" />
     <file path="/a.dummy" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384500793821" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379066880076" ignored="false" />
@@ -125,7 +121,7 @@
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/classes/applicationContext.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/classes/applicationContext_data.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/classes/applicationContext_test.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="/UserController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380000539379" ignored="false" />
+    <file path="/UserController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507098528" ignored="false" />
     <file path="/User.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384481259432" ignored="false" />
     <file path="/PersonJsonTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383103743109" ignored="false" />
     <file path="$PROJECT_DIR$/../helloormbak/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380009743116" ignored="false" />
@@ -211,7 +207,7 @@
     <file path="/EnglistCardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974482618" ignored="false" />
     <file path="/EnglishCardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974051755" ignored="false" />
     <file path="/CardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383633929402" ignored="false" />
-    <file path="/CardController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383800087802" ignored="false" />
+    <file path="/CardController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507059089" ignored="false" />
     <file path="/CardService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974663998" ignored="false" />
     <file path="/CardServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381975127440" ignored="false" />
     <file path="/CardDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381975140126" ignored="false" />
@@ -409,6 +405,9 @@
     <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/controller/ReadyState.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384497198216" ignored="false" />
     <file path="/ReadyState.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384496759282" ignored="false" />
     <file path="/AfterSecurityFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384502840608" ignored="false" />
+    <file path="/User.proto" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384506876882" ignored="false" />
+    <file path="/UserService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507186330" ignored="false" />
+    <file path="/UserServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507194331" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -462,21 +461,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" line="103" class="com.zy17.controller.MessageController" package="com.zy17.controller">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="244" class="ApacheHttpRestClient" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -492,67 +476,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/dao/impl/PersonDaoImpl.java" line="57" class="com.zy17.dao.impl.PersonDaoImpl" package="com.zy17.dao.impl">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" line="128" class="com.zy17.controller.MessageController" package="com.zy17.controller">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="jar://$MAVEN_REPOSITORY$/net/sf/jsr107cache/jsr107cache/1.0/jsr107cache-1.0-sources.jar!/net/sf/jsr107cache/CacheManager.java" line="41" class="net.sf.jsr107cache.CacheManager" package="net.sf.jsr107cache">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" line="114" class="com.zy17.controller.MessageController" package="com.zy17.controller">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" line="38" class="com.zy17.controller.MessageController" package="com.zy17.controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -832,82 +756,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="UserController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="54" selection-start="615" selection-end="615" vertical-scroll-proportion="-1.8461539">
-              <folding />
+            <state line="37" column="1" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.72824633">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext-security.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/classes/applicationContext-security.xml">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="641" selection-end="641" vertical-scroll-proportion="0.24742268">
+            <state line="9" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomAccessDeniedHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAccessDeniedHandler.java">
+      <file leaf-file-name="CardController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="43" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorizationHeaderSecurityFilter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/AuthorizationHeaderSecurityFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="38" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenericFilterBean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE-sources.jar!/org/springframework/web/filter/GenericFilterBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="0" selection-start="6887" selection-end="6887" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomAuthenticationEntryPoint.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="59" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestAuthenticationException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="52" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllSecurityFilter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/AllSecurityFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0">
+            <state line="56" column="29" selection-start="1853" selection-end="1853" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -932,11 +804,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/controller/MessageController.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/auth/RestToken.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/auth/Encrypt.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" />
         <option value="$PROJECT_DIR$/src/com/zy17/user/User.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/log4j.properties" />
         <option value="$PROJECT_DIR$/build.xml" />
@@ -948,6 +815,11 @@
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/zy17/auth/AuthorizationHeaderSecurityFilter.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/classes/applicationContext-security.xml" />
+        <option value="$PROJECT_DIR$/src/protobuf/User.proto" />
+        <option value="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -1139,7 +1011,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zy17" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1189,40 +1087,34 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.zy17.protobuf.domain" />
       <recent name="com.zy17.controller" />
       <recent name="com.zy17.dao.objectifyimpl" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zy17.service" />
+      <recent name="com.zy17.controller" />
       <recent name="com.zy17.filter" />
       <recent name="com.zy17.domain" />
-      <recent name="com.zy17.controller" />
       <recent name="com.zy17.controller.protobufview" />
-      <recent name="com.zy17.dao.objectifyimpl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\GitHub\helloorm\src\protobuf" />
       <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF" />
       <recent name="E:\workspace\GitHub\helloorm\src\com\zy17" />
       <recent name="E:\workspace\GitHub\helloorm\test\resource" />
       <recent name="E:\workspace\GitHub\helloorm\src\com\zy17\filter" />
-      <recent name="E:\workspace\GitHub\Helloorm\src" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zy17.service.impl" />
       <recent name="com.zy17.dao.impl" />
       <recent name="com.zy17.controller" />
       <recent name="com.zy17.dao" />
-      <recent name="com.zy17.service.impl" />
       <recent name="com.zy17.service" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.zy17.controller" />
-      <recent name="com.zy17.dao.objectifyimpl" />
-      <recent name="com.zy17.domain.abk" />
-      <recent name="com.zy17.domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF\js" />
@@ -1230,6 +1122,12 @@
       <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF\classes" />
       <recent name="E:\workspace\GitHub\helloorm\src" />
       <recent name="E:\workspace\GitHub\helloorm\test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zy17.controller" />
+      <recent name="com.zy17.dao.objectifyimpl" />
+      <recent name="com.zy17.domain.abk" />
+      <recent name="com.zy17.domain" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1935,7 +1833,7 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29571664" sideWeight="0.5528899" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2781457" sideWeight="0.56625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2781457" sideWeight="0.59625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3923841" sideWeight="0.59625" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5425" sideWeight="0.66062605" order="3" side_tool="false" content_ui="tabs" />
@@ -2035,46 +1933,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="40" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.1.4.RELEASE/spring-security-web-3.1.4.RELEASE-sources.jar!/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="40" selection-start="7426" selection-end="7426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.2.0.RELEASE/spring-beans-3.2.0.RELEASE-sources.jar!/org/springframework/beans/factory/parsing/FailFastProblemReporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="40" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.20422535" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE-sources.jar!/org/springframework/web/filter/GenericFilterBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="0" selection-start="6887" selection-end="6887" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="52" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAccessDeniedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="43" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.1.4.RELEASE/spring-security-web-3.1.4.RELEASE-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="172" column="0" selection-start="8319" selection-end="8319" vertical-scroll-proportion="0.187251">
@@ -2091,14 +1949,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="59" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
+        <state line="27" column="59" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.31355932">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/AllSecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0">
+        <state line="60" column="0" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.19575472">
           <folding />
         </state>
       </provider>
@@ -2142,15 +2000,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/AuthorizationHeaderSecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="38" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
+        <state line="29" column="38" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.7492163">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/war/WEB-INF/classes/applicationContext-security.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="641" selection-end="641" vertical-scroll-proportion="0.24742268">
+        <state line="7" column="58" selection-start="504" selection-end="504" vertical-scroll-proportion="-1.44">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protobuf/Card.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="46" selection-start="811" selection-end="811" vertical-scroll-proportion="1.3012048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protobuf/User.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.43373495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="29" selection-start="1853" selection-end="1853" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="3" selection-start="207" selection-end="207" vertical-scroll-proportion="0.47368422">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="1" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.72824633">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

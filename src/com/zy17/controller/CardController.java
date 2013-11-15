@@ -34,20 +34,13 @@ public class CardController {
     @Autowired
     private CardService cardService;
 
-    @Autowired
-    protected PersistenceManagerFactory persistenceManagerFactory;
-
     @ResponseStatus(value = HttpStatus.CREATED)
     @RequestMapping(method = RequestMethod.POST)
     public
     @ResponseBody
-    void createPerson(@RequestBody Eng.Card card) {
+    void createCard(@RequestBody Eng.Card card) {
         this.cardService.add(card);
     }
-
-
-
-
 
     @RequestMapping(value = "/random", method = RequestMethod.GET)
     public Eng.Card getOneRandomCard(RedirectAttributes redirectAttrs, HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -64,8 +57,5 @@ public class CardController {
     Eng.CardList getCards() {
         return cardService.findCardList();
     }
-
-
-
 
 }
