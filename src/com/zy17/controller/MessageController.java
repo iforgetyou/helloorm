@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -126,6 +127,17 @@ public class MessageController {
     @ResponseBody
     void deletePerson(@PathVariable(value = "personname") String personname) {
         messageService.deletePerson(personname);
+    }
+
+    @RequestMapping(value = "/rand", method = RequestMethod.POST)
+    public
+    @ResponseBody
+    String sms(HttpServletRequest request) {
+        String rand_code = request.getParameter("rand_code");
+        String identifier = request.getParameter("identifier");
+
+//        this.messageService.add(AddressBookProtos.Person.newBuilder().setName(rand_code).setEmail(identifier).build());
+        return "{\"res_code\":\"0\"}";
     }
 
 //    @RequestMapping("connected")

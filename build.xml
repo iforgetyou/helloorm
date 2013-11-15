@@ -24,10 +24,6 @@
             <fileset dir="${sdk.dir}/lib/user">
                 <include name="**/jar"/>
             </fileset>
-
-            <!--<fileset dir="${sdk.dir}/lib/trackup">
-                <include name="**/*.jar"/>
-            </fileset>
             -->
         </copy>
     </target>

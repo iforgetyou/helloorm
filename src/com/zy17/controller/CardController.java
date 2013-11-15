@@ -45,15 +45,7 @@ public class CardController {
         this.cardService.add(card);
     }
 
-    @RequestMapping(value = "/rand", method = RequestMethod.POST)
-    public
-    @ResponseBody
-    String sms(HttpServletRequest request) {
-        String rand_code = request.getParameter("rand_code");
-        String identifier = request.getParameter("identifier");
-//        this.cardService.add(card);
-        return "{\"res_code\":\"0\"}";
-    }
+
 
 
 
