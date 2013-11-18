@@ -1,5 +1,4 @@
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.zy17.protobuf.domain.AddressBookProtos;
 import com.zy17.protobuf.domain.Eng;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
@@ -21,19 +20,10 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Date;
 
-//import org.apache.http.client.methods.CloseableHttpResponse;
-
-//import org.apache.http.client.methods.CloseableHttpResponse;
-
-/**
- * This class is the same as the ApacheHttpRestClient2 class, but with
- * fewer try/catch clauses, and fewer comments.
- */
 public class ApacheHttpRestClient {
 
     Logger log = LoggerFactory.getLogger(ApacheHttpRestClient.class);
@@ -42,10 +32,9 @@ public class ApacheHttpRestClient {
     public HttpGet get;
     public HttpDelete delete;
     public DefaultHttpClient httpclient;
-    public AddressBookProtos.Person john;
     Eng.Card card;
-    public String remoteUrl = "http://127.0.0.1:8080/";
-//    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
+//    public String remoteUrl = "http://127.0.0.1:8080/";
+    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
 
     @Before
     public void init() {
@@ -54,25 +43,23 @@ public class ApacheHttpRestClient {
         post = new HttpPost(remoteUrl);
         post.setHeader("Accept", "application/x-protobuf");
         post.setHeader("Content-Type", "application/x-protobuf");
+        post.setHeader("AppKey", "dGVzdDp0ZXN0");
+        post.setHeader("Authorization", "x");
+
 
         get = new HttpGet(remoteUrl);
         get.setHeader("Accept", "application/x-protobuf");
         get.setHeader("Content-Type", "application/x-protobuf");
+        get.setHeader("AppKey", "dGVzdDp0ZXN0");
+        get.setHeader("Authorization", "x");
 
         delete = new HttpDelete(remoteUrl);
         delete.setHeader("Accept", "application/x-protobuf");
         delete.setHeader("Content-Type", "application/x-protobuf");
+        delete.setHeader("AppKey", "dGVzdDp0ZXN0");
+        delete.setHeader("Authorization", "x");
 
-        john =
-                AddressBookProtos.Person.newBuilder()
-                        .setId(1234)
-                        .setName("乔约翰")
-                        .setEmail("jdoe@example.com")
-                        .addPhone(
-                                AddressBookProtos.Person.PhoneNumber.newBuilder()
-                                        .setNumber("555-4321")
-                                        .setType(AddressBookProtos.Person.PhoneType.HOME))
-                        .build();
+
         card = Eng.Card.newBuilder().setChiText("中文").setEngText("English" + new Date()).build();
     }
 
@@ -122,6 +109,7 @@ public class ApacheHttpRestClient {
         if (entity1 != null) {
             EntityUtils.consume(entity1);
         }
+        System.out.println(response1.getStatusLine().getStatusCode() );
         assert (response1.getStatusLine().getStatusCode() == 201);
     }
 
@@ -189,31 +177,6 @@ public class ApacheHttpRestClient {
     }
 
     @Test
-    public void testAll() throws Exception {
-        for (int i = 0; i < 10; i++) {
-            postTest();
-            getTest();
-        }
-        deleteTest();
-    }
-
-    @Test
-    public void postTest() throws IOException, URISyntaxException {
-        post.setURI(new URI(remoteUrl + "message/person"));
-        post.setEntity(new ByteArrayEntity(getPersonBytes()));
-//      System.out.println(post.getEntity().getContent());
-        HttpResponse response = httpclient.execute(post);
-        org.apache.http.HttpEntity entity = response.getEntity();
-
-
-        assert (response.getStatusLine().getStatusCode() == 201);
-//        System.out.println("post get result: " + response.getStatusLine().getStatusCode());
-        if (entity != null) {
-            EntityUtils.consume(entity);
-        }
-    }
-
-    @Test
     public void getTest() throws URISyntaxException, IOException {
 //        this.postTest();
 
@@ -243,33 +206,4 @@ public class ApacheHttpRestClient {
             EntityUtils.consume(entity);
         }
     }
-
-    @Test
-    public void deleteTest() throws Exception {
-        this.postTest();
-
-        String replace = john.getName().replaceAll(" ", "%20");
-        delete.setURI(new URI(remoteUrl + "message/person/" + replace));
-        HttpResponse response = httpclient.execute(delete);
-        org.apache.http.HttpEntity entity = response.getEntity();
-        assert (response.getStatusLine().getStatusCode() == 200);
-    }
-
-    private byte[] getPersonBytes() {
-        byte[] bytes = john.toByteArray();
-        return bytes;
-    }
-
-    @Test
-    public void ChineaseTest() throws InvalidProtocolBufferException, UnsupportedEncodingException {
-        byte[] bytes = john.toByteArray();
-        AddressBookProtos.Person person = AddressBookProtos.Person.parseFrom(bytes);
-        System.out.println(person.getName());
-
-        byte[] unicodes = person.getName().getBytes("unicode");
-        System.out.println(new String(unicodes,"unicode"));
-
-    }
-
-
 }

@@ -1,7 +1,7 @@
 package com.zy17.service;
 
-import com.zy17.protobuf.domain.EngUser;
-import org.springframework.stereotype.Service;
+import com.zy17.protobuf.domain.Eng;
+import com.zy17.protobuf.domain.Eng;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,5 +11,13 @@ import org.springframework.stereotype.Service;
  */
 
 public interface UserService {
-    void add(EngUser user);
+    void add( Eng.User  user);
+
+    void addByThirdpart(Eng.ThirdPartUser user);
+
+    Eng.User  login( Eng.User  user);
+
+    Eng.User  login( Eng.ThirdPartUser user);
+
+    Eng.User  findByNameAndPwdFromMongo(String key, String credentials);
 }

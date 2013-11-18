@@ -80,6 +80,14 @@
         <url-pattern>/upload</url-pattern>
     </servlet-mapping>
 
+    <security-constraint>
+        <web-resource-collection>
+            <url-pattern>/users/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>

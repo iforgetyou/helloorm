@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -30,6 +31,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/blobs")
 public class BlobController {
+    private static final Logger log = Logger.getLogger(BlobController.class.getName());
     @Autowired
     BlobDao dao;
 
@@ -42,6 +44,7 @@ public class BlobController {
     public
     @ResponseBody
     Eng.BlobMessage getUploadUrl() {
+        //可以向其他账号申请上传地址
         Eng.BlobMessage blobMessage = Eng.BlobMessage.newBuilder().setBlobUploadUrl(dao.getUploadUrl()).build();
         return blobMessage;
     }
@@ -81,6 +84,8 @@ public class BlobController {
 
     @RequestMapping(value = "/{blobkey}", method = RequestMethod.GET)
     public void mediaServe(@PathVariable String blobkey, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        long started = System.currentTimeMillis();
         BlobstoreServiceFactory.getBlobstoreService().serve(new BlobKey(blobkey), response);
+        log.info("收到多媒体服务请求,耗时" + String.valueOf(System.currentTimeMillis() - started));
     }
 }

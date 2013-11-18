@@ -1,7 +1,5 @@
 package com.zy17.domain;
 
-import com.google.protobuf.GeneratedMessage;
-import com.zy17.protobuf.domain.AddressBookProtos;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

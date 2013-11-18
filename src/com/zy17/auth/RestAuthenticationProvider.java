@@ -1,6 +1,8 @@
 package com.zy17.auth;
 
-import com.zy17.user.User;
+import com.zy17.protobuf.domain.Eng;
+import com.zy17.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.Authentication;
@@ -17,30 +19,30 @@ import java.util.List;
  */
 public class RestAuthenticationProvider implements AuthenticationProvider {
 
-//	@Autowired
-//	private UserService userService;
+	@Autowired
+	private UserService userService;
 
 	@Override
 	public Authentication authenticate(Authentication authentication)
 			throws AuthenticationException {
-		RestToken restToken = (RestToken) authentication;
+        RestToken restToken = (RestToken) authentication;
 
-		String key = restToken.getKey();
-		String credentials = restToken.getCredentials();
+        String key = restToken.getKey();
+        String credentials = restToken.getCredentials();
 
-		User user = null;
+        Eng.User user = userService.findByNameAndPwdFromMongo(key, credentials);
 
-		if (user == null) {
-			throw new BadCredentialsException("Authenticate failed.");
-		}
-		return getAuthenticatedUser(user);
-	}
+        if (user == null) {
+            throw new BadCredentialsException("Authenticate failed.");
+        }
+        return getAuthenticatedUser(user);
+    }
 
-	private Authentication getAuthenticatedUser(User user) {
+	private Authentication getAuthenticatedUser(Eng.User user) {
 		List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
 		authorities.add(new SimpleGrantedAuthority(getRole(user.getRole())));
 
-		return new RestToken(user.getUserName(), user.getPassword(),
+		return new RestToken(user.getUsername(), user.getPassword(),
 				authorities);
 	}
 

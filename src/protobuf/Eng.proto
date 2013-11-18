@@ -48,3 +48,31 @@ message PbSound {
 message PbImageList {
     repeated PbImage image = 1;
 }
+
+
+
+
+
+
+//系统内部用户信息
+message User {
+    //    全局唯一用户标示
+    required string username = 1;
+    optional string password = 3;
+    optional string nickname = 5;
+    optional string gender = 7;
+    optional int32 role = 8;
+    repeated ThirdPartUser user = 9;
+}
+
+message ThirdPartUser {
+    required string openId = 1;
+    optional string accessToken = 3;
+    optional int32 remindIn = 5;
+    optional int32 expiresIn = 7;
+    required string platformType = 9;
+}
+
+message UserList {
+    repeated User users = 1;
+}

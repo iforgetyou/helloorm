@@ -7,31 +7,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb4ab1f-4379-49c2-8c61-e37756c16242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/protobuf/User.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\protocsrc\com\zy17\protobuf\domain\AddressBookProtos.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\controller\MessageController.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\PersonDao.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\impl\PersonDaoImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\domain\PersonDomain.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\service\MessageService.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\service\impl\MessageServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\protobuf\addressbook.proto" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/domain/EngUserDomain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_8_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/exception/RestExceptionHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/dao/UserDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/UserDaoImpl.java" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_codahale_metrics_metrics_annotation_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_codahale_metrics_metrics_core_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_codahale_metrics_metrics_healthchecks_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_ryantenney_metrics_metrics_spring_3_0_0_RC1.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__org_springframework_spring_context_support_3_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\MessageDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\impl\MessageDaoImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\domain\TextMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\user\User.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\protobuf\User.proto" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\test\PersonJsonTest.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\test\com\zy17\controller\MessageControllerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\war\WEB-INF\log4j.properties" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ApacheHttpRestClient.java" afterPath="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/domain/Base.java" afterPath="$PROJECT_DIR$/src/com/zy17/domain/Base.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/BlobController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/BlobController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/impl/CardServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/CardServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/Eng.java" afterPath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/Eng.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBackend.iml" afterPath="$PROJECT_DIR$/MobileBackend.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" afterPath="$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/UserService.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/appengine-web.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/appengine-web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/helloorm_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/helloorm_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_google_appengine_appengine_api_labs_1_8_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_api_labs_1_8_7.xml" />
+      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_google_appengine_appengine_endpoints_1_8_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_endpoints_1_8_7.xml" />
+      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\src\protobuf\Card.proto" afterPath="$PROJECT_DIR$/src/protobuf/Eng.proto" />
     </list>
     <ignored path="helloorm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384502791475" ignored="false" />
+    <file path="/Dummy.txt" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384762631383" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/webapp/WEB-INF/classes/META-INF/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065910856" ignored="false" />
     <file path="/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379515695969" ignored="false" />
-    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507146625" ignored="false" />
+    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384746698317" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/java/com/zy17/EnglishEdu/dao/impl/PMF.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065592417" ignored="false" />
-    <file path="/a.dummy" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384500793821" ignored="false" />
+    <file path="/a.dummy" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384765001687" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379066880076" ignored="false" />
-    <file path="/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383274050692" ignored="false" />
+    <file path="/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384746329883" ignored="false" />
     <file path="/QSort.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379296385127" ignored="false" />
     <file path="$PROJECT_DIR$/src/QSort.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379295452861" ignored="false" />
     <file path="/build.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381471695298" ignored="false" />
@@ -41,27 +68,27 @@
     <file path="/MessageController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384223283049" ignored="false" />
     <file path="/TestMessage.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379389366326" ignored="false" />
     <file path="/appengine-web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379397076919" ignored="false" />
-    <file path="/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384493333826" ignored="false" />
+    <file path="/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384768434451" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380503829565" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/UserDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379841713776" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/UserServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/UserServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/UserService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/User.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/UserController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/UserDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/User.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/UserController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/UserDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/TopicController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379399295546" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/TopicController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/TopicController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/TopicService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379399396103" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/TopicService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="$PROJECT_DIR$/../Restful/web/WEB-INF/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379410729076" ignored="false" />
     <file path="/TextMessage.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379516058898" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/GenData.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380092649068" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/GenData.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/GenData.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379492427943" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/TopicServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext_data.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/TopicServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext_data.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/applicationContext_data.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379489757238" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/TopicDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Base.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/TopicDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Base.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/Base.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381990614555" ignored="false" />
     <file path="/TopicDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383700968917" ignored="false" />
     <file path="/MessageDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380072130308" ignored="false" />
@@ -100,7 +127,7 @@
     <file path="/addressbook.proto" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381216484306" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/FeedBackController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379831890938" ignored="false" />
     <file path="/FeedBackController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379832503557" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/FeedbackController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/FeedbackController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/FeedbackService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379831946425" ignored="false" />
     <file path="/FeedbackService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379832510107" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/FeedbackServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379831968412" ignored="false" />
@@ -109,19 +136,19 @@
     <file path="/Feedback.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379832634709" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Feedback.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/FeedbackService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/FeedbackServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/FeedbackServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/FeedbackDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379832249363" ignored="false" />
     <file path="/FeedbackDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379832539766" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/FeedbackDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379832267419" ignored="false" />
     <file path="/FeedbackDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379833180498" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/FeedbackDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/FeedbackDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/FeedbackDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379832541379" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380188613711" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384755300892" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/classes/applicationContext-security.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/classes/applicationContext.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/classes/applicationContext_data.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/classes/applicationContext_test.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="/UserController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507098528" ignored="false" />
+    <file path="/UserController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384745096880" ignored="false" />
     <file path="/User.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384481259432" ignored="false" />
     <file path="/PersonJsonTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383103743109" ignored="false" />
     <file path="$PROJECT_DIR$/../helloormbak/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380009743116" ignored="false" />
@@ -132,7 +159,7 @@
     <file path="/PersonDomainDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380094536435" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/Encrypt.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
     <file path="/Encrypt.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380074308507" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384501896547" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/log4j.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380094215407" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/log4j.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/RequestDumperFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380092219237" ignored="false" />
@@ -144,16 +171,16 @@
     <file path="/MultiReadHttpServletRequest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380091194617" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/filter/MultiReadHttpServletRequest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380092229771" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/filter/RequestDumperFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380092229771" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/OfyService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380101921758" ignored="false" />
     <file path="/PersonDomainOfyDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380179483825" ignored="false" />
     <file path="/a.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380096784273" ignored="false" />
     <file path="/Utils.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380099992266" ignored="false" />
     <file path="/PersonDomainOfyDaoImplTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380162239679" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/controller/ControllerTestBase.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380163108311" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/dao/impl/MongodbJavaScripTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/controller/ControllerTestBase.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/dao/impl/MongodbJavaScripTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/MongodbJavaScripTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380173493642" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/dao/impl/UpdatePullTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/dao/impl/UpdatePullTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="/UpdatePullTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383873936399" ignored="false" />
     <file path="/MyEntity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380177244912" ignored="false" />
     <file path="/MyEntityBase.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380177249119" ignored="false" />
@@ -165,7 +192,7 @@
     <file path="/PBMessageConverter1.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380506237069" ignored="false" />
     <file path="/MessageControllerTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380508124495" ignored="false" />
     <file path="/ApacheHttpRestClient3.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380522883923" ignored="false" />
-    <file path="/ApacheHttpRestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383633854539" ignored="false" />
+    <file path="/ApacheHttpRestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384763689221" ignored="false" />
     <file path="/PersonDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381310848265" ignored="false" />
     <file path="/UrlFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381312874689" ignored="false" />
     <file path="D:/Program Files/lucene-4.4.0/demo/src/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381454634544" ignored="false" />
@@ -207,18 +234,18 @@
     <file path="/EnglistCardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974482618" ignored="false" />
     <file path="/EnglishCardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974051755" ignored="false" />
     <file path="/CardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383633929402" ignored="false" />
-    <file path="/CardController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507059089" ignored="false" />
+    <file path="/CardController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384765047547" ignored="false" />
     <file path="/CardService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974663998" ignored="false" />
-    <file path="/CardServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381975127440" ignored="false" />
+    <file path="/CardServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384755480786" ignored="false" />
     <file path="/CardDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381975140126" ignored="false" />
-    <file path="/CardDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382089119676" ignored="false" />
+    <file path="/CardDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384765716360" ignored="false" />
     <file path="D:/Program Files/appengine-java-sdk-1.8.3/demos/mediastore/src/com/google/appengine/demos/mediastore/MediaObject.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382064809663" ignored="false" />
     <file path="/Upload.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382089389955" ignored="false" />
     <file path="/UploadPost.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383795505401" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/.idea/workspace.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382435081314" ignored="false" />
     <file path="/upload.jsp" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382431410856" ignored="false" />
     <file path="D:/Program Files/appengine-java-sdk-1.8.3/demos/mediastore/war/WEB-INF/templates/upload.jsp" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382429637742" ignored="false" />
-    <file path="/BlobController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383805504658" ignored="false" />
+    <file path="/BlobController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384746540514" ignored="false" />
     <file path="/BlobDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382490344058" ignored="false" />
     <file path="/BlobDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382497940885" ignored="false" />
     <file path="/EngTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382522797658" ignored="false" />
@@ -318,8 +345,8 @@
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6098044010825613377tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383286894552" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/example/GaeClient/http/ProtobufHttpResponseHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383535589762" ignored="false" />
     <file path="/ProtobufHttpResponseHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383535488449" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/BaseDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/jsonview/ViewAwareJsonMessageConverter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383534624375" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/BaseDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/jsonview/ViewAwareJsonMessageConverter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
     <file path="/ViewAwareJsonMessageConverter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383534292488" ignored="false" />
     <file path="$PROJECT_DIR$/../../SlidingMenu1/abs/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383542868488" ignored="false" />
     <file path="$PROJECT_DIR$/../../SlidingMenu1/library/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383537358869" ignored="false" />
@@ -363,40 +390,40 @@
     <file path="$PROJECT_DIR$/../GaeClient/res/layout/card_detail_media.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383817854141" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5508614796889013283tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383817589344" ignored="false" />
     <file path="/applicationContext-security.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384503555338" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext-security.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384501956741" ignored="false" />
-    <file path="/RestAuthenticationProvider.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384481230248" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/CategoryDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/MessageDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/TransactionHelp.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/PoiDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext_test.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext-security.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="/RestAuthenticationProvider.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384744841667" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/CategoryDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/MessageDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/TransactionHelp.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/PoiDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext_test.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/CustomAccessDeniedHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/CustomAuthenticationEntryPoint.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/CustomAuthenticationEntryPoint.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/RestAuthenticationException.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/RestToken.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/PoiController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/AllSecurityFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981460" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/AfterSecurityFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/RestAuthenticationProvider.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/PoiController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/AllSecurityFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/AfterSecurityFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/RestAuthenticationProvider.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Transaction.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Region.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/resources/health-check.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Region.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/resources/health-check.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/GeoPoint.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Topic.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/metrics/MetricsConfig.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/metrics/health/MongodbHealthCheck.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/metrics/MetricsConfig.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/metrics/health/MongodbHealthCheck.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/MessageService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/BaseService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/CategoryService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/PoiService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/MessageServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/PoiServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/CategoryController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/MetricsController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/MessageController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/jsonview/JsonViewSupportFactoryBean.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/RestExceptionHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/MessageServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/PoiServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/CategoryController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/MetricsController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/MessageController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/jsonview/JsonViewSupportFactoryBean.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/RestExceptionHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/UserActions.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/dao/impl/Test.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/ProtobufRequestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384496803689" ignored="false" />
@@ -405,9 +432,19 @@
     <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/controller/ReadyState.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384497198216" ignored="false" />
     <file path="/ReadyState.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384496759282" ignored="false" />
     <file path="/AfterSecurityFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384502840608" ignored="false" />
-    <file path="/User.proto" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384506876882" ignored="false" />
-    <file path="/UserService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507186330" ignored="false" />
-    <file path="/UserServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384507194331" ignored="false" />
+    <file path="/User.proto" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384744860798" ignored="false" />
+    <file path="/UserService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384745061440" ignored="false" />
+    <file path="/UserServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384745160960" ignored="false" />
+    <file path="/UserDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384743747291" ignored="false" />
+    <file path="/EngUserDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384743696971" ignored="false" />
+    <file path="/RestExceptionHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384755952502" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/controller/UserControllerTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/controller/TopicControllerTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/controller/PoiControllerTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/CategoryServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/jsonview/ViewInjectingReturnValueHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/jsonview/ResponseView.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
+    <file path="/logging.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384764581043" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,46 +459,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="244" class="ApacheHttpRestClient" package="">
+      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="207" class="ApacheHttpRestClient" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -506,7 +505,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" line="26" class="com.zy17.dao.impl.CardDaoImpl" package="com.zy17.dao.impl">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" line="28" class="com.zy17.dao.impl.CardDaoImpl" package="com.zy17.dao.impl">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -521,7 +520,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="83" class="ApacheHttpRestClient" package="">
+      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="70" class="ApacheHttpRestClient" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -536,7 +535,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="115" class="ApacheHttpRestClient" package="">
+      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="102" class="ApacheHttpRestClient" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -551,22 +550,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java" line="28" class="com.zy17.controller.CardController" package="com.zy17.controller">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/BlobController.java" line="58" class="com.zy17.controller.BlobController" package="com.zy17.controller">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java" line="22" class="com.zy17.controller.CardController" package="com.zy17.controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -596,7 +580,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java" line="24" class="com.zy17.auth.CustomAuthenticationEntryPoint" package="com.zy17.auth">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/controller/BlobController.java" line="64" class="com.zy17.controller.BlobController" package="com.zy17.controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -611,7 +595,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/AllSecurityFilter.java" line="38" class="com.zy17.auth.AllSecurityFilter" package="com.zy17.auth">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" line="27" class="com.zy17.auth.RestAuthenticationProvider" package="com.zy17.auth">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -626,7 +610,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" line="25" class="com.zy17.auth.RestAuthenticationProvider" package="com.zy17.auth">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" line="60" class="com.zy17.auth.RestAuthenticationProvider" package="com.zy17.auth">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -641,22 +625,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" line="58" class="com.zy17.auth.RestAuthenticationProvider" package="com.zy17.auth">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" line="47" class="com.zy17.auth.RestAuthenticationProvider" package="com.zy17.auth">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" line="49" class="com.zy17.auth.RestAuthenticationProvider" package="com.zy17.auth">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -686,7 +655,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" line="27" class="com.zy17.auth.RestAuthenticationProvider" package="com.zy17.auth">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" line="29" class="com.zy17.auth.RestAuthenticationProvider" package="com.zy17.auth">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -746,7 +715,225 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/exception/RestExceptionHandler.java" line="1" class="RestExceptionHandler.java" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java" line="108" class="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/exception/RestExceptionHandler.java" line="5" class="RestExceptionHandler.java" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java" line="181" class="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java" line="201" class="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java" line="219" class="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java" line="242" class="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java" line="262" class="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java" line="292" class="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java" line="98" class="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java" line="279" class="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver" package="org.springframework.web.servlet.mvc.method.annotation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" line="53" class="com.zy17.dao.impl.CardDaoImpl" package="com.zy17.dao.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -756,10 +943,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/UserController.java">
+      <file leaf-file-name="BlobController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/BlobController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="1" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.72824633">
+            <state line="81" column="48" selection-start="3479" selection-end="3479" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -767,20 +954,96 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java">
+      <file leaf-file-name="CardController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+            <state line="21" column="16" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomAuthenticationEntryPoint.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java">
+      <file leaf-file-name="Eng.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/Eng.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="29" selection-start="1853" selection-end="1853" vertical-scroll-proportion="0.0">
+            <state line="1820" column="28" selection-start="59577" selection-end="59577" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="47" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="204" column="25" selection-start="7179" selection-end="7179" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logback.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/WEB-INF/logback.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="31" selection-start="3169" selection-end="3169" vertical-scroll-proportion="0.507837">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appengine-web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/WEB-INF/appengine-web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApacheHttpRestClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="42" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -804,22 +1067,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/zy17/user/User.java" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/log4j.properties" />
-        <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/applicationContext-security.xml" />
-        <option value="$PROJECT_DIR$/src/com/zy17/auth/AfterSecurityFilter.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/zy17/auth/AuthorizationHeaderSecurityFilter.java" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/classes/applicationContext-security.xml" />
-        <option value="$PROJECT_DIR$/src/protobuf/User.proto" />
-        <option value="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/domain/Base.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/controller/BlobController.java" />
         <option value="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/com/zy17/exception/RestExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/service/impl/CardServiceImpl.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/logging.properties" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" />
+        <option value="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/appengine-web.xml" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -844,62 +1107,6 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="MobileBackend" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="MobileBackend" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="MobileBackend" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="protoc" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="MobileBackend" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -942,7 +1149,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -971,6 +1177,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="war" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -989,60 +1213,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zy17" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy17" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy17" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
+              <option name="myItemId" value="protobuf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1078,7 +1255,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="project.structure.side.proportion" value="0.36746413" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
@@ -1087,20 +1264,20 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.zy17.protobuf.domain" />
       <recent name="com.zy17.controller" />
       <recent name="com.zy17.dao.objectifyimpl" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zy17.exception" />
       <recent name="com.zy17.service" />
       <recent name="com.zy17.controller" />
       <recent name="com.zy17.filter" />
       <recent name="com.zy17.domain" />
-      <recent name="com.zy17.controller.protobufview" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace\GitHub\helloorm\src\protobuf" />
@@ -1110,11 +1287,17 @@
       <recent name="E:\workspace\GitHub\helloorm\src\com\zy17\filter" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.zy17.service.impl" />
       <recent name="com.zy17.dao.impl" />
-      <recent name="com.zy17.controller" />
       <recent name="com.zy17.dao" />
+      <recent name="com.zy17.service.impl" />
+      <recent name="com.zy17.controller" />
       <recent name="com.zy17.service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zy17.controller" />
+      <recent name="com.zy17.dao.objectifyimpl" />
+      <recent name="com.zy17.domain.abk" />
+      <recent name="com.zy17.domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF\js" />
@@ -1123,17 +1306,11 @@
       <recent name="E:\workspace\GitHub\helloorm\src" />
       <recent name="E:\workspace\GitHub\helloorm\test" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.zy17.controller" />
-      <recent name="com.zy17.dao.objectifyimpl" />
-      <recent name="com.zy17.domain.abk" />
-      <recent name="com.zy17.domain" />
-    </key>
   </component>
   <component name="RestClientSettings">
     <option name="LAST_HOST" value="http://iforgetyou529.appsp0t.com" />
   </component>
-  <component name="RunManager" selected="Remote.gae_local">
+  <component name="RunManager" selected="JUnit.ApacheHttpRestClient.MultipartTest">
     <configuration default="false" name="ApacheHttpRestClient.MultipartTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="MobileBackend" />
@@ -1815,34 +1992,34 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1292" height="994" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32625" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.59432936" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14072847" sideWeight="0.59625" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2334437" sideWeight="0.47125" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43375" sideWeight="0.33937398" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52875" sideWeight="0.33195364" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.67048347" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40375" sideWeight="0.6836903" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52875" sideWeight="0.66804636" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29571664" sideWeight="0.5528899" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2955298" sideWeight="0.5528899" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2781457" sideWeight="0.59625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3923841" sideWeight="0.59625" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5425" sideWeight="0.66062605" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41225165" sideWeight="0.47125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54125" sideWeight="0.66062605" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34508196" sideWeight="0.45583424" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5103599" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1928,134 +2105,133 @@
         <filter targetName="request_logs" isVisible="true" />
       </targetFilters>
       <treeView value="false" />
-      <verbose value="false" />
       <expanded value="true" />
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.1.4.RELEASE/spring-security-web-3.1.4.RELEASE-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/appengine/appengine-api-1.0-sdk/1.8.7/appengine-api-1.0-sdk-1.8.7.jar!/com/google/appengine/api/memcache/MemcacheService.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="0" selection-start="8319" selection-end="8319" vertical-scroll-proportion="0.187251">
+        <state line="44" column="0" selection-start="2209" selection-end="2209" vertical-scroll-proportion="-19.08" />
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/appengine-java-sdk-1.8.3/src/user/appengine-api-1.0-sdk-1.8.3-src.zip!/com/google/appengine/api/memcache/MemcacheService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="5" selection-start="4700" selection-end="4700" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.1.4.RELEASE/spring-security-web-3.1.4.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="3882" selection-end="3882" vertical-scroll-proportion="0.95568687">
+        <state line="40" column="13" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="21" selection-start="4502" selection-end="4502" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0-sources.jar!/com/google/protobuf/UninitializedMessageException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="3672" selection-end="3672" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/Eng.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1820" column="28" selection-start="59577" selection-end="59577" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="59" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.31355932">
+        <state line="24" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/AllSecurityFilter.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/util/logging/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.19575472">
+        <state line="173" column="13" selection-start="7431" selection-end="7431" vertical-scroll-proportion="7.078652">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.1.4.RELEASE/spring-security-web-3.1.4.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="30" selection-start="9368" selection-end="9368" vertical-scroll-proportion="0.37223044">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="54" selection-start="615" selection-end="615" vertical-scroll-proportion="-1.8461539">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/3.1.4.RELEASE/spring-security-config-3.1.4.RELEASE-sources.jar!/org/springframework/security/config/method/GlobalMethodSecurityBeanDefinitionParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="395" column="30" selection-start="21729" selection-end="21729" vertical-scroll-proportion="0.33278418">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.1.4.RELEASE/spring-security-core-3.1.4.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="6" selection-start="2412" selection-end="2412" vertical-scroll-proportion="0.38317758">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/AuthorizationHeaderSecurityFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="38" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.7492163">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/classes/applicationContext-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="58" selection-start="504" selection-end="504" vertical-scroll-proportion="-1.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/protobuf/Card.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="46" selection-start="811" selection-end="811" vertical-scroll-proportion="1.3012048">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/protobuf/User.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.43373495">
+        <state line="1" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="29" selection-start="1853" selection-end="1853" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="207" selection-end="207" vertical-scroll-proportion="0.47368422">
+        <state line="21" column="16" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="1" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.72824633">
+        <state line="204" column="25" selection-start="7179" selection-end="7179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/BlobController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="48" selection-start="3479" selection-end="3479" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="47" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="42" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/appengine-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="31" selection-start="3169" selection-end="3169" vertical-scroll-proportion="0.507837">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
       </provider>
     </entry>
   </component>
@@ -2081,7 +2257,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.15895951" />
+                <option value="0.36746413" />
               </list>
             </option>
           </splitter-proportions>
@@ -2113,11 +2289,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|MobileBackend</last-edited>
+          <last-edited>MobileBackend</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.15895951" />
+                <option value="0.36746413" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -2141,7 +2318,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.15895951" />
+                <option value="0.36746413" />
               </list>
             </option>
           </splitter-proportions>

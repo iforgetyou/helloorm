@@ -1,5 +1,7 @@
 package com.zy17.service.impl;
 
+import com.google.appengine.api.memcache.MemcacheService;
+import com.google.appengine.api.memcache.MemcacheServiceFactory;
 import com.zy17.dao.CardDao;
 import com.zy17.protobuf.domain.Eng;
 import com.zy17.service.CardService;
@@ -14,6 +16,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CardServiceImpl implements CardService {
+
     @Autowired
     private CardDao dao;
 
