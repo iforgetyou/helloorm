@@ -13,11 +13,9 @@ import com.zy17.protobuf.domain.Eng;
 public interface UserService {
     void add( Eng.User  user);
 
-    void addByThirdpart(Eng.ThirdPartUser user);
-
     Eng.User  login( Eng.User  user);
 
     Eng.User  login( Eng.ThirdPartUser user);
 
-    Eng.User  findByNameAndPwdFromMongo(String key, String credentials);
+    Eng.User findByNameAndPwd(String key, String credentials);
 }

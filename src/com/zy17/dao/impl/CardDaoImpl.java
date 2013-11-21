@@ -36,7 +36,11 @@ public class CardDaoImpl extends BaseDaoImpl<CardDomain> implements CardDao {
             Eng.CardList.Builder builder = Eng.CardList.newBuilder();
             List<CardDomain> all = findAll();
             for (CardDomain cardDomain : all) {
-                builder.addCard(cardDomain.getCard());
+                if (cardDomain!=null){
+                    builder.addCard(cardDomain.getCard());
+                }else {
+                    log.info("cardDomain is null");
+                }
             }
             cardlist = builder.build();
             log.info("从数据库获取，放入缓存");

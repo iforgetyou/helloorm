@@ -1,8 +1,8 @@
 package com.zy17.service.impl;
 
 import com.zy17.dao.UserDao;
+import com.zy17.domain.EngUserDomain;
 import com.zy17.protobuf.domain.Eng;
-
 import com.zy17.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,24 +20,23 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void add(Eng.User user) {
+        dao.add(new EngUserDomain(user));
     }
 
-    @Override
-    public void addByThirdpart(Eng.ThirdPartUser user) {
-    }
 
     @Override
     public Eng.User login(Eng.User user) {
-        return null;
+        return dao.findUser(new EngUserDomain(user));
     }
 
     @Override
     public Eng.User login(Eng.ThirdPartUser user) {
-        return null;
+        int loginType=1;
+        return dao.findUserByThirdpart(user.getOpenId(), loginType);
     }
 
     @Override
-    public Eng.User findByNameAndPwdFromMongo(String key, String credentials) {
+    public Eng.User findByNameAndPwd(String key, String credentials) {
         return null;
     }
 }

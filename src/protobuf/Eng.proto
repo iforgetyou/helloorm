@@ -57,12 +57,16 @@ message PbImageList {
 //系统内部用户信息
 message User {
     //    全局唯一用户标示
-    required string username = 1;
+    required string email = 1;
     optional string password = 3;
     optional string nickname = 5;
     optional string gender = 7;
     optional int32 role = 8;
-    repeated ThirdPartUser user = 9;
+//    repeated ThirdPartUser user = 9;
+    optional string phonenum=11;
+    optional string sinaOpenid=21;
+    optional string qqOpenid=22;
+    optional string weixinOpenid=23;
 }
 
 message ThirdPartUser {
@@ -70,9 +74,15 @@ message ThirdPartUser {
     optional string accessToken = 3;
     optional int32 remindIn = 5;
     optional int32 expiresIn = 7;
-    required string platformType = 9;
+    required PlatformType platformType = 9;
 }
 
 message UserList {
     repeated User users = 1;
+}
+
+enum PlatformType{
+    SINA = 1;
+    QQ=2;
+    WEIXIN=3;
 }

@@ -8,6 +8,97 @@ public final class Eng {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
+  /**
+   * Protobuf enum {@code com.PlatformType}
+   */
+  public enum PlatformType
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>SINA = 1;</code>
+     */
+    SINA(0, 1),
+    /**
+     * <code>QQ = 2;</code>
+     */
+    QQ(1, 2),
+    /**
+     * <code>WEIXIN = 3;</code>
+     */
+    WEIXIN(2, 3),
+    ;
+
+    /**
+     * <code>SINA = 1;</code>
+     */
+    public static final int SINA_VALUE = 1;
+    /**
+     * <code>QQ = 2;</code>
+     */
+    public static final int QQ_VALUE = 2;
+    /**
+     * <code>WEIXIN = 3;</code>
+     */
+    public static final int WEIXIN_VALUE = 3;
+
+
+    public final int getNumber() { return value; }
+
+    public static PlatformType valueOf(int value) {
+      switch (value) {
+        case 1: return SINA;
+        case 2: return QQ;
+        case 3: return WEIXIN;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<PlatformType>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<PlatformType>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<PlatformType>() {
+            public PlatformType findValueByNumber(int number) {
+              return PlatformType.valueOf(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return com.zy17.protobuf.domain.Eng.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final PlatformType[] VALUES = values();
+
+    public static PlatformType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int index;
+    private final int value;
+
+    private PlatformType(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:com.PlatformType)
+  }
+
   public interface CardOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
@@ -6062,32 +6153,32 @@ public final class Eng {
   public interface UserOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required string username = 1;
+    // required string email = 1;
     /**
-     * <code>required string username = 1;</code>
+     * <code>required string email = 1;</code>
      *
      * <pre>
      *    全局唯一用户标示
      * </pre>
      */
-    boolean hasUsername();
+    boolean hasEmail();
     /**
-     * <code>required string username = 1;</code>
+     * <code>required string email = 1;</code>
      *
      * <pre>
      *    全局唯一用户标示
      * </pre>
      */
-    java.lang.String getUsername();
+    java.lang.String getEmail();
     /**
-     * <code>required string username = 1;</code>
+     * <code>required string email = 1;</code>
      *
      * <pre>
      *    全局唯一用户标示
      * </pre>
      */
     com.google.protobuf.ByteString
-        getUsernameBytes();
+        getEmailBytes();
 
     // optional string password = 3;
     /**
@@ -6144,30 +6235,77 @@ public final class Eng {
      */
     int getRole();
 
-    // repeated .com.ThirdPartUser user = 9;
+    // optional string phonenum = 11;
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string phonenum = 11;</code>
+     *
+     * <pre>
+     *    repeated ThirdPartUser user = 9;
+     * </pre>
      */
-    java.util.List<com.zy17.protobuf.domain.Eng.ThirdPartUser> 
-        getUserList();
+    boolean hasPhonenum();
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string phonenum = 11;</code>
+     *
+     * <pre>
+     *    repeated ThirdPartUser user = 9;
+     * </pre>
      */
-    com.zy17.protobuf.domain.Eng.ThirdPartUser getUser(int index);
+    java.lang.String getPhonenum();
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string phonenum = 11;</code>
+     *
+     * <pre>
+     *    repeated ThirdPartUser user = 9;
+     * </pre>
      */
-    int getUserCount();
+    com.google.protobuf.ByteString
+        getPhonenumBytes();
+
+    // optional string sinaOpenid = 21;
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string sinaOpenid = 21;</code>
      */
-    java.util.List<? extends com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder> 
-        getUserOrBuilderList();
+    boolean hasSinaOpenid();
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string sinaOpenid = 21;</code>
      */
-    com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder getUserOrBuilder(
-        int index);
+    java.lang.String getSinaOpenid();
+    /**
+     * <code>optional string sinaOpenid = 21;</code>
+     */
+    com.google.protobuf.ByteString
+        getSinaOpenidBytes();
+
+    // optional string qqOpenid = 22;
+    /**
+     * <code>optional string qqOpenid = 22;</code>
+     */
+    boolean hasQqOpenid();
+    /**
+     * <code>optional string qqOpenid = 22;</code>
+     */
+    java.lang.String getQqOpenid();
+    /**
+     * <code>optional string qqOpenid = 22;</code>
+     */
+    com.google.protobuf.ByteString
+        getQqOpenidBytes();
+
+    // optional string weixinOpenid = 23;
+    /**
+     * <code>optional string weixinOpenid = 23;</code>
+     */
+    boolean hasWeixinOpenid();
+    /**
+     * <code>optional string weixinOpenid = 23;</code>
+     */
+    java.lang.String getWeixinOpenid();
+    /**
+     * <code>optional string weixinOpenid = 23;</code>
+     */
+    com.google.protobuf.ByteString
+        getWeixinOpenidBytes();
   }
   /**
    * Protobuf type {@code com.User}
@@ -6226,7 +6364,7 @@ public final class Eng {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              username_ = input.readBytes();
+              email_ = input.readBytes();
               break;
             }
             case 26: {
@@ -6249,12 +6387,24 @@ public final class Eng {
               role_ = input.readInt32();
               break;
             }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
-                user_ = new java.util.ArrayList<com.zy17.protobuf.domain.Eng.ThirdPartUser>();
-                mutable_bitField0_ |= 0x00000020;
-              }
-              user_.add(input.readMessage(com.zy17.protobuf.domain.Eng.ThirdPartUser.PARSER, extensionRegistry));
+            case 90: {
+              bitField0_ |= 0x00000020;
+              phonenum_ = input.readBytes();
+              break;
+            }
+            case 170: {
+              bitField0_ |= 0x00000040;
+              sinaOpenid_ = input.readBytes();
+              break;
+            }
+            case 178: {
+              bitField0_ |= 0x00000080;
+              qqOpenid_ = input.readBytes();
+              break;
+            }
+            case 186: {
+              bitField0_ |= 0x00000100;
+              weixinOpenid_ = input.readBytes();
               break;
             }
           }
@@ -6265,9 +6415,6 @@ public final class Eng {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
-          user_ = java.util.Collections.unmodifiableList(user_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -6300,28 +6447,28 @@ public final class Eng {
     }
 
     private int bitField0_;
-    // required string username = 1;
-    public static final int USERNAME_FIELD_NUMBER = 1;
-    private java.lang.Object username_;
+    // required string email = 1;
+    public static final int EMAIL_FIELD_NUMBER = 1;
+    private java.lang.Object email_;
     /**
-     * <code>required string username = 1;</code>
+     * <code>required string email = 1;</code>
      *
      * <pre>
      *    全局唯一用户标示
      * </pre>
      */
-    public boolean hasUsername() {
+    public boolean hasEmail() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string username = 1;</code>
+     * <code>required string email = 1;</code>
      *
      * <pre>
      *    全局唯一用户标示
      * </pre>
      */
-    public java.lang.String getUsername() {
-      java.lang.Object ref = username_;
+    public java.lang.String getEmail() {
+      java.lang.Object ref = email_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
@@ -6329,26 +6476,26 @@ public final class Eng {
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
-          username_ = s;
+          email_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>required string username = 1;</code>
+     * <code>required string email = 1;</code>
      *
      * <pre>
      *    全局唯一用户标示
      * </pre>
      */
     public com.google.protobuf.ByteString
-        getUsernameBytes() {
-      java.lang.Object ref = username_;
+        getEmailBytes() {
+      java.lang.Object ref = email_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        username_ = b;
+        email_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -6500,64 +6647,209 @@ public final class Eng {
       return role_;
     }
 
-    // repeated .com.ThirdPartUser user = 9;
-    public static final int USER_FIELD_NUMBER = 9;
-    private java.util.List<com.zy17.protobuf.domain.Eng.ThirdPartUser> user_;
+    // optional string phonenum = 11;
+    public static final int PHONENUM_FIELD_NUMBER = 11;
+    private java.lang.Object phonenum_;
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string phonenum = 11;</code>
+     *
+     * <pre>
+     *    repeated ThirdPartUser user = 9;
+     * </pre>
      */
-    public java.util.List<com.zy17.protobuf.domain.Eng.ThirdPartUser> getUserList() {
-      return user_;
+    public boolean hasPhonenum() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string phonenum = 11;</code>
+     *
+     * <pre>
+     *    repeated ThirdPartUser user = 9;
+     * </pre>
      */
-    public java.util.List<? extends com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder> 
-        getUserOrBuilderList() {
-      return user_;
+    public java.lang.String getPhonenum() {
+      java.lang.Object ref = phonenum_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          phonenum_ = s;
+        }
+        return s;
+      }
     }
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string phonenum = 11;</code>
+     *
+     * <pre>
+     *    repeated ThirdPartUser user = 9;
+     * </pre>
      */
-    public int getUserCount() {
-      return user_.size();
+    public com.google.protobuf.ByteString
+        getPhonenumBytes() {
+      java.lang.Object ref = phonenum_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        phonenum_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string sinaOpenid = 21;
+    public static final int SINAOPENID_FIELD_NUMBER = 21;
+    private java.lang.Object sinaOpenid_;
+    /**
+     * <code>optional string sinaOpenid = 21;</code>
+     */
+    public boolean hasSinaOpenid() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string sinaOpenid = 21;</code>
      */
-    public com.zy17.protobuf.domain.Eng.ThirdPartUser getUser(int index) {
-      return user_.get(index);
+    public java.lang.String getSinaOpenid() {
+      java.lang.Object ref = sinaOpenid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          sinaOpenid_ = s;
+        }
+        return s;
+      }
     }
     /**
-     * <code>repeated .com.ThirdPartUser user = 9;</code>
+     * <code>optional string sinaOpenid = 21;</code>
      */
-    public com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder getUserOrBuilder(
-        int index) {
-      return user_.get(index);
+    public com.google.protobuf.ByteString
+        getSinaOpenidBytes() {
+      java.lang.Object ref = sinaOpenid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        sinaOpenid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string qqOpenid = 22;
+    public static final int QQOPENID_FIELD_NUMBER = 22;
+    private java.lang.Object qqOpenid_;
+    /**
+     * <code>optional string qqOpenid = 22;</code>
+     */
+    public boolean hasQqOpenid() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>optional string qqOpenid = 22;</code>
+     */
+    public java.lang.String getQqOpenid() {
+      java.lang.Object ref = qqOpenid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          qqOpenid_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string qqOpenid = 22;</code>
+     */
+    public com.google.protobuf.ByteString
+        getQqOpenidBytes() {
+      java.lang.Object ref = qqOpenid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        qqOpenid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string weixinOpenid = 23;
+    public static final int WEIXINOPENID_FIELD_NUMBER = 23;
+    private java.lang.Object weixinOpenid_;
+    /**
+     * <code>optional string weixinOpenid = 23;</code>
+     */
+    public boolean hasWeixinOpenid() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>optional string weixinOpenid = 23;</code>
+     */
+    public java.lang.String getWeixinOpenid() {
+      java.lang.Object ref = weixinOpenid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          weixinOpenid_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string weixinOpenid = 23;</code>
+     */
+    public com.google.protobuf.ByteString
+        getWeixinOpenidBytes() {
+      java.lang.Object ref = weixinOpenid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        weixinOpenid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private void initFields() {
-      username_ = "";
+      email_ = "";
       password_ = "";
       nickname_ = "";
       gender_ = "";
       role_ = 0;
-      user_ = java.util.Collections.emptyList();
+      phonenum_ = "";
+      sinaOpenid_ = "";
+      qqOpenid_ = "";
+      weixinOpenid_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasUsername()) {
+      if (!hasEmail()) {
         memoizedIsInitialized = 0;
         return false;
-      }
-      for (int i = 0; i < getUserCount(); i++) {
-        if (!getUser(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
       }
       memoizedIsInitialized = 1;
       return true;
@@ -6567,7 +6859,7 @@ public final class Eng {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getUsernameBytes());
+        output.writeBytes(1, getEmailBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBytes(3, getPasswordBytes());
@@ -6581,8 +6873,17 @@ public final class Eng {
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         output.writeInt32(8, role_);
       }
-      for (int i = 0; i < user_.size(); i++) {
-        output.writeMessage(9, user_.get(i));
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBytes(11, getPhonenumBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeBytes(21, getSinaOpenidBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeBytes(22, getQqOpenidBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeBytes(23, getWeixinOpenidBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -6595,7 +6896,7 @@ public final class Eng {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getUsernameBytes());
+          .computeBytesSize(1, getEmailBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -6613,9 +6914,21 @@ public final class Eng {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(8, role_);
       }
-      for (int i = 0; i < user_.size(); i++) {
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, user_.get(i));
+          .computeBytesSize(11, getPhonenumBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(21, getSinaOpenidBytes());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(22, getQqOpenidBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(23, getWeixinOpenidBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -6729,7 +7042,6 @@ public final class Eng {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getUserFieldBuilder();
         }
       }
       private static Builder create() {
@@ -6738,7 +7050,7 @@ public final class Eng {
 
       public Builder clear() {
         super.clear();
-        username_ = "";
+        email_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         password_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -6748,12 +7060,14 @@ public final class Eng {
         bitField0_ = (bitField0_ & ~0x00000008);
         role_ = 0;
         bitField0_ = (bitField0_ & ~0x00000010);
-        if (userBuilder_ == null) {
-          user_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-        } else {
-          userBuilder_.clear();
-        }
+        phonenum_ = "";
+        bitField0_ = (bitField0_ & ~0x00000020);
+        sinaOpenid_ = "";
+        bitField0_ = (bitField0_ & ~0x00000040);
+        qqOpenid_ = "";
+        bitField0_ = (bitField0_ & ~0x00000080);
+        weixinOpenid_ = "";
+        bitField0_ = (bitField0_ & ~0x00000100);
         return this;
       }
 
@@ -6785,7 +7099,7 @@ public final class Eng {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.username_ = username_;
+        result.email_ = email_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -6802,15 +7116,22 @@ public final class Eng {
           to_bitField0_ |= 0x00000010;
         }
         result.role_ = role_;
-        if (userBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) == 0x00000020)) {
-            user_ = java.util.Collections.unmodifiableList(user_);
-            bitField0_ = (bitField0_ & ~0x00000020);
-          }
-          result.user_ = user_;
-        } else {
-          result.user_ = userBuilder_.build();
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
         }
+        result.phonenum_ = phonenum_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.sinaOpenid_ = sinaOpenid_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.qqOpenid_ = qqOpenid_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.weixinOpenid_ = weixinOpenid_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -6827,9 +7148,9 @@ public final class Eng {
 
       public Builder mergeFrom(com.zy17.protobuf.domain.Eng.User other) {
         if (other == com.zy17.protobuf.domain.Eng.User.getDefaultInstance()) return this;
-        if (other.hasUsername()) {
+        if (other.hasEmail()) {
           bitField0_ |= 0x00000001;
-          username_ = other.username_;
+          email_ = other.email_;
           onChanged();
         }
         if (other.hasPassword()) {
@@ -6850,46 +7171,34 @@ public final class Eng {
         if (other.hasRole()) {
           setRole(other.getRole());
         }
-        if (userBuilder_ == null) {
-          if (!other.user_.isEmpty()) {
-            if (user_.isEmpty()) {
-              user_ = other.user_;
-              bitField0_ = (bitField0_ & ~0x00000020);
-            } else {
-              ensureUserIsMutable();
-              user_.addAll(other.user_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.user_.isEmpty()) {
-            if (userBuilder_.isEmpty()) {
-              userBuilder_.dispose();
-              userBuilder_ = null;
-              user_ = other.user_;
-              bitField0_ = (bitField0_ & ~0x00000020);
-              userBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getUserFieldBuilder() : null;
-            } else {
-              userBuilder_.addAllMessages(other.user_);
-            }
-          }
+        if (other.hasPhonenum()) {
+          bitField0_ |= 0x00000020;
+          phonenum_ = other.phonenum_;
+          onChanged();
+        }
+        if (other.hasSinaOpenid()) {
+          bitField0_ |= 0x00000040;
+          sinaOpenid_ = other.sinaOpenid_;
+          onChanged();
+        }
+        if (other.hasQqOpenid()) {
+          bitField0_ |= 0x00000080;
+          qqOpenid_ = other.qqOpenid_;
+          onChanged();
+        }
+        if (other.hasWeixinOpenid()) {
+          bitField0_ |= 0x00000100;
+          weixinOpenid_ = other.weixinOpenid_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasUsername()) {
+        if (!hasEmail()) {
           
           return false;
-        }
-        for (int i = 0; i < getUserCount(); i++) {
-          if (!getUser(i).isInitialized()) {
-            
-            return false;
-          }
         }
         return true;
       }
@@ -6913,100 +7222,100 @@ public final class Eng {
       }
       private int bitField0_;
 
-      // required string username = 1;
-      private java.lang.Object username_ = "";
+      // required string email = 1;
+      private java.lang.Object email_ = "";
       /**
-       * <code>required string username = 1;</code>
+       * <code>required string email = 1;</code>
        *
        * <pre>
        *    全局唯一用户标示
        * </pre>
        */
-      public boolean hasUsername() {
+      public boolean hasEmail() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string username = 1;</code>
+       * <code>required string email = 1;</code>
        *
        * <pre>
        *    全局唯一用户标示
        * </pre>
        */
-      public java.lang.String getUsername() {
-        java.lang.Object ref = username_;
+      public java.lang.String getEmail() {
+        java.lang.Object ref = email_;
         if (!(ref instanceof java.lang.String)) {
           java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
-          username_ = s;
+          email_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>required string username = 1;</code>
+       * <code>required string email = 1;</code>
        *
        * <pre>
        *    全局唯一用户标示
        * </pre>
        */
       public com.google.protobuf.ByteString
-          getUsernameBytes() {
-        java.lang.Object ref = username_;
+          getEmailBytes() {
+        java.lang.Object ref = email_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          username_ = b;
+          email_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>required string username = 1;</code>
+       * <code>required string email = 1;</code>
        *
        * <pre>
        *    全局唯一用户标示
        * </pre>
        */
-      public Builder setUsername(
+      public Builder setEmail(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        username_ = value;
+        email_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string username = 1;</code>
+       * <code>required string email = 1;</code>
        *
        * <pre>
        *    全局唯一用户标示
        * </pre>
        */
-      public Builder clearUsername() {
+      public Builder clearEmail() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        username_ = getDefaultInstance().getUsername();
+        email_ = getDefaultInstance().getEmail();
         onChanged();
         return this;
       }
       /**
-       * <code>required string username = 1;</code>
+       * <code>required string email = 1;</code>
        *
        * <pre>
        *    全局唯一用户标示
        * </pre>
        */
-      public Builder setUsernameBytes(
+      public Builder setEmailBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        username_ = value;
+        email_ = value;
         onChanged();
         return this;
       }
@@ -7266,244 +7575,324 @@ public final class Eng {
         return this;
       }
 
-      // repeated .com.ThirdPartUser user = 9;
-      private java.util.List<com.zy17.protobuf.domain.Eng.ThirdPartUser> user_ =
-        java.util.Collections.emptyList();
-      private void ensureUserIsMutable() {
-        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
-          user_ = new java.util.ArrayList<com.zy17.protobuf.domain.Eng.ThirdPartUser>(user_);
-          bitField0_ |= 0x00000020;
-         }
+      // optional string phonenum = 11;
+      private java.lang.Object phonenum_ = "";
+      /**
+       * <code>optional string phonenum = 11;</code>
+       *
+       * <pre>
+       *    repeated ThirdPartUser user = 9;
+       * </pre>
+       */
+      public boolean hasPhonenum() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>optional string phonenum = 11;</code>
+       *
+       * <pre>
+       *    repeated ThirdPartUser user = 9;
+       * </pre>
+       */
+      public java.lang.String getPhonenum() {
+        java.lang.Object ref = phonenum_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          phonenum_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string phonenum = 11;</code>
+       *
+       * <pre>
+       *    repeated ThirdPartUser user = 9;
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getPhonenumBytes() {
+        java.lang.Object ref = phonenum_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          phonenum_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string phonenum = 11;</code>
+       *
+       * <pre>
+       *    repeated ThirdPartUser user = 9;
+       * </pre>
+       */
+      public Builder setPhonenum(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        phonenum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string phonenum = 11;</code>
+       *
+       * <pre>
+       *    repeated ThirdPartUser user = 9;
+       * </pre>
+       */
+      public Builder clearPhonenum() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        phonenum_ = getDefaultInstance().getPhonenum();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string phonenum = 11;</code>
+       *
+       * <pre>
+       *    repeated ThirdPartUser user = 9;
+       * </pre>
+       */
+      public Builder setPhonenumBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        phonenum_ = value;
+        onChanged();
+        return this;
       }
 
-      private com.google.protobuf.RepeatedFieldBuilder<
-          com.zy17.protobuf.domain.Eng.ThirdPartUser, com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder, com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder> userBuilder_;
+      // optional string sinaOpenid = 21;
+      private java.lang.Object sinaOpenid_ = "";
+      /**
+       * <code>optional string sinaOpenid = 21;</code>
+       */
+      public boolean hasSinaOpenid() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>optional string sinaOpenid = 21;</code>
+       */
+      public java.lang.String getSinaOpenid() {
+        java.lang.Object ref = sinaOpenid_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          sinaOpenid_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string sinaOpenid = 21;</code>
+       */
+      public com.google.protobuf.ByteString
+          getSinaOpenidBytes() {
+        java.lang.Object ref = sinaOpenid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          sinaOpenid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string sinaOpenid = 21;</code>
+       */
+      public Builder setSinaOpenid(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        sinaOpenid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string sinaOpenid = 21;</code>
+       */
+      public Builder clearSinaOpenid() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        sinaOpenid_ = getDefaultInstance().getSinaOpenid();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string sinaOpenid = 21;</code>
+       */
+      public Builder setSinaOpenidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        sinaOpenid_ = value;
+        onChanged();
+        return this;
+      }
 
+      // optional string qqOpenid = 22;
+      private java.lang.Object qqOpenid_ = "";
       /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
+       * <code>optional string qqOpenid = 22;</code>
        */
-      public java.util.List<com.zy17.protobuf.domain.Eng.ThirdPartUser> getUserList() {
-        if (userBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(user_);
+      public boolean hasQqOpenid() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>optional string qqOpenid = 22;</code>
+       */
+      public java.lang.String getQqOpenid() {
+        java.lang.Object ref = qqOpenid_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          qqOpenid_ = s;
+          return s;
         } else {
-          return userBuilder_.getMessageList();
+          return (java.lang.String) ref;
         }
       }
       /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
+       * <code>optional string qqOpenid = 22;</code>
        */
-      public int getUserCount() {
-        if (userBuilder_ == null) {
-          return user_.size();
+      public com.google.protobuf.ByteString
+          getQqOpenidBytes() {
+        java.lang.Object ref = qqOpenid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          qqOpenid_ = b;
+          return b;
         } else {
-          return userBuilder_.getCount();
+          return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
+       * <code>optional string qqOpenid = 22;</code>
        */
-      public com.zy17.protobuf.domain.Eng.ThirdPartUser getUser(int index) {
-        if (userBuilder_ == null) {
-          return user_.get(index);
-        } else {
-          return userBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public Builder setUser(
-          int index, com.zy17.protobuf.domain.Eng.ThirdPartUser value) {
-        if (userBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUserIsMutable();
-          user_.set(index, value);
-          onChanged();
-        } else {
-          userBuilder_.setMessage(index, value);
-        }
+      public Builder setQqOpenid(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
+        qqOpenid_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
+       * <code>optional string qqOpenid = 22;</code>
        */
-      public Builder setUser(
-          int index, com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder builderForValue) {
-        if (userBuilder_ == null) {
-          ensureUserIsMutable();
-          user_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          userBuilder_.setMessage(index, builderForValue.build());
-        }
+      public Builder clearQqOpenid() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        qqOpenid_ = getDefaultInstance().getQqOpenid();
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
+       * <code>optional string qqOpenid = 22;</code>
        */
-      public Builder addUser(com.zy17.protobuf.domain.Eng.ThirdPartUser value) {
-        if (userBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUserIsMutable();
-          user_.add(value);
-          onChanged();
+      public Builder setQqOpenidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
+        qqOpenid_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string weixinOpenid = 23;
+      private java.lang.Object weixinOpenid_ = "";
+      /**
+       * <code>optional string weixinOpenid = 23;</code>
+       */
+      public boolean hasWeixinOpenid() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>optional string weixinOpenid = 23;</code>
+       */
+      public java.lang.String getWeixinOpenid() {
+        java.lang.Object ref = weixinOpenid_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          weixinOpenid_ = s;
+          return s;
         } else {
-          userBuilder_.addMessage(value);
+          return (java.lang.String) ref;
         }
+      }
+      /**
+       * <code>optional string weixinOpenid = 23;</code>
+       */
+      public com.google.protobuf.ByteString
+          getWeixinOpenidBytes() {
+        java.lang.Object ref = weixinOpenid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          weixinOpenid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string weixinOpenid = 23;</code>
+       */
+      public Builder setWeixinOpenid(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000100;
+        weixinOpenid_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
+       * <code>optional string weixinOpenid = 23;</code>
        */
-      public Builder addUser(
-          int index, com.zy17.protobuf.domain.Eng.ThirdPartUser value) {
-        if (userBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUserIsMutable();
-          user_.add(index, value);
-          onChanged();
-        } else {
-          userBuilder_.addMessage(index, value);
-        }
+      public Builder clearWeixinOpenid() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        weixinOpenid_ = getDefaultInstance().getWeixinOpenid();
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
+       * <code>optional string weixinOpenid = 23;</code>
        */
-      public Builder addUser(
-          com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder builderForValue) {
-        if (userBuilder_ == null) {
-          ensureUserIsMutable();
-          user_.add(builderForValue.build());
-          onChanged();
-        } else {
-          userBuilder_.addMessage(builderForValue.build());
-        }
+      public Builder setWeixinOpenidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000100;
+        weixinOpenid_ = value;
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public Builder addUser(
-          int index, com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder builderForValue) {
-        if (userBuilder_ == null) {
-          ensureUserIsMutable();
-          user_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          userBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public Builder addAllUser(
-          java.lang.Iterable<? extends com.zy17.protobuf.domain.Eng.ThirdPartUser> values) {
-        if (userBuilder_ == null) {
-          ensureUserIsMutable();
-          super.addAll(values, user_);
-          onChanged();
-        } else {
-          userBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public Builder clearUser() {
-        if (userBuilder_ == null) {
-          user_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-          onChanged();
-        } else {
-          userBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public Builder removeUser(int index) {
-        if (userBuilder_ == null) {
-          ensureUserIsMutable();
-          user_.remove(index);
-          onChanged();
-        } else {
-          userBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder getUserBuilder(
-          int index) {
-        return getUserFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder getUserOrBuilder(
-          int index) {
-        if (userBuilder_ == null) {
-          return user_.get(index);  } else {
-          return userBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public java.util.List<? extends com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder> 
-           getUserOrBuilderList() {
-        if (userBuilder_ != null) {
-          return userBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(user_);
-        }
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder addUserBuilder() {
-        return getUserFieldBuilder().addBuilder(
-            com.zy17.protobuf.domain.Eng.ThirdPartUser.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder addUserBuilder(
-          int index) {
-        return getUserFieldBuilder().addBuilder(
-            index, com.zy17.protobuf.domain.Eng.ThirdPartUser.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .com.ThirdPartUser user = 9;</code>
-       */
-      public java.util.List<com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder> 
-           getUserBuilderList() {
-        return getUserFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          com.zy17.protobuf.domain.Eng.ThirdPartUser, com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder, com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder> 
-          getUserFieldBuilder() {
-        if (userBuilder_ == null) {
-          userBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              com.zy17.protobuf.domain.Eng.ThirdPartUser, com.zy17.protobuf.domain.Eng.ThirdPartUser.Builder, com.zy17.protobuf.domain.Eng.ThirdPartUserOrBuilder>(
-                  user_,
-                  ((bitField0_ & 0x00000020) == 0x00000020),
-                  getParentForChildren(),
-                  isClean());
-          user_ = null;
-        }
-        return userBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:com.User)
@@ -7570,20 +7959,15 @@ public final class Eng {
      */
     int getExpiresIn();
 
-    // required string platformType = 9;
+    // required .com.PlatformType platformType = 9;
     /**
-     * <code>required string platformType = 9;</code>
+     * <code>required .com.PlatformType platformType = 9;</code>
      */
     boolean hasPlatformType();
     /**
-     * <code>required string platformType = 9;</code>
+     * <code>required .com.PlatformType platformType = 9;</code>
      */
-    java.lang.String getPlatformType();
-    /**
-     * <code>required string platformType = 9;</code>
-     */
-    com.google.protobuf.ByteString
-        getPlatformTypeBytes();
+    com.zy17.protobuf.domain.Eng.PlatformType getPlatformType();
   }
   /**
    * Protobuf type {@code com.ThirdPartUser}
@@ -7656,9 +8040,15 @@ public final class Eng {
               expiresIn_ = input.readInt32();
               break;
             }
-            case 74: {
-              bitField0_ |= 0x00000010;
-              platformType_ = input.readBytes();
+            case 72: {
+              int rawValue = input.readEnum();
+              com.zy17.protobuf.domain.Eng.PlatformType value = com.zy17.protobuf.domain.Eng.PlatformType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(9, rawValue);
+              } else {
+                bitField0_ |= 0x00000010;
+                platformType_ = value;
+              }
               break;
             }
           }
@@ -7819,47 +8209,20 @@ public final class Eng {
       return expiresIn_;
     }
 
-    // required string platformType = 9;
+    // required .com.PlatformType platformType = 9;
     public static final int PLATFORMTYPE_FIELD_NUMBER = 9;
-    private java.lang.Object platformType_;
+    private com.zy17.protobuf.domain.Eng.PlatformType platformType_;
     /**
-     * <code>required string platformType = 9;</code>
+     * <code>required .com.PlatformType platformType = 9;</code>
      */
     public boolean hasPlatformType() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>required string platformType = 9;</code>
+     * <code>required .com.PlatformType platformType = 9;</code>
      */
-    public java.lang.String getPlatformType() {
-      java.lang.Object ref = platformType_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          platformType_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string platformType = 9;</code>
-     */
-    public com.google.protobuf.ByteString
-        getPlatformTypeBytes() {
-      java.lang.Object ref = platformType_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        platformType_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public com.zy17.protobuf.domain.Eng.PlatformType getPlatformType() {
+      return platformType_;
     }
 
     private void initFields() {
@@ -7867,7 +8230,7 @@ public final class Eng {
       accessToken_ = "";
       remindIn_ = 0;
       expiresIn_ = 0;
-      platformType_ = "";
+      platformType_ = com.zy17.protobuf.domain.Eng.PlatformType.SINA;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -7902,7 +8265,7 @@ public final class Eng {
         output.writeInt32(7, expiresIn_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeBytes(9, getPlatformTypeBytes());
+        output.writeEnum(9, platformType_.getNumber());
       }
       getUnknownFields().writeTo(output);
     }
@@ -7931,7 +8294,7 @@ public final class Eng {
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(9, getPlatformTypeBytes());
+          .computeEnumSize(9, platformType_.getNumber());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -8057,7 +8420,7 @@ public final class Eng {
         bitField0_ = (bitField0_ & ~0x00000004);
         expiresIn_ = 0;
         bitField0_ = (bitField0_ & ~0x00000008);
-        platformType_ = "";
+        platformType_ = com.zy17.protobuf.domain.Eng.PlatformType.SINA;
         bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
@@ -8140,9 +8503,7 @@ public final class Eng {
           setExpiresIn(other.getExpiresIn());
         }
         if (other.hasPlatformType()) {
-          bitField0_ |= 0x00000010;
-          platformType_ = other.platformType_;
-          onChanged();
+          setPlatformType(other.getPlatformType());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -8393,76 +8754,38 @@ public final class Eng {
         return this;
       }
 
-      // required string platformType = 9;
-      private java.lang.Object platformType_ = "";
+      // required .com.PlatformType platformType = 9;
+      private com.zy17.protobuf.domain.Eng.PlatformType platformType_ = com.zy17.protobuf.domain.Eng.PlatformType.SINA;
       /**
-       * <code>required string platformType = 9;</code>
+       * <code>required .com.PlatformType platformType = 9;</code>
        */
       public boolean hasPlatformType() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>required string platformType = 9;</code>
+       * <code>required .com.PlatformType platformType = 9;</code>
        */
-      public java.lang.String getPlatformType() {
-        java.lang.Object ref = platformType_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          platformType_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public com.zy17.protobuf.domain.Eng.PlatformType getPlatformType() {
+        return platformType_;
       }
       /**
-       * <code>required string platformType = 9;</code>
+       * <code>required .com.PlatformType platformType = 9;</code>
        */
-      public com.google.protobuf.ByteString
-          getPlatformTypeBytes() {
-        java.lang.Object ref = platformType_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          platformType_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string platformType = 9;</code>
-       */
-      public Builder setPlatformType(
-          java.lang.String value) {
+      public Builder setPlatformType(com.zy17.protobuf.domain.Eng.PlatformType value) {
         if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000010;
         platformType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string platformType = 9;</code>
+       * <code>required .com.PlatformType platformType = 9;</code>
        */
       public Builder clearPlatformType() {
         bitField0_ = (bitField0_ & ~0x00000010);
-        platformType_ = getDefaultInstance().getPlatformType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string platformType = 9;</code>
-       */
-      public Builder setPlatformTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        platformType_ = value;
+        platformType_ = com.zy17.protobuf.domain.Eng.PlatformType.SINA;
         onChanged();
         return this;
       }
@@ -9241,15 +9564,18 @@ public final class Eng {
       "obInfo\"0\n\007PbImage\022%\n\tmediaInfo\030\001 \002(\0132\022.c" +
       "om.MediaBlobInfo\"0\n\007PbSound\022%\n\tmediaInfo" +
       "\030\001 \002(\0132\022.com.MediaBlobInfo\"*\n\013PbImageLis" +
-      "t\022\033\n\005image\030\001 \003(\0132\014.com.PbImage\"|\n\004User\022\020" +
-      "\n\010username\030\001 \002(\t\022\020\n\010password\030\003 \001(\t\022\020\n\010ni" +
-      "ckname\030\005 \001(\t\022\016\n\006gender\030\007 \001(\t\022\014\n\004role\030\010 \001" +
-      "(\005\022 \n\004user\030\t \003(\0132\022.com.ThirdPartUser\"o\n\r" +
-      "ThirdPartUser\022\016\n\006openId\030\001 \002(\t\022\023\n\013accessT" +
-      "oken\030\003 \001(\t\022\020\n\010remindIn\030\005 \001(\005\022\021\n\texpiresI" +
-      "n\030\007 \001(\005\022\024\n\014platformType\030\t \002(\t\"$\n\010UserLis",
-      "t\022\030\n\005users\030\001 \003(\0132\t.com.UserB\037\n\030com.zy17." +
-      "protobuf.domainB\003Eng"
+      "t\022\033\n\005image\030\001 \003(\0132\014.com.PbImage\"\245\001\n\004User\022" +
+      "\r\n\005email\030\001 \002(\t\022\020\n\010password\030\003 \001(\t\022\020\n\010nick" +
+      "name\030\005 \001(\t\022\016\n\006gender\030\007 \001(\t\022\014\n\004role\030\010 \001(\005" +
+      "\022\020\n\010phonenum\030\013 \001(\t\022\022\n\nsinaOpenid\030\025 \001(\t\022\020" +
+      "\n\010qqOpenid\030\026 \001(\t\022\024\n\014weixinOpenid\030\027 \001(\t\"\202" +
+      "\001\n\rThirdPartUser\022\016\n\006openId\030\001 \002(\t\022\023\n\013acce" +
+      "ssToken\030\003 \001(\t\022\020\n\010remindIn\030\005 \001(\005\022\021\n\texpir",
+      "esIn\030\007 \001(\005\022\'\n\014platformType\030\t \002(\0162\021.com.P" +
+      "latformType\"$\n\010UserList\022\030\n\005users\030\001 \003(\0132\t" +
+      ".com.User*,\n\014PlatformType\022\010\n\004SINA\020\001\022\006\n\002Q" +
+      "Q\020\002\022\n\n\006WEIXIN\020\003B\037\n\030com.zy17.protobuf.dom" +
+      "ainB\003Eng"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -9309,7 +9635,7 @@ public final class Eng {
           internal_static_com_User_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_User_descriptor,
-              new java.lang.String[] { "Username", "Password", "Nickname", "Gender", "Role", "User", });
+              new java.lang.String[] { "Email", "Password", "Nickname", "Gender", "Role", "Phonenum", "SinaOpenid", "QqOpenid", "WeixinOpenid", });
           internal_static_com_ThirdPartUser_descriptor =
             getDescriptor().getMessageTypes().get(9);
           internal_static_com_ThirdPartUser_fieldAccessorTable = new

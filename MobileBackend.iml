@@ -91,8 +91,6 @@
     <orderEntry type="library" name="Maven: org.json:json:20080701" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.2" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.6.2" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:0.9.29" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:0.9.29" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-mongodb:1.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.5.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:2.10.1" level="project" />

@@ -37,12 +37,17 @@ public class CardDomain extends Base {
 
     public Eng.Card getCard() {
         try {
-            return Eng.Card.newBuilder()
+            Eng.Card.Builder builder = Eng.Card.newBuilder();
+            builder
                     .setEngText(this.engText)
-                    .setChiText(new String(this.chiText.getBytes("unicode"), "utf-8"))
-                    .setImage(Eng.PbImage.parseFrom(imageBytes))
-                    .setSound(Eng.PbSound.parseFrom(soundBytes))
-                    .build();
+                    .setChiText(new String(this.chiText.getBytes("unicode"), "utf-8"));
+            if (imageBytes != null) {
+                builder.setImage(Eng.PbImage.parseFrom(imageBytes));
+            }
+            if (soundBytes != null) {
+                builder.setSound(Eng.PbSound.parseFrom(soundBytes));
+            }
+            return builder.build();
         } catch (InvalidProtocolBufferException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {

@@ -30,7 +30,7 @@ public class RestAuthenticationProvider implements AuthenticationProvider {
         String key = restToken.getKey();
         String credentials = restToken.getCredentials();
 
-        Eng.User user = userService.findByNameAndPwdFromMongo(key, credentials);
+        Eng.User user = userService.findByNameAndPwd(key, credentials);
 
         if (user == null) {
             throw new BadCredentialsException("Authenticate failed.");
@@ -42,7 +42,7 @@ public class RestAuthenticationProvider implements AuthenticationProvider {
 		List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
 		authorities.add(new SimpleGrantedAuthority(getRole(user.getRole())));
 
-		return new RestToken(user.getUsername(), user.getPassword(),
+		return new RestToken(user.getEmail(), user.getPassword(),
 				authorities);
 	}
 

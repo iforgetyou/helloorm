@@ -7,56 +7,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb4ab1f-4379-49c2-8c61-e37756c16242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/domain/EngUserDomain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_8_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/exception/RestExceptionHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/dao/UserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/UserDaoImpl.java" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_codahale_metrics_metrics_annotation_3_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_codahale_metrics_metrics_core_3_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_codahale_metrics_metrics_healthchecks_3_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_ryantenney_metrics_metrics_spring_3_0_0_RC1.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__org_springframework_spring_context_support_3_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\MessageDao.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\impl\MessageDaoImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\domain\TextMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\user\User.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\protobuf\User.proto" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\test\PersonJsonTest.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\test\com\zy17\controller\MessageControllerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\war\WEB-INF\log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__ch_qos_logback_logback_classic_0_9_29.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__ch_qos_logback_logback_core_0_9_29.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\GitHub\helloorm\src\com\zy17\dao\impl\ManyCallbacks.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ApacheHttpRestClient.java" afterPath="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/domain/Base.java" afterPath="$PROJECT_DIR$/src/com/zy17/domain/Base.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/BlobController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/BlobController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/impl/BlobDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/BlobDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/impl/CardServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/CardServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/domain/CardDomain.java" afterPath="$PROJECT_DIR$/src/com/zy17/domain/CardDomain.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/Eng.java" afterPath="$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/Eng.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/protobuf/Eng.proto" afterPath="$PROJECT_DIR$/src/protobuf/Eng.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/domain/EngUserDomain.java" afterPath="$PROJECT_DIR$/src/com/zy17/domain/EngUserDomain.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBackend.iml" afterPath="$PROJECT_DIR$/MobileBackend.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" afterPath="$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" afterPath="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/dao/impl/UserDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/UserService.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/appengine-web.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/appengine-web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/helloorm_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/helloorm_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_google_appengine_appengine_api_labs_1_8_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_api_labs_1_8_7.xml" />
-      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\.idea\libraries\Maven__com_google_appengine_appengine_endpoints_1_8_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_endpoints_1_8_7.xml" />
-      <change type="MOVED" beforePath="E:\workspace\GitHub\helloorm\src\protobuf\Card.proto" afterPath="$PROJECT_DIR$/src/protobuf/Eng.proto" />
     </list>
     <ignored path="helloorm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384762631383" ignored="false" />
+    <file path="/Dummy.txt" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1385003919725" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/webapp/WEB-INF/classes/META-INF/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065910856" ignored="false" />
     <file path="/jdoconfig.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379515695969" ignored="false" />
-    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384746698317" ignored="false" />
+    <file path="/fragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852448686" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/src/main/java/com/zy17/EnglishEdu/dao/impl/PMF.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379065592417" ignored="false" />
-    <file path="/a.dummy" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384765001687" ignored="false" />
+    <file path="/a.dummy" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1385014488317" ignored="false" />
     <file path="$PROJECT_DIR$/../EngListenTalk/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379066880076" ignored="false" />
     <file path="/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384746329883" ignored="false" />
     <file path="/QSort.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379296385127" ignored="false" />
@@ -68,7 +48,7 @@
     <file path="/MessageController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384223283049" ignored="false" />
     <file path="/TestMessage.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379389366326" ignored="false" />
     <file path="/appengine-web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379397076919" ignored="false" />
-    <file path="/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384768434451" ignored="false" />
+    <file path="/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384922531600" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380503829565" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/UserDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379841713776" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/UserServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
@@ -82,7 +62,7 @@
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/TopicService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="$PROJECT_DIR$/../Restful/web/WEB-INF/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379410729076" ignored="false" />
     <file path="/TextMessage.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379516058898" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/GenData.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/GenData.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384846867884" ignored="false" />
     <file path="/GenData.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379492427943" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/service/impl/TopicServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext_data.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
@@ -98,11 +78,11 @@
     <file path="/PMFHelper.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379496625350" ignored="false" />
     <file path="/PMF.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379495938002" ignored="false" />
     <file path="/BaseDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381993251560" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383728666416" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/res/values/strings.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382662886560" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/res/values/strings.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/example/GaeClient/MyActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382605638461" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/res/layout/main.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382605613962" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/build.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1379586336032" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/build.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="/MyActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382605162033" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383724121661" ignored="false" />
     <file path="/main.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382603110480" ignored="false" />
@@ -171,7 +151,7 @@
     <file path="/MultiReadHttpServletRequest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380091194617" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/filter/MultiReadHttpServletRequest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380092229771" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/filter/RequestDumperFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380092229771" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384926346438" ignored="false" />
     <file path="/OfyService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380101921758" ignored="false" />
     <file path="/PersonDomainOfyDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380179483825" ignored="false" />
     <file path="/a.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380096784273" ignored="false" />
@@ -192,7 +172,7 @@
     <file path="/PBMessageConverter1.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380506237069" ignored="false" />
     <file path="/MessageControllerTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380508124495" ignored="false" />
     <file path="/ApacheHttpRestClient3.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1380522883923" ignored="false" />
-    <file path="/ApacheHttpRestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384763689221" ignored="false" />
+    <file path="/ApacheHttpRestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384922231410" ignored="false" />
     <file path="/PersonDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381310848265" ignored="false" />
     <file path="/UrlFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381312874689" ignored="false" />
     <file path="D:/Program Files/lucene-4.4.0/demo/src/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381454634544" ignored="false" />
@@ -220,25 +200,25 @@
     <file path="D:/Program Files/appengine-java-sdk-1.8.3/demos/helloservers/war/WEB-INF/backends.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381472945274" ignored="false" />
     <file path="D:/Program Files/appengine-java-sdk-1.8.3/demos/helloservers/war/WEB-INF/web.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381475055874" ignored="false" />
     <file path="/GaeClientTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383537479426" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383700451882" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853608890" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/test/GaeClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381802990740" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/test/GaeClientTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383537491045" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/GaeClient.iml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381813696237" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/protocsrc/com/zy17/protobuf/domain/AddressBookProtos.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381813719730" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/domain/AddressBookProtos.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381813744369" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/protobuf/domain/AddressBookProtos.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381813867186" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/protobuf/domain/AddressBookProtos.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy4456958628204676240tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381813990163" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/example/GaeClient/GaeClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382600702761" ignored="false" />
     <file path="/GaeClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383718746294" ignored="false" />
     <file path="/Card.proto" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383629218794" ignored="false" />
     <file path="/EnglistCardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974482618" ignored="false" />
     <file path="/EnglishCardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974051755" ignored="false" />
-    <file path="/CardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383633929402" ignored="false" />
+    <file path="/CardDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384936574317" ignored="false" />
     <file path="/CardController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384765047547" ignored="false" />
     <file path="/CardService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381974663998" ignored="false" />
     <file path="/CardServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384755480786" ignored="false" />
     <file path="/CardDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1381975140126" ignored="false" />
-    <file path="/CardDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384765716360" ignored="false" />
+    <file path="/CardDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384832319606" ignored="false" />
     <file path="D:/Program Files/appengine-java-sdk-1.8.3/demos/mediastore/src/com/google/appengine/demos/mediastore/MediaObject.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382064809663" ignored="false" />
     <file path="/Upload.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382089389955" ignored="false" />
     <file path="/UploadPost.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383795505401" ignored="false" />
@@ -247,7 +227,7 @@
     <file path="D:/Program Files/appengine-java-sdk-1.8.3/demos/mediastore/war/WEB-INF/templates/upload.jsp" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382429637742" ignored="false" />
     <file path="/BlobController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384746540514" ignored="false" />
     <file path="/BlobDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382490344058" ignored="false" />
-    <file path="/BlobDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382497940885" ignored="false" />
+    <file path="/BlobDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384932259964" ignored="false" />
     <file path="/EngTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382522797658" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/gen/com/example/GaeClient/BuildConfig.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382673122023" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/target/generated-sources/r/com/example/GaeClient/BuildConfig.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382599770124" ignored="false" />
@@ -290,7 +270,7 @@
     <file path="$PROJECT_DIR$/../GaeClient/res/layout/voice_demo.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382692182796" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/example/GaeClient/VoiceActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382695355988" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6160977252418088574tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382607220412" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383701445705" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384854721043" ignored="false" />
     <file path="/VoiceActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382695354333" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy931747382403306821tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382663730035" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5829725303537887407tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1382664786293" ignored="false" />
@@ -314,7 +294,7 @@
     <file path="$USER_HOME$/Documents/Tencent Files/254360451/FileRecv/RCDemo/src/Test.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383118680219" ignored="false" />
     <file path="/Test1.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383110588758" ignored="false" />
     <file path="/Test.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383117925344" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/protobuf/domain/Eng.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383634009888" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/protobuf/domain/Eng.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7380939261740711570tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383119570116" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/example/GaeClient/ListViewLoader.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383125708025" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3977579022551871666tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383124743099" ignored="false" />
@@ -322,7 +302,7 @@
     <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/BirdGridFragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383787089305" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5496085214568548466tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383211578953" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/MyApplication.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383718052375" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/gen/com/zy17/R.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383728670214" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen/com/zy17/R.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852902485" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3069777448788072492tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383212559730" ignored="false" />
     <file path="$PROJECT_DIR$/../../SlidingMenu1/abs/gen/com/actionbarsherlock/BuildConfig.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383542493343" ignored="false" />
     <file path="$PROJECT_DIR$/../../SlidingMenu1/abs/pom.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383542824219" ignored="false" />
@@ -351,21 +331,21 @@
     <file path="$PROJECT_DIR$/../../SlidingMenu1/abs/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383542868488" ignored="false" />
     <file path="$PROJECT_DIR$/../../SlidingMenu1/library/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383537358869" ignored="false" />
     <file path="$PROJECT_DIR$/../../SlidingMenu1/abs/gen/com/actionbarsherlock/Manifest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383542825904" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/CardController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383699991358" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/GaeClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383718817638" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/CardController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/GaeClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/ImageListActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383621716943" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/SendMessageUtil.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383730898891" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ResponsiveUIActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383787450771" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ResponsiveUIActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="/ResponsiveUIActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383786231003" ignored="false" />
     <file path="D:/Program Files/adt-bundle-windows-x86_64-20130917/sdk/samples/android-17/SampleSyncAdapter/tests/src/com/example/android/samplesync/client/UserTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383641885365" ignored="false" />
     <file path="D:/Program Files/adt-bundle-windows-x86_64-20130917/sdk/samples/android-17/SampleSyncAdapter/tests/src/com/example/android/samplesync/authenticator/AuthenticatorActivityTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383641908498" ignored="false" />
     <file path="D:/Program Files/adt-bundle-windows-x86_64-20130917/sdk/samples/android-17/SampleSyncAdapter/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383642700027" ignored="false" />
     <file path="$PROJECT_DIR$/../../android-async-mvc/gen/com/mindtherobot/samples/asyncmvc/BuildConfig.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383644356115" ignored="false" />
-    <file path="$PROJECT_DIR$/../../SlidingMenu/abs/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383701357050" ignored="false" />
-    <file path="$PROJECT_DIR$/../../SlidingMenu/library/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383701494617" ignored="false" />
+    <file path="$PROJECT_DIR$/../../SlidingMenu/abs/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852833919" ignored="false" />
+    <file path="$PROJECT_DIR$/../../SlidingMenu/library/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852794962" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6350470894369668417tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383701517179" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/res/layout/createcard.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383785055543" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/CreateCardActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383788336880" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/CreateCardActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="/CreateCardActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383730570670" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6448956452994342520tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383715914991" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy4990340027088189488tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383715983424" ignored="false" />
@@ -376,7 +356,7 @@
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy8556679366704514382tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383786528354" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/res/layout/CardDetail.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383788294870" ignored="false" />
     <file path="/CardDetail.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383788280653" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/VoiceActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383788336880" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/VoiceActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy1063217392092776647tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383788362818" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/res/layout/card_detail.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383810297392" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5220877854681852064tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383789893681" ignored="false" />
@@ -385,13 +365,13 @@
     <file path="$PROJECT_DIR$/../GaeClient/res/layout/create_card.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383805624555" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy2851136588779517730tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383807802762" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6524504867089141390tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383810312176" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/res/layout/card_detail_text.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383817424083" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/res/layout/card_detail_text.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3460134522700555798tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383817513350" ignored="false" />
     <file path="$PROJECT_DIR$/../GaeClient/res/layout/card_detail_media.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383817854141" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5508614796889013283tmp/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1383817589344" ignored="false" />
-    <file path="/applicationContext-security.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384503555338" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext-security.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
-    <file path="/RestAuthenticationProvider.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384744841667" ignored="false" />
+    <file path="/applicationContext-security.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384939641442" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/resources/applicationContext-security.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384846405528" ignored="false" />
+    <file path="/RestAuthenticationProvider.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1385015073607" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/CategoryDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/dao/impl/MessageDaoMongoDbImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
@@ -408,7 +388,7 @@
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/auth/RestAuthenticationProvider.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Transaction.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Region.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
-    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/resources/health-check.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
+    <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/resources/health-check.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384926205255" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/GeoPoint.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/Topic.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/metrics/MetricsConfig.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
@@ -426,17 +406,17 @@
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/RestExceptionHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/domain/UserActions.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/dao/impl/Test.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384482981461" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/ProtobufRequestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384496803689" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/ProtobufRequestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="/ProtobufRequestClient.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384496799615" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/HttpRequestAsyncTask.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384496735986" ignored="false" />
-    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/controller/ReadyState.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384497198216" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/HttpRequestAsyncTask.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/controller/ReadyState.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
     <file path="/ReadyState.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384496759282" ignored="false" />
     <file path="/AfterSecurityFilter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384502840608" ignored="false" />
     <file path="/User.proto" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384744860798" ignored="false" />
     <file path="/UserService.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384745061440" ignored="false" />
-    <file path="/UserServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384745160960" ignored="false" />
-    <file path="/UserDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384743747291" ignored="false" />
-    <file path="/EngUserDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384743696971" ignored="false" />
+    <file path="/UserServiceImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1385014419292" ignored="false" />
+    <file path="/UserDaoImpl.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1385016390942" ignored="false" />
+    <file path="/EngUserDomain.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1385015828321" ignored="false" />
     <file path="/RestExceptionHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384755952502" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/controller/UserControllerTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/test/java/com/citylife/trackup/backend/controller/TopicControllerTest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773131" ignored="false" />
@@ -445,6 +425,103 @@
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/jsonview/ViewInjectingReturnValueHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
     <file path="E:/workDir/trunk/src/Trackup-prototype/src/main/java/com/citylife/trackup/backend/controller/jsonview/ResponseView.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384753773132" ignored="false" />
     <file path="/logging.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384764581043" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen/com/zy17/Manifest.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852444595" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/src/com/actionbarsherlock/ActionBarSherlock.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852708631" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/src/com/actionbarsherlock/app/SherlockActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852708631" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen/com/zy17/BuildConfig.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852578982" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/AndroidManifest.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../SlidingMenu/library/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384854721043" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__themes.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-v11/abs__themes.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-v14/abs__themes.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-v14/abs__styles.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__styles.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/App.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/CardMediaActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/CardListFragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/CardDetailActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/EngMenuFragment.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/ListViewLoader.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/util/FLACStreamEncoder.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/util/AudioMeter.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/util/FLACRecorder.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/util/NetworkUtil.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/model/ThreadSafe.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/model/CardListModel.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/model/Immutable.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/ProtobufHttpResponseHandler.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/GaeClient/http/ProtobufParser.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/local.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/controller/ControllerProtocol.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/controller/CardController.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/controller/ControllerState.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/src/com/zy17/ui/CardTextActivity.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/res/values/array.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/res/values/dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384852885821" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-land/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__popup_menu_item_layout.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/sherlock_spinner_dropdown_item.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__bools.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__ids.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__attrs.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__colors.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__config.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-sw600dp/abs__bools.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__progress_horizontal_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__progress_horizontal_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__action_bar_home.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__list_selector_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout-xlarge/abs__screen_action_bar.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout-xlarge/abs__screen_action_bar_overlay.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-w360dp/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__search_dropdown_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-w480dp/abs__config.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__item_background_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__btn_cab_done_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-w480dp/abs__bools.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__ic_clear.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-w500dp/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__list_selector_background_transition_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-large-mdpi-1024x600/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__search_dropdown_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-large-land-hdpi-1024x600/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__list_menu_item_radio.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__textfield_searchview_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-large-land-mdpi-1024x600/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__item_background_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__screen_simple.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__spinner_ab_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/color/abs__primary_text_disable_only_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout-large/abs__action_mode_close_item.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/color/abs__primary_text_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__spinner_ab_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__tab_indicator_ab_holo.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__action_mode_bar.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-large/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__list_selector_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-w600dp/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__list_menu_item_icon.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__textfield_searchview_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__activity_chooser_view_list_item.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-xlarge/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__textfield_searchview_right_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-sw600dp/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/color/abs__primary_text_disable_only_holo_dark.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/drawable/abs__ic_clear_holo_light.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853647690" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__list_menu_item_checkbox.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649191" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__activity_chooser_view.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values/abs__strings.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649192" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/values-large-hdpi-1024x600/abs__dimens.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__dialog_title_holo.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__action_bar_tab.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../GaeClient/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/res/layout/abs__action_bar_title_item.xml" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853649193" ignored="false" />
+    <file path="$PROJECT_DIR$/../SlidingMenu/library/src/com/jeremyfeinstein/slidingmenu/lib/CustomViewAbove.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384853752441" ignored="false" />
+    <file path="$PROJECT_DIR$/../../SlidingMenu/SlidingMenu/abs/project.properties" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1384854805297" ignored="false" />
+    <file path="/Eng.proto" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1385016222289" ignored="false" />
+    <file path="/UserDao.java" changelist="ccb4ab1f-4379-49c2-8c61-e37756c16242" time="1385016361505" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -459,6 +536,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="207" class="ApacheHttpRestClient" package="">
         <option name="ENABLED" value="true" />
@@ -520,7 +598,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="70" class="ApacheHttpRestClient" package="">
+      <breakpoint url="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java" line="68" class="ApacheHttpRestClient" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -880,7 +958,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" line="53" class="com.zy17.dao.impl.CardDaoImpl" package="com.zy17.dao.impl">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" line="57" class="com.zy17.dao.impl.CardDaoImpl" package="com.zy17.dao.impl">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -933,7 +1011,6 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -943,10 +1020,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BlobController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/BlobController.java">
+      <file leaf-file-name="UserController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="48" selection-start="3479" selection-end="3479" vertical-scroll-proportion="0.0">
+            <state line="50" column="29" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.46689305">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="27" selection-start="657" selection-end="665" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestAuthenticationProvider.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="56" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -954,10 +1058,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java">
+      <file leaf-file-name="UserDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="16" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+            <state line="20" column="30" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -965,85 +1069,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomAuthenticationEntryPoint.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java">
+      <file leaf-file-name="EngUserDomain.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/EngUserDomain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+            <state line="20" column="28" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Eng.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/Eng.java">
+      <file leaf-file-name="Eng.proto" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/protobuf/Eng.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1820" column="28" selection-start="59577" selection-end="59577" vertical-scroll-proportion="0.0">
+            <state line="69" column="1" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java">
+      <file leaf-file-name="BaseDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="47" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+            <state line="98" column="20" selection-start="3138" selection-end="3138" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="CardService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zy17/service/CardService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="204" column="25" selection-start="7179" selection-end="7179" vertical-scroll-proportion="0.0">
+            <state line="11" column="28" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logback.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/logback.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="31" selection-start="3169" selection-end="3169" vertical-scroll-proportion="0.507837">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appengine-web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/appengine-web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApacheHttpRestClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="42" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1067,22 +1124,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/zy17/domain/Base.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/controller/BlobController.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/com/zy17/exception/RestExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/zy17/service/impl/CardServiceImpl.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/logging.properties" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/com/zy17/controller/CardController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java" />
-        <option value="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/appengine-web.xml" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/test/ApacheHttpRestClient.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/BlobDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/domain/CardDomain.java" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/classes/applicationContext-security.xml" />
+        <option value="$PROJECT_DIR$/src/com/zy17/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/ManyCallbacks.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/domain/EngUserDomain.java" />
+        <option value="$PROJECT_DIR$/src/protobuf/Eng.proto" />
+        <option value="$PROJECT_DIR$/src/com/zy17/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/zy17/dao/impl/UserDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -1112,13 +1169,59 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="MobileBackend" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="MobileBackend" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="MobileBackend" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="protoc" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Profiles" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
+        </PATH_ELEMENT>
       </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="width" value="1292" />
-    <option name="height" value="994" />
+    <option name="height" value="976" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1149,6 +1252,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1157,69 +1261,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protobuf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1235,18 +1278,19 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="E:/workDir/trunk/src/Trackup-prototype" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GaeClient" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="100" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="932" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="928" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="100" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="85" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
@@ -1264,13 +1308,13 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.zy17.protobuf.domain" />
       <recent name="com.zy17.controller" />
       <recent name="com.zy17.dao.objectifyimpl" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zy17.exception" />
@@ -1293,18 +1337,18 @@
       <recent name="com.zy17.controller" />
       <recent name="com.zy17.service" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF" />
+      <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF\js" />
+      <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF\classes" />
+      <recent name="E:\workspace\GitHub\helloorm\src" />
+      <recent name="E:\workspace\GitHub\helloorm\test" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zy17.controller" />
       <recent name="com.zy17.dao.objectifyimpl" />
       <recent name="com.zy17.domain.abk" />
       <recent name="com.zy17.domain" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF\js" />
-      <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF" />
-      <recent name="E:\workspace\GitHub\helloorm\war\WEB-INF\classes" />
-      <recent name="E:\workspace\GitHub\helloorm\src" />
-      <recent name="E:\workspace\GitHub\helloorm\test" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1991,35 +2035,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="0" width="1292" height="994" extended-state="0" />
-    <editor active="true" />
+    <frame x="-9" y="0" width="1292" height="976" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32625" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.59432936" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736573" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2334437" sideWeight="0.47125" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2334437" sideWeight="0.6534527" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52875" sideWeight="0.33195364" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.67048347" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52875" sideWeight="0.66804636" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2955298" sideWeight="0.5528899" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2781457" sideWeight="0.59625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2781457" sideWeight="0.4667519" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41225165" sideWeight="0.47125" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54125" sideWeight="0.66062605" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3187086" sideWeight="0.67263424" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53324807" sideWeight="0.66062605" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34508196" sideWeight="0.45583424" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5103599" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3465473" sideWeight="0.66804636" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2109,129 +2153,129 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/appengine/appengine-api-1.0-sdk/1.8.7/appengine-api-1.0-sdk-1.8.7.jar!/com/google/appengine/api/memcache/MemcacheService.class">
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="2209" selection-end="2209" vertical-scroll-proportion="-19.08" />
+        <state line="33" column="34" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-8.307693">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/appengine-java-sdk-1.8.3/src/user/appengine-api-1.0-sdk-1.8.3-src.zip!/com/google/appengine/api/memcache/MemcacheService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/CardDomain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="5" selection-start="4700" selection-end="4700" vertical-scroll-proportion="0.0">
+        <state line="29" column="33" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/RestToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="55" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/RestAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="56" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="50" selection-start="2082" selection-end="2082" vertical-scroll-proportion="1.3277694">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="27" selection-start="657" selection-end="665" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-eb/jdo2-api-2.3-eb-sources.jar!/javax/jdo/PersistenceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="17" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.86562943">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/BaseDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="13" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
+        <state line="98" column="20" selection-start="3138" selection-end="3138" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/service/CardService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="21" selection-start="4502" selection-end="4502" vertical-scroll-proportion="0.0">
+        <state line="11" column="28" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0-sources.jar!/com/google/protobuf/UninitializedMessageException.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/domain/EngUserDomain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="3672" selection-end="3672" vertical-scroll-proportion="0.33333334">
+        <state line="20" column="28" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protocsrc/com/zy17/protobuf/domain/Eng.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1820" column="28" selection-start="59577" selection-end="59577" vertical-scroll-proportion="0.0">
+        <state line="26" column="4" selection-start="579" selection-end="579" vertical-scroll-proportion="0.4884726">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/auth/CustomAuthenticationEntryPoint.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/util/logging/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="13" selection-start="7431" selection-end="7431" vertical-scroll-proportion="7.078652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/CardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+        <state line="13" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/protobuf/Eng.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="25" selection-start="7179" selection-end="7179" vertical-scroll-proportion="0.0">
+        <state line="69" column="1" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/BlobController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="48" selection-start="3479" selection-end="3479" vertical-scroll-proportion="0.0">
+        <state line="20" column="30" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy17/dao/impl/CardDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zy17/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="47" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+        <state line="50" column="29" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.46689305">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ApacheHttpRestClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="42" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/appengine-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="31" selection-start="3169" selection-end="3169" vertical-scroll-proportion="0.507837">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
       </provider>
     </entry>
   </component>
@@ -2294,7 +2338,6 @@
             <option name="proportions">
               <list>
                 <option value="0.36746413" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

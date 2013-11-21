@@ -9,4 +9,8 @@
         <!-- Configure java.util.logging -->
     </system-properties>
     <resource-files/>
+    <!--Other settings here...-->
+    <!--<automatic-scaling>-->
+        <!--<max-idle-instances>3</max-idle-instances>-->
+    <!--</automatic-scaling>-->
 </appengine-web-app>

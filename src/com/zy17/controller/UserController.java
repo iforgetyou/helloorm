@@ -29,13 +29,13 @@ public class UserController {
     }
 
     //    第三方用户登录注册
-    @ResponseStatus(value = HttpStatus.CREATED)
-    @RequestMapping(value = "thirdpart", method = RequestMethod.POST)
-    public
-    @ResponseBody
-    void createUserByThirdpart(@RequestBody Eng.ThirdPartUser user) {
-        this.userService.addByThirdpart(user);
-    }
+//    @ResponseStatus(value = HttpStatus.CREATED)
+//    @RequestMapping(value = "thirdpart", method = RequestMethod.POST)
+//    public
+//    @ResponseBody
+//    void createUserByThirdpart(@RequestBody Eng.ThirdPartUser user) {
+//        this.userService.addByThirdpart(user);
+//    }
 
     /*
    * 用户登录
