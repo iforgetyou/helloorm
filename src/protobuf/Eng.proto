@@ -62,11 +62,11 @@ message User {
     optional string nickname = 5;
     optional string gender = 7;
     optional int32 role = 8;
-//    repeated ThirdPartUser user = 9;
-    optional string phonenum=11;
-    optional string sinaOpenid=21;
-    optional string qqOpenid=22;
-    optional string weixinOpenid=23;
+    //    repeated ThirdPartUser user = 9;
+    optional string phonenum = 11;
+    optional string sinaOpenid = 21;
+    optional string qqOpenid = 22;
+    optional string weixinOpenid = 23;
 }
 
 message ThirdPartUser {
@@ -81,8 +81,14 @@ message UserList {
     repeated User users = 1;
 }
 
-enum PlatformType{
+enum PlatformType {
     SINA = 1;
-    QQ=2;
-    WEIXIN=3;
+    QQ = 2;
+    WEIXIN = 3;
+}
+
+message Err {
+    required int32 errorCode = 1;
+    required string errMessage = 2;
+    optional string errDetail = 3;
 }

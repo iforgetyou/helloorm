@@ -1,6 +1,7 @@
 package com.zy17.exception;
 
-import com.zy17.controller.BlobController;
+import com.zy17.exception.UserAlreadyExsists;
+import com.zy17.protobuf.domain.Eng;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -8,13 +9,10 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import javax.xml.bind.ValidationException;
-import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA. User: Administrator Date: 13-6-19 Time: 下午3:32 To
@@ -22,20 +20,23 @@ import java.util.logging.Logger;
  */
 @ControllerAdvice
 public class RestExceptionHandler extends ResponseEntityExceptionHandler {
-    private static final Logger log = Logger.getLogger(RestExceptionHandler.class.getName());
 
-    @ExceptionHandler(value = {IllegalArgumentException.class, NumberFormatException.class, AuthenticationException.class, Exception.class})
-    @ResponseStatus(value = HttpStatus.BAD_REQUEST)
-    public ResponseEntity<Object> exceptionHandler(Exception ex, WebRequest request) {
-        log.severe(ex.getMessage());
+    @ExceptionHandler(value = {UserAlreadyExsists.class,
+            ValidationException.class,
+            AuthenticationException.class,
+            Exception.class})
+    public ResponseEntity<Object> exceptionHandler(Exception ex,
+                                                   WebRequest request) {
+
         HttpHeaders headers = new HttpHeaders();
-          if (ex instanceof IllegalArgumentException) {
+
+        if (ex instanceof IllegalArgumentException) {
             HttpStatus status = HttpStatus.BAD_REQUEST;
             return handleException((IllegalArgumentException) ex, headers,
                     status, request);
         } else if (ex instanceof ValidationException) {
             HttpStatus status = HttpStatus.BAD_REQUEST;
-            return handleException((NumberFormatException) ex, headers, status,
+            return handleException((ValidationException) ex, headers, status,
                     request);
         } else if (ex instanceof AuthenticationException) {
             HttpStatus status = HttpStatus.NETWORK_AUTHENTICATION_REQUIRED;
@@ -54,18 +55,23 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
     protected ResponseEntity<Object> handleException(Exception ex,
                                                      HttpHeaders headers, HttpStatus status, WebRequest request) {
-        return handleExceptionInternal(ex, ex, headers, status,
+        Eng.Err error = Eng.Err.newBuilder()
+                .setErrorCode(status.value())
+                .setErrMessage(ex.getMessage())
+                .build();
+        return handleExceptionInternal(ex, error.toByteArray(), headers, status,
                 request);
-    }
-
-    public RestExceptionHandler() {
-        super();
     }
 
     @Override
     protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(
             HttpRequestMethodNotSupportedException ex, HttpHeaders headers,
             HttpStatus status, WebRequest request) {
-        return null;
+        Eng.Err error = Eng.Err.newBuilder()
+                .setErrorCode(status.value())
+                .setErrMessage(ex.getMessage())
+                .build();
+        return handleExceptionInternal(ex, error.toByteArray(), headers, status,
+                request);
     }
 }

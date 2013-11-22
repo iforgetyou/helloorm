@@ -1,5 +1,6 @@
 package com.zy17.service;
 
+import com.zy17.exception.UserAlreadyExsists;
 import com.zy17.protobuf.domain.Eng;
 import com.zy17.protobuf.domain.Eng;
 
@@ -11,11 +12,13 @@ import com.zy17.protobuf.domain.Eng;
  */
 
 public interface UserService {
-    void add( Eng.User  user);
+    void add( Eng.User  user) throws UserAlreadyExsists;
 
     Eng.User  login( Eng.User  user);
 
     Eng.User  login( Eng.ThirdPartUser user);
 
     Eng.User findByNameAndPwd(String key, String credentials);
+
+    boolean checkusername(String username);
 }

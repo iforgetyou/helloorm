@@ -32,8 +32,9 @@ public class ApacheHttpRestClient {
     public HttpDelete delete;
     public DefaultHttpClient httpclient;
     Eng.Card card;
-//        public String remoteUrl = "http://127.0.0.1:8080/";
-    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
+    Eng.User user;
+    public String remoteUrl = "http://127.0.0.1:8080/";
+//    public String remoteUrl = "http://iforgetyou529.appsp0t.com/";
 
     @Before
     public void init() {
@@ -60,6 +61,29 @@ public class ApacheHttpRestClient {
 
 
         card = Eng.Card.newBuilder().setChiText("中文").setEngText("English" + new Date()).build();
+        user = Eng.User.newBuilder()
+                .setEmail("fdafieji@126.com")
+                .setNickname("英语哥")
+                .setPassword("mima").build();
+    }
+
+    @Test
+    public void createUser() throws Exception {
+        post.setURI(new URI(remoteUrl + "/users"));
+        post.setEntity(new ByteArrayEntity(user.toByteArray()));
+        HttpResponse response = httpclient.execute(post);
+        org.apache.http.HttpEntity entity = response.getEntity();
+
+        InputStream content = entity.getContent();
+        if (response.getStatusLine().getStatusCode() != 201) {
+            byte[] bytes = IOUtils.toByteArray(content);
+            Eng.Err err = Eng.Err.parseFrom(bytes);
+            if (entity != null) {
+                EntityUtils.consume(entity);
+            }
+            System.out.println(err);
+        }
+//        assert (response.getStatusLine().getStatusCode() == 201);
     }
 
     @Test
@@ -72,7 +96,7 @@ public class ApacheHttpRestClient {
         byte[] bytes = IOUtils.toByteArray(content);
         Eng.BlobMessage blobMessage = Eng.BlobMessage.parseFrom(bytes);
         System.out.println(blobMessage);
-        if (true){
+        if (true) {
             return;
         }
 //        上传多媒体

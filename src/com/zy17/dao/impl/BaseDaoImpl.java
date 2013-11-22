@@ -6,14 +6,15 @@ import com.google.appengine.api.memcache.MemcacheService;
 import com.google.appengine.api.memcache.MemcacheServiceFactory;
 import com.zy17.domain.Base;
 import org.apache.commons.lang.math.RandomUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
 import java.lang.reflect.ParameterizedType;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.logging.Logger;
 
 //import net.sf.jsr107cache.*;
 
@@ -24,14 +25,13 @@ import java.util.*;
  * Time: 下午5:22
  */
 public class BaseDaoImpl<T extends Base> {
-    final static Logger logger = LoggerFactory
-            .getLogger(BaseDaoImpl.class);
+    final static Logger logger = Logger.getLogger(BaseDaoImpl.class.getName());
     @Autowired
     protected PersistenceManagerFactory persistenceManagerFactory;
     protected BlobstoreService blobstoreService = BlobstoreServiceFactory.getBlobstoreService();
     //    Cache cache;
     MemcacheService memcache = MemcacheServiceFactory.getMemcacheService();
-    List<String> keyList=new ArrayList<String>();
+    List<String> keyList = new ArrayList<String>();
 
     protected String DEFAULT_QUERY = "select from " + this.getPersistentClass().getName();
 

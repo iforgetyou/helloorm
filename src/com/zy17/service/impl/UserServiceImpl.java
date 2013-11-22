@@ -2,6 +2,7 @@ package com.zy17.service.impl;
 
 import com.zy17.dao.UserDao;
 import com.zy17.domain.EngUserDomain;
+import com.zy17.exception.UserAlreadyExsists;
 import com.zy17.protobuf.domain.Eng;
 import com.zy17.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,10 @@ public class UserServiceImpl implements UserService {
     private UserDao dao;
 
     @Override
-    public void add(Eng.User user) {
+    public void add(Eng.User user) throws UserAlreadyExsists {
+        if (dao.findUserByEmail(user.getEmail())) {
+            throw new UserAlreadyExsists();
+        }
         dao.add(new EngUserDomain(user));
     }
 
@@ -31,12 +35,16 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Eng.User login(Eng.ThirdPartUser user) {
-        int loginType=1;
-        return dao.findUserByThirdpart(user.getOpenId(), loginType);
+        return dao.findUserByThirdpart(user.getOpenId(), user.getPlatformType());
     }
 
     @Override
     public Eng.User findByNameAndPwd(String key, String credentials) {
         return null;
+    }
+
+    @Override
+    public boolean checkusername(String username) {
+        return dao.findUserByEmail(username);
     }
 }

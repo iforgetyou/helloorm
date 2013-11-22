@@ -15,4 +15,6 @@ public interface UserDao {
     Eng.User findUser(EngUserDomain engUserDomain);
 
     Eng.User findUserByThirdpart(String openId, Eng.PlatformType platformType);
+
+    boolean findUserByEmail(String username);
 }
